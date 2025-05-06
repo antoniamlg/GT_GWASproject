@@ -15,7 +15,7 @@ plink --bfile data/raw/genotypes \
   --geno 0.05 \
   --maf 0.01 \
   --make-bed \
-  --out data/clean/genotypes_qc
+  --out data/clean/genotypes_qc```
 
 ### bullet lists
 with - or 1.
