@@ -5,7 +5,9 @@
 ### code blocks
 Use triple backticks (```) for code blocks:
 
-<pre>```bash plink --bfile data --mind 0.1 --geno 0.05 --maf 0.01 --make-bed --out qc_filtered ```</pre>
+```bash
+plink --bfile data --mind 0.1 --geno 0.05 --maf 0.01 --make-bed --out qc_filtered
+```
 You can specify language after the triple backticks (e.g., bash, r, python) for syntax highlighting.
 
 Also possible like this
@@ -15,7 +17,8 @@ plink --bfile data/raw/genotypes \
   --geno 0.05 \
   --maf 0.01 \
   --make-bed \
-  --out data/clean/genotypes_qc```
+  --out data/clean/genotypes_qc
+```
 
 ### bullet lists
 with - or 1.
