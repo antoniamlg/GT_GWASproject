@@ -30,7 +30,7 @@ with - or 1.
 | MAF Filter   | plink --maf 0.01                     | Remove rare variants         |
 
 ### links
-[<link name>](https://github.com/antoniamlg/GT_GWASproject)
+[link name](https://github.com/antoniamlg/GT_GWASproject)
 
 ### images
 ![image name](image.png)
