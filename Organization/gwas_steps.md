@@ -11,6 +11,7 @@
 plink --bfile gwas_data_indiv_filtered --impute-sex 0.8 --make-bed --out gwas_data_sex_imputed --allow-no-sex
 ```
 | command   | what it does            |
+|--------------|--------------------------------------|
 | ```--bfile```   | reads in all .bed, .bam & .fam files  |
 | ```--impute-sex 0.8```  | command to impute sex, F>0.8 likely male, F<0.2 likely female, 0.8 standard value |
 | ```--make-bed```  | needed to produce new output files  |
