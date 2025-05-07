@@ -8,18 +8,48 @@
 
 ## 1. Impute Sex
 ```bash
-plink --bfile gwas_data_indiv_filtered --impute-sex 0.8 --make-bed --out gwas_data_sex_imputed --allow-no-sex
+plink --bfile gwas_data_indiv_filtered
+      --impute-sex 0.8 
+      --make-bed --out gwas_data_sex_imputed
+      --allow-no-sex
 ```
-| command   | what it does            |
-|--------------|--------------------------------------|
-| ```--bfile```   | reads in all .bed, .bam & .fam files  |
+| command                 | what it does                                                                      |
+|-------------------------|-----------------------------------------------------------------------------------|
+| ```--bfile```           | reads in all .bed, .bam & .fam files                                              |
 | ```--impute-sex 0.8```  | command to impute sex, F>0.8 likely male, F<0.2 likely female, 0.8 standard value |
-| ```--make-bed```  | needed to produce new output files  |
+| ```--make-bed```        | needed to produce new output files                                                |
+| ```--allow-no-sex```    | allows PLINK to process those individuals at all                                  |
 
 - impute sex = infer sex: change sex assignments to imputed values
 - get sex of individuals based on X chromosome heterozygosity rates
   - SNPs determine whether an individual is likely male (low heterozygosity on X, since XY) or female (normal heterozygosity on X, since XX)
 - outputs a .sexcheck file
+
+```bash
+# The terminal output I get
+515439 MB RAM detected; reserving 257719 MB for main workspace.
+1376653 variants loaded from .bim file.
+2009 people (992 males, 916 females, 101 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+../../students/amlg/project/data/gwas_data_sex_imputed.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 2009 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: 106246 het. haploid genotypes present (see
+../../students/amlg/project/data/gwas_data_sex_imputed.hh ); many commands
+treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.478922.
+1376653 variants and 2009 people pass filters and QC.
+Note: No phenotypes present.
+--impute-sex: 29856 Xchr and 0 Ychr variant(s) scanned, 1889/2009 sexes
+imputed. Report written to
+../../students/amlg/project/data/gwas_data_sex_imputed.sexcheck .
+--make-bed to ../../students/amlg/project/data/gwas_data_sex_imputed.bed +
+../../students/amlg/project/data/gwas_data_sex_imputed.bim +
+../../students/amlg/project/data/gwas_data_sex_imputed.fam ... done.
+```
 
 ## 2. Check Sex
 ---
