@@ -13,6 +13,11 @@ Python script to:
 1. Read the metadata and split IIDs by chip.
 2. Create `.keep` files for each chip group.
 
+Use `.keep` to filter bed file into chip specific files:
+```bash
+plink --bfile gwas_data --keep /faststorage/project/populationgenomics/students/amlg/project/data/splitbychip/chipX.keep --make-bed --out /faststorage/project/populationgenomics/students/amlg/project/data/splitbychip/chipX_data
+```
+
 ## 1.1 Sample-level QC []
 
 ### 1.1.1 Missingness []
