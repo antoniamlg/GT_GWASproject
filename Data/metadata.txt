@@ -1,0 +1,2023 @@
+user	build	chip	chip_version	inferred_sex	source
+10645	37			Female	AncestryDNA
+10542	37	HTS iSelect HD	v4	Female	23andMe
+10653	37			Female	AncestryDNA, AncestryDNA
+10106	37			Female	AncestryDNA
+10559	37	Illumina GSAs	v5	Male	23andMe
+10828	37	Illumina GSAs	v5	Female	23andMe
+1100	37	OmniExpress plus	v3	Male	23andMe
+1042	37	OmniExpress	v1	Female	AncestryDNA
+10544	37	HTS iSelect HD	v4	Male	23andMe
+1033	37	OmniExpress plus	v3	Male	23andMe
+1	37	Illumina GSAs	v5	Male	23andMe, vcf
+10383	37			Male	AncestryDNA
+10448	37			Female	AncestryDNA
+10093	37			Male	AncestryDNA
+10232	37			Male	AncestryDNA
+10572	37			Female	AncestryDNA, AncestryDNA
+10058	37			Male	DNA.Land
+10790	37			Male	AncestryDNA
+10936	37			Male	23andMe
+10635	37			Female	AncestryDNA
+1047	37	OmniExpress plus	v3	Male	23andMe
+11076	37	HTS iSelect HD	v4	Female	23andMe
+1026	37	OmniExpress plus	v3	Female	23andMe
+1041	37	OmniExpress plus	v3	Female	23andMe
+10765	37	Illumina GSAs	v5	Male	23andMe
+10216	37	HTS iSelect HD	v4	Male	23andMe
+10348	37			Male	23andMe
+10188	37			Male	AncestryDNA
+1079	37	OmniExpress plus	v3	Female	23andMe
+1071	37	OmniExpress plus	v3	Male	23andMe
+10520	37			Female	generic
+10074	37	Illumina GSAs	v5	Female	23andMe
+11062	37			Female	AncestryDNA
+10171	37	Illumina GSAs	v5	Male	23andMe
+10347	37			Male	FTDNA
+1103	37	OmniExpress plus	v3	Female	23andMe
+10926	37	Illumina GSAs	v5	Female	23andMe
+1084	37	OmniExpress			FTDNA
+10142	37	Illumina GSAs	v5	Female	23andMe
+1029	37	OmniExpress plus	v3	Female	23andMe
+1094	37	OmniExpress plus	v3	Male	23andMe
+10	37	OmniExpress plus	v3	Male	23andMe
+10388	37	Illumina GSAs	v5	Female	23andMe
+10785	37			Female	AncestryDNA
+1034	37	OmniExpress plus	v3	Male	23andMe
+1040	37	OmniExpress plus	v3	Male	23andMe
+10583	37	Illumina GSAs	v5	Male	23andMe
+10489	37			Male	23andMe
+10141	37	Illumina GSAs	v5	Male	23andMe
+10868	37	Illumina GSAs	v5	Female	23andMe
+10962	37			Female	AncestryDNA
+1046	37	OmniExpress plus	v3	Male	23andMe
+11082	37	HTS iSelect HD	v4	Male	23andMe
+10530	37			Male	AncestryDNA
+10507	37	Illumina GSAs	v5	Male	23andMe
+10977	37	OmniExpress	v1	Female	AncestryDNA
+10881	37	OmniExpress		Male	MyHeritage
+10420	37	Illumina GSAs	v5	Male	23andMe
+1039	37	OmniExpress plus	v3	Male	23andMe
+10279	37	Illumina GSAs	v5	Female	23andMe
+10897	37			Female	AncestryDNA
+1060	37	OmniExpress plus	v3	Male	23andMe
+10195	37	Illumina GSAs	v5	Female	23andMe, 23andMe
+10414	37			Male	FTDNA, 23andMe
+1035	37	OmniExpress	v1	Female	AncestryDNA
+1081	37	OmniExpress plus	v3	Female	23andMe, 23andMe
+10408	37	HTS iSelect HD	v4	Female	23andMe
+10302	37	Illumina GSAs	v5	Female	23andMe
+11053	37			Male	AncestryDNA
+10885	37	Illumina GSAs	v5	Male	23andMe
+1085	37	OmniExpress plus	v3	Male	23andMe
+10986	37	Illumina GSAs	v5	Female	23andMe
+1078	37	OmniExpress	v1	Female	AncestryDNA
+10523	37	Illumina GSAs	v5	Male	23andMe
+10424	37			Female	AncestryDNA
+1050	37			Male	FTDNA
+1036	37	OmniExpress plus	v3	Male	23andMe
+10620	37	Illumina GSAs	v5	Female	23andMe
+10092	37	HTS iSelect HD	v4	Male	23andMe
+10508	37	OmniExpress	v1	Female	AncestryDNA
+1020	37	OmniExpress plus	v3	Male	23andMe
+10123	37	Illumina GSAs	v5	Female	23andMe
+10834	37			Female	vcf
+10497	37	Illumina GSAs	v5	Male	23andMe
+10325	37	Illumina GSAs	v5	Female	23andMe
+10251	37	OmniExpress plus	v3	Female	23andMe
+10430	37			Female	AncestryDNA
+1091	37	OmniExpress plus	v3	Male	23andMe
+11008	37	Illumina GSAs	v5	Female	23andMe
+1024	37	OmniExpress plus	v3	Female	23andMe
+11	37	OmniExpress plus	v3	Male	23andMe
+10984	37			Male	AncestryDNA
+1010	37			Male	23andMe
+1028	37	OmniExpress plus	v3	Female	23andMe
+10827	37	OmniExpress	v1	Female	AncestryDNA
+10883	37			Female	FTDNA, FTDNA
+11015	37	HTS iSelect HD	v4	Female	23andMe
+1074	37	OmniExpress	v1	Female	AncestryDNA
+10374	37	OmniExpress plus	v3	Female	23andMe
+10233	37	Illumina GSAs	v5	Male	23andMe
+11012	37			Female	AncestryDNA
+10097	37			Female	AncestryDNA, AncestryDNA
+10100	37			Female	AncestryDNA
+10702	37	Illumina GSAs	v5	Female	23andMe
+1022	37	OmniExpress plus	v3	Male	23andMe
+1080	37	OmniExpress plus	v3	Female	23andMe
+10959	37			Female	LivingDNA
+10477	37	Illumina GSAs	v5	Female	23andMe, GenesForGood
+10781	37	Illumina GSAs	v5	Male	23andMe
+1038	37	OmniExpress plus	v3	Female	23andMe
+10384	37			Female	AncestryDNA
+1013	37	OmniExpress plus	v3	Male	23andMe
+10036	37			Male	AncestryDNA
+10770	37	Illumina GSAs	v5	Female	23andMe
+10632	37			Male	23andMe, 23andMe
+10773	37			Male	AncestryDNA
+1092	37	OmniExpress			FTDNA
+10919	37	Illumina GSAs		Male	generic
+10077	37	Illumina GSAs	v5	Female	23andMe
+10575	37			Female	FTDNA
+10362	37			Male	FTDNA
+10246	37			Male	AncestryDNA
+10586	37			Male	AncestryDNA
+1066	37	OmniExpress plus	v3	Male	23andMe
+10339	37	Illumina GSAs	v5	Female	23andMe
+10490	37			Female	AncestryDNA
+1063	37	OmniExpress plus	v3	Male	23andMe
+10191	37	Illumina GSAs	v5	Male	23andMe
+10964	37			Female	AncestryDNA
+10207	37	Illumina GSAs	v5	Male	23andMe
+10492	37			Female	AncestryDNA
+1058	37	OmniExpress plus	v3	Female	23andMe
+1089	37	OmniExpress plus	v3	Female	23andMe
+1077	37	OmniExpress plus	v3	Male	23andMe
+10020	37	Illumina GSAs	v5	Male	23andMe
+1059	37				generic
+10381	37			Female	AncestryDNA
+1104	37	OmniExpress plus	v3	Female	23andMe, 23andMe, 23andMe
+10967	37	Illumina GSAs	v5	Female	23andMe
+10469	37	Illumina GSAs	v5	Female	23andMe
+10260	37			Female	AncestryDNA
+1075	37	OmniExpress plus	v3	Female	23andMe
+10012	37			Female	23andMe
+10080	37	Illumina GSAs	v5	Male	23andMe
+11069	37			Female	AncestryDNA
+user	build	chip	chip_version	inferred_sex	source
+1440	37	OmniExpress plus	v3	Female	23andMe
+141	37	OmniExpress plus	v3	Male	23andMe
+11462	37			Female	AncestryDNA
+1209	37	OmniExpress plus	v3	Female	23andMe
+1193	37	OmniExpress plus	v3	Female	23andMe
+13	37	OmniExpress plus	v3	Male	23andMe
+11753	37			Male	AncestryDNA
+11531	37			Male	AncestryDNA, 23andMe
+11795	37			Female	AncestryDNA
+1165	37	OmniExpress plus	v3	Female	23andMe
+1325	37	OmniExpress plus	v3	Female	23andMe
+1177	37	OmniExpress plus	v3	Male	23andMe
+11790	37			Female	23andMe, 23andMe
+1424	37	OmniExpress plus	v3	Female	23andMe
+1221	37	OmniExpress plus	v3	Male	23andMe
+11562	37			Male	AncestryDNA
+1420	37	OmniExpress plus	v3	Male	23andMe
+11493	37	HTS iSelect HD	v4	Female	23andMe
+139	37	OmniExpress plus	v3	Male	23andMe
+11669	37	Illumina GSAs	v5	Male	23andMe
+1131	37	OmniExpress plus	v3	Female	23andMe
+11758	37			Female	vcf
+1374	37	OmniExpress plus	v3	Female	23andMe
+1404	37	OmniExpress plus	v3	Male	23andMe, AncestryDNA
+11135	37			Female	AncestryDNA
+1290	37	OmniExpress plus	v3	Male	23andMe
+1201	37	OmniExpress plus	v3	Female	23andMe
+1470	37	OmniExpress plus	v3	Male	23andMe
+11796	37	Illumina GSAs	v5	Male	23andMe
+1459	37	OmniExpress plus	v3	Female	23andMe
+11393	37			Female	AncestryDNA
+1467	37	OmniExpress plus	v3	Male	23andMe
+1288	37	OmniExpress plus	v3	Female	23andMe
+1465	37	OmniExpress plus	v3	Female	23andMe
+1390	37	OmniExpress plus	v3	Female	23andMe
+1403	37				23andMe
+118	37			Male	23andMe
+1426	37	OmniExpress			FTDNA, DNA.Land, FTDNA
+126	37			Male	23andMe
+1112	37	OmniExpress plus	v3	Male	23andMe
+11441	37	Illumina GSAs	v5	Female	23andMe
+1338	37	OmniExpress plus	v3	Male	23andMe
+137	37	OmniExpress plus	v3	Male	23andMe
+11519	37	OmniExpress	v1	Female	AncestryDNA
+1472	37				23andMe
+11739	37			Female	FTDNA, FTDNA
+1227	37	OmniExpress plus	v3	Male	23andMe
+1259	37	OmniExpress			FTDNA
+1192	37	OmniExpress plus	v3	Female	23andMe
+11087	37	Illumina GSAs	v5	Male	23andMe
+11526	37			Female	AncestryDNA
+11388	37	Illumina GSAs	v5	Female	23andMe
+1183	37	OmniExpress			FTDNA
+1409	37	OmniExpress plus	v3	Male	23andMe
+1379	37	OmniExpress plus	v3	Female	23andMe
+1275	37	OmniExpress plus	v3	Male	23andMe
+1129	37	OmniExpress plus	v3	Male	23andMe
+11377	37			Male	AncestryDNA
+1210	37	OmniExpress plus	v3	Female	23andMe
+1447	37	OmniExpress plus	v3	Female	23andMe
+1213	37	OmniExpress plus	v3	Female	23andMe
+1442	37	OmniExpress plus	v3	Male	23andMe
+14	37			Female	23andMe
+11828	37			Female	AncestryDNA
+11548	37			Female	AncestryDNA
+1235	37	OmniExpress plus	v3	Female	23andMe
+11520	37				generic
+1384	37	OmniExpress plus	v3	Male	23andMe
+11747	37			Male	AncestryDNA
+11819	37	Illumina GSAs	v5	Female	23andMe
+11502	37			Female	AncestryDNA
+1341	37	OmniExpress plus	v3	Female	23andMe
+11458	37			Female	AncestryDNA
+1133	37	OmniExpress plus	v3	Male	23andMe
+11515	37			Female	AncestryDNA
+11698	37	Illumina GSAs	v5	Male	23andMe
+11585	37			Female	AncestryDNA
+1134	37	OmniExpress plus	v3	Female	23andMe
+1366	37	OmniExpress plus	v3	Female	23andMe
+11141	37	Illumina GSAs	v5	Female	23andMe
+1499	37	OmniExpress plus	v3	Female	23andMe
+1430	37	OmniExpress plus	v3	Male	23andMe
+11641	37			Male	MyHeritage
+1342	37			Male	23andMe
+1142	37	OmniExpress plus	v3	Female	23andMe
+11643	37	HTS iSelect HD	v4	Male	23andMe
+1432	37	OmniExpress plus	v3	Male	23andMe
+1125	37	OmniExpress plus	v3	Male	23andMe
+11584	37			Female	AncestryDNA
+1393	37	OmniExpress	v1	Female	AncestryDNA
+1305	37	OmniExpress plus	v3	Male	23andMe
+1462	37	OmniExpress plus	v3	Female	23andMe
+1446	37	OmniExpress plus	v3	Male	23andMe
+1171	37	OmniExpress plus	v3	Female	23andMe, 23andMe
+1450	37	OmniExpress	v1	Female	AncestryDNA
+11125	37	OmniExpress		Female	MyHeritage
+1378	37	HTS iSelect HD	v4	Female	23andMe
+1258	37	OmniExpress plus	v3	Male	23andMe
+11822	37	Illumina GSAs	v5	Male	23andMe
+11432	37			Male	FTDNA
+144	37	OmniExpress plus	v3	Male	23andMe
+1375	37	OmniExpress plus	v3	Female	23andMe
+11425	37	Illumina GSAs	v5	Female	23andMe
+1190	37	OmniExpress plus	v3	Female	23andMe
+1121	37	OmniExpress plus	v3	Female	23andMe, AncestryDNA
+1214	37	OmniExpress plus	v3	Male	23andMe
+1466	37	OmniExpress plus	v3	Male	23andMe
+11525	37			Male	MyHeritage
+1392	37	OmniExpress plus	v3	Female	23andMe
+1172	37	OmniExpress plus	v3	Female	23andMe
+1233	37	OmniExpress plus	v3	Female	23andMe
+146	37	OmniExpress plus	v3	Male	23andMe
+11128	37	Illumina GSAs	v5	Female	23andMe
+1412	37	OmniExpress plus	v3	Female	23andMe
+11143	37			Female	FTDNA
+123	37	OmniExpress plus	v3	Male	23andMe
+1163	37	OmniExpress plus	v3	Male	23andMe
+1281	37	OmniExpress plus	v3	Male	23andMe
+11528	37			Male	AncestryDNA
+1445	37	OmniExpress plus	v3	Female	23andMe
+11397	37			Female	AncestryDNA
+11557	37			Female	AncestryDNA
+1147	37	OmniExpress plus	v3	Male	23andMe, AncestryDNA
+1215	37	OmniExpress plus	v3	Female	23andMe
+1114	37	OmniExpress plus	v3	Male	23andMe
+1452	37				23andMe
+124	37	OmniExpress plus	v3	Female	23andMe
+11802	37	Illumina GSAs	v5	Male	23andMe
+11700	37			Male	AncestryDNA
+1414	37	OmniExpress plus	v3	Male	23andMe
+1401	37	OmniExpress plus	v3	Male	23andMe
+11509	37	Illumina GSAs	v5	Male	23andMe
+11360	37			Female	AncestryDNA
+11396	37			Female	AncestryDNA
+11744	37				vcf
+1312	37	OmniExpress plus	v3	Male	23andMe
+11785	37			Male	AncestryDNA
+1196	37	OmniExpress plus	v3	Male	23andMe
+1382	37	OmniExpress plus	v3	Female	23andMe
+1491	37	OmniExpress			FTDNA
+1239	37				FTDNA
+1269	37	OmniExpress plus	v3	Female	23andMe
+1494	37	OmniExpress plus	v3	Male	23andMe
+11499	37			Female	AncestryDNA
+11529	37	Illumina GSAs	v5	Female	23andMe
+1173	37	OmniExpress plus	v3	Female	23andMe
+user	build	chip	chip_version	inferred_sex	source
+1715	37	OmniExpress	v1	Female	AncestryDNA
+1707	37	HTS iSelect HD	v4	Male	23andMe
+1718	37	HTS iSelect HD	v4	Male	23andMe
+2022	37	OmniExpress plus	v3	Female	23andMe
+1975	37	HTS iSelect HD	v4	Male	23andMe
+1682	37	HTS iSelect HD	v4	Male	23andMe
+1877	37	OmniExpress plus	v3	Male	23andMe
+1851	37	OmniExpress plus	v3	Male	23andMe
+1802	37	HTS iSelect HD	v4	Male	23andMe
+1902	37	HTS iSelect HD	v4	Male	23andMe
+1772	37	OmniExpress	v1	Male	AncestryDNA
+1503	37	HTS iSelect HD	v4	Female	23andMe
+1525	37	HTS iSelect HD	v4	Male	23andMe
+1674	37	OmniExpress	v1	Male	AncestryDNA
+1664	37	OmniExpress plus	v3	Female	23andMe
+1952	37	HTS iSelect HD	v4	Male	23andMe, 23andMe
+1699	37	HTS iSelect HD	v4	Female	23andMe
+1788	37	HTS iSelect HD	v4	Male	23andMe
+1827	37	HTS iSelect HD	v4	Male	23andMe
+202	37	OmniExpress plus	v3	Male	23andMe
+1531	37	HTS iSelect HD	v4	Female	23andMe
+1853	37	HTS iSelect HD	v4	Male	23andMe
+1523	37	OmniExpress plus	v3	Male	23andMe
+1759	37	HTS iSelect HD	v4	Female	23andMe
+1904	37	HTS iSelect HD	v4	Male	23andMe
+1964	37	OmniExpress		Male	23andMe, 23andMe
+1561	37	OmniExpress			FTDNA
+1568	37	HTS iSelect HD	v4	Female	23andMe
+1720	37	HTS iSelect HD	v4	Male	23andMe
+1615	37	HTS iSelect HD	v4	Male	23andMe
+1731	37	OmniExpress	v1	Female	AncestryDNA
+189	37	OmniExpress plus	v3	Female	23andMe
+1889	37	HTS iSelect HD	v4	Male	23andMe
+1992	37	OmniExpress plus	v3	Female	23andMe
+1623	37	HTS iSelect HD	v4	Male	23andMe
+1626	37	HTS iSelect HD	v4	Female	23andMe
+1901	37	OmniExpress plus	v3	Male	23andMe
+1764	37	OmniExpress plus	v3	Male	23andMe
+1814	37	HTS iSelect HD	v4	Male	23andMe
+1875	37	OmniExpress plus	v3	Female	23andMe
+1876	37	OmniExpress plus	v3	Female	23andMe
+2006	37	HTS iSelect HD	v4	Female	23andMe
+1668	37	HTS iSelect HD	v4	Male	23andMe
+1785	37	HTS iSelect HD	v4	Female	23andMe
+1778	37	OmniExpress plus	v3	Male	23andMe
+1647	37	OmniExpress	v1	Female	AncestryDNA
+1903	37	HTS iSelect HD	v4	Female	23andMe
+1996	37	OmniExpress plus	v3	Female	23andMe
+1564	37	HTS iSelect HD	v4	Female	23andMe, 23andMe
+1675	37	HTS iSelect HD	v4	Female	23andMe
+160	37	OmniExpress plus	v3	Female	23andMe
+175	37	OmniExpress plus	v3	Male	23andMe
+1858	37	HTS iSelect HD	v4	Female	23andMe
+200	37	OmniExpress plus	v3	Male	23andMe
+1627	37	HTS iSelect HD	v4	Male	23andMe
+1705	37	HTS iSelect HD	v4	Female	23andMe
+1775	37	HTS iSelect HD	v4	Female	23andMe
+1822	37	HTS iSelect HD	v4	Female	23andMe
+1841	37	OmniExpress plus	v3	Male	23andMe
+1980	37	OmniExpress plus	v3	Male	23andMe
+1811	37	HTS iSelect HD	v4	Male	23andMe
+1641	37	HTS iSelect HD	v4	Male	23andMe
+1507	37	OmniExpress plus	v3	Male	23andMe
+1514	37	HTS iSelect HD	v4	Male	23andMe
+1625	37	OmniExpress	v1	Female	AncestryDNA
+1808	37	HTS iSelect HD	v4	Male	23andMe
+1599	37	OmniExpress			FTDNA
+1712	37	OmniExpress plus	v3	Female	23andMe
+1738	37				23andMe
+2009	37	HTS iSelect HD	v4	Female	23andMe
+1593	37	HTS iSelect HD	v4	Male	23andMe
+1984	37	OmniExpress plus	v3	Female	23andMe
+1678	37	OmniExpress plus	v3	Female	23andMe
+1780	37	HTS iSelect HD	v4	Female	23andMe
+1727	37	OmniExpress plus	v3	Male	23andMe
+1743	37	OmniExpress plus	v3	Female	23andMe
+1813	37	HTS iSelect HD	v4	Male	23andMe
+1885	37	Illumina GSAs	v5	Male	23andMe
+1871	37			Female	FTDNA
+1588	37	HTS iSelect HD	v4	Male	23andMe
+159	37	OmniExpress plus	v3	Female	23andMe
+2008	37	HTS iSelect HD	v4	Female	23andMe
+1987	37	OmniExpress plus	v3	Male	23andMe, FTDNA, FTDNA
+1515	37	OmniExpress plus	v3	Male	23andMe
+2000	37	HTS iSelect HD	v4	Female	23andMe
+1566	37	OmniExpress plus	v3	Male	23andMe
+1777	37	HTS iSelect HD	v4	Male	23andMe, 23andMe
+1610	37	HTS iSelect HD	v4	Female	23andMe
+1658	37	HTS iSelect HD	v4	Male	23andMe
+1970	37	HTS iSelect HD	v4	Female	23andMe
+1578	37	HTS iSelect HD	v4	Male	23andMe
+1582	37	HTS iSelect HD	v4	Male	23andMe
+1565	37	HTS iSelect HD	v4	Female	23andMe
+1659	37	OmniExpress plus	v3	Male	23andMe
+1742	37	OmniExpress plus	v3	Female	23andMe
+1993	37	HTS iSelect HD	v4	Male	23andMe
+2011	37	HTS iSelect HD	v4	Female	23andMe
+1653	37	HTS iSelect HD	v4	Female	23andMe
+1815	37	OmniExpress plus	v3	Male	23andMe
+168	37	OmniExpress plus	v3	Male	23andMe
+154	37	OmniExpress plus	v3	Male	23andMe
+1958	37	OmniExpress plus	v3	Male	23andMe
+1968	37	OmniExpress plus	v3	Female	23andMe, 23andMe
+1784	37	HTS iSelect HD	v4	Male	23andMe
+1537	37	HTS iSelect HD	v4	Male	23andMe
+180	37			Male	23andMe
+1790	37	OmniExpress plus	v3	Male	23andMe
+1697	37	OmniExpress plus	v3	Female	23andMe
+1776	37	OmniExpress plus	v3	Male	23andMe
+16	37	HTS iSelect HD	v4	Male	23andMe
+1825	37	OmniExpress plus	v3	Male	23andMe
+1522	37	HTS iSelect HD	v4	Male	23andMe
+2004	37	HTS iSelect HD	v4	Female	23andMe
+1631	37	HTS iSelect HD	v4	Male	23andMe
+1685	37	HTS iSelect HD	v4	Female	23andMe
+1879	37	HTS iSelect HD	v4	Male	23andMe
+1706	37	HTS iSelect HD	v4	Female	23andMe
+1985	37	OmniExpress plus	v3	Male	23andMe
+1595	37	OmniExpress	v1	Male	AncestryDNA
+1702	37	HTS iSelect HD	v4	Male	23andMe
+1848	37	OmniExpress plus	v3	Male	23andMe
+1991	37	HTS iSelect HD	v4	Female	23andMe
+2001	37	HTS iSelect HD	v4	Male	23andMe
+1810	37	HTS iSelect HD	v4	Male	23andMe
+177	37	OmniExpress plus	v3	Male	23andMe
+2018	37	OmniExpress plus	v3	Male	23andMe
+1600	37	HTS iSelect HD	v4	Male	23andMe
+1691	37	OmniExpress	v1	Male	AncestryDNA
+1686	37	HTS iSelect HD	v4	Male	23andMe
+1763	37	HTS iSelect HD	v4	Male	23andMe
+1735	37	OmniExpress			FTDNA
+1737	37	OmniExpress	v1	Female	AncestryDNA
+1887	37	HTS iSelect HD	v4	Male	23andMe
+2013	37	HTS iSelect HD	v4	Male	23andMe
+1745	37	OmniExpress plus	v3	Male	23andMe
+1717	37	HTS iSelect HD	v4	Male	23andMe
+1833	37	HTS iSelect HD	v4	Female	23andMe
+187	37			Male	23andMe
+199	37	OmniExpress plus	v3	Male	23andMe
+1573	37	HTS iSelect HD	v4	Male	23andMe
+1532	37	OmniExpress		Female	23andMe, AncestryDNA
+1963	37	OmniExpress plus	v3	Male	23andMe
+1892	37	OmniExpress plus	v3	Female	23andMe
+1669	37	HTS iSelect HD	v4	Female	23andMe, 23andMe
+1695	37	HTS iSelect HD	v4	Female	23andMe
+1519	37	OmniExpress	v1	Female	AncestryDNA
+1723	37	HTS iSelect HD	v4	Male	23andMe
+17	37			Female	23andMe
+1521	37	HTS iSelect HD	v4	Male	23andMe
+user	build	chip	chip_version	inferred_sex	source
+2056	37	HTS iSelect HD	v4	Male	23andMe
+2362	37	HTS iSelect HD	v4	Male	23andMe
+2106	37	OmniExpress plus	v3	Male	23andMe
+207	37	OmniExpress plus	v3	Male	23andMe
+2099	37	HTS iSelect HD	v4	Female	23andMe
+2456	37	OmniExpress plus	v3	Male	23andMe
+2076	37	HTS iSelect HD	v4	Male	23andMe
+2665	37	OmniExpress	v1	Male	AncestryDNA
+2385	37	OmniExpress plus	v3	Male	23andMe
+2055	37			Female	23andMe
+252	37			Male	23andMe
+2393	37	OmniExpress	v1	Male	AncestryDNA, AncestryDNA
+2645	37	HTS iSelect HD	v4	Male	23andMe
+2516	37	OmniExpress plus	v3	Female	23andMe
+2455	37	HTS iSelect HD	v4	Female	23andMe
+2288	37	OmniExpress plus	v3	Male	23andMe, 23andMe
+2633	37	HTS iSelect HD	v4	Male	23andMe
+2214	37	OmniExpress plus	v3	Male	23andMe
+2498	37	OmniExpress plus	v3	Male	23andMe
+26	37			Male	vcf, 23andMe
+2238	37	OmniExpress plus	v3	Male	23andMe
+2635	37	HTS iSelect HD	v4	Female	23andMe
+2512	37	OmniExpress plus	v3	Female	23andMe
+216	37	OmniExpress plus	v3	Male	23andMe
+2189	37	HTS iSelect HD	v4	Male	23andMe
+2047	37	OmniExpress	v1	Male	AncestryDNA
+2070	37				23andMe
+2050	37	OmniExpress plus	v3	Female	23andMe
+2067	37	HTS iSelect HD	v4	Male	23andMe
+215	37			Male	generic
+2042	37	OmniExpress plus	v3	Male	23andMe
+266	37	OmniExpress plus	v3	Male	23andMe
+2616	37	HTS iSelect HD	v4	Male	23andMe
+2570	37	HTS iSelect HD	v4	Male	23andMe
+2025	37	HTS iSelect HD	v4	Female	23andMe
+2166	37	HTS iSelect HD	v4	Female	23andMe
+2183	37	HTS iSelect HD	v4	Male	23andMe
+2278	37	OmniExpress plus	v3	Female	23andMe
+2030	37	HTS iSelect HD	v4	Female	23andMe
+2207	37	OmniExpress	v1	Male	AncestryDNA
+2402	37	HTS iSelect HD	v4	Male	23andMe
+258	37	OmniExpress plus	v3	Male	23andMe
+2034	37	HTS iSelect HD	v4	Female	23andMe
+2694	37				FTDNA
+2041	37	OmniExpress		Female	FTDNA, FTDNA
+2090	37	HTS iSelect HD	v4	Female	23andMe
+2307	37	OmniExpress plus	v3	Female	23andMe
+2676	37	OmniExpress plus	v3	Male	23andMe
+2153	37	OmniExpress plus	v3	Male	23andMe
+203	37	OmniExpress			FTDNA
+2162	37	OmniExpress plus	v3	Male	23andMe
+251	37	OmniExpress plus	v3	Female	23andMe
+22	37	OmniExpress plus	v3	Male	23andMe
+2457	37	HTS iSelect HD	v4	Male	23andMe
+2075	37	HTS iSelect HD	v4	Female	23andMe
+2399	37	HTS iSelect HD	v4	Female	23andMe
+2236	37	OmniExpress plus	v3	Female	23andMe
+2557	37	HTS iSelect HD	v4	Male	23andMe
+2692	37	HTS iSelect HD	v4	Male	23andMe
+2274	37			Male	23andMe
+2510	37	HTS iSelect HD	v4	Male	23andMe
+2293	37	OmniExpress plus	v3	Female	23andMe
+2421	37	HTS iSelect HD	v4	Male	23andMe
+2358	37	OmniExpress	v1	Female	AncestryDNA
+2687	37	OmniExpress plus	v3	Male	23andMe
+241	37	OmniExpress plus	v3	Male	23andMe
+2203	37	OmniExpress	v1	Male	AncestryDNA
+2023	37	OmniExpress plus	v3	Female	23andMe
+2035	37	OmniExpress plus	v3	Female	23andMe
+2506	37	OmniExpress			FTDNA
+2039	37	HTS iSelect HD	v4	Male	23andMe
+2662	37				23andMe
+2151	37	OmniExpress plus	v3	Male	23andMe
+2040	37	OmniExpress	v1	Female	AncestryDNA
+2074	37	OmniExpress plus	v3	Male	23andMe
+2276	37	HTS iSelect HD	v4	Female	23andMe
+2356	37	HTS iSelect HD	v4	Female	23andMe
+2504	37	OmniExpress plus	v3	Male	23andMe
+2239	37	HTS iSelect HD	v4	Male	23andMe
+2291	37	HTS iSelect HD	v4	Male	23andMe
+2558	37	OmniExpress plus	v3	Female	23andMe
+210	37			Male	23andMe
+2225	37	HTS iSelect HD	v4	Female	23andMe
+2339	37	OmniExpress plus	v3	Female	23andMe
+2052	37	HTS iSelect HD	v4	Female	23andMe
+2275	37				23andMe
+2700	37	OmniExpress plus	v3	Female	23andMe
+268	37	OmniExpress plus	v3	Female	23andMe
+2279	37	HTS iSelect HD	v4	Male	23andMe
+2329	37	OmniExpress plus	v3	Female	23andMe
+2675	37	HTS iSelect HD	v4	Female	23andMe
+2350	37	HTS iSelect HD	v4	Male	23andMe
+2080	37	OmniExpress plus	v3	Male	23andMe
+2077	37	OmniExpress plus	v3	Male	23andMe
+2574	37	OmniExpress	v1	Male	AncestryDNA
+2677	37	OmniExpress plus	v3	Male	23andMe
+2024	37	OmniExpress plus	v3	Male	23andMe
+253	37	OmniExpress plus	v3	Male	23andMe
+2064	37	HTS iSelect HD	v4	Female	23andMe
+2116	37	HTS iSelect HD	v4	Female	23andMe
+2571	37	OmniExpress	v1	Female	AncestryDNA
+2699	37	HTS iSelect HD	v4	Male	23andMe
+2159	37	HTS iSelect HD	v4	Female	23andMe
+2628	37	HTS iSelect HD	v4	Male	23andMe
+2681	37	OmniExpress plus	v3	Female	23andMe
+2576	37	HTS iSelect HD	v4	Female	23andMe
+2212	37			Male	23andMe
+2673	37	OmniExpress	v1	Male	AncestryDNA
+2158	37	OmniExpress plus	v3	Female	23andMe
+2334	37	HTS iSelect HD	v4	Male	23andMe, 23andMe
+2629	37				23andMe
+2542	37	OmniExpress plus	v3	Male	23andMe
+2048	37	OmniExpress plus	v3	Female	23andMe
+2083	37	HTS iSelect HD	v4	Female	23andMe
+2361	37	HTS iSelect HD	v4	Female	23andMe
+204	37	OmniExpress plus	v3	Male	23andMe
+2304	37			Male	23andMe
+2554	37	HTS iSelect HD	v4	Female	23andMe
+2636	37	OmniExpress	v1	Female	AncestryDNA
+2535	37	HTS iSelect HD	v4	Male	23andMe
+2513	37	OmniExpress plus	v3	Female	23andMe
+2177	37	HTS iSelect HD	v4	Male	23andMe
+2217	37	OmniExpress plus	v3	Male	23andMe
+2568	37	HTS iSelect HD	v4	Male	23andMe
+2053	37	OmniExpress			FTDNA
+2101	37	OmniExpress	v1	Male	AncestryDNA
+262	37			Male	23andMe
+2651	37	OmniExpress			FTDNA
+2316	37				23andMe
+2406	37	HTS iSelect HD	v4	Male	23andMe
+2453	37	HTS iSelect HD	v4	Female	23andMe
+2297	37	HTS iSelect HD	v4	Female	23andMe
+2648	37	HTS iSelect HD	v4	Female	23andMe
+2028	37				FTDNA
+2660	37			Male	23andMe
+2249	37	OmniExpress plus	v3	Male	23andMe
+2367	37	HTS iSelect HD	v4	Male	23andMe
+2412	37	OmniExpress plus	v3	Female	23andMe, 23andMe
+2371	37	OmniExpress plus	v3	Male	23andMe
+2314	37	HTS iSelect HD	v4	Female	23andMe
+2202	37	HTS iSelect HD	v4	Female	23andMe
+2096	37	OmniExpress plus	v3	Female	23andMe
+2454	37	HTS iSelect HD	v4	Female	23andMe
+user	build	chip	chip_version	inferred_sex	source
+328	37	OmniExpress plus	v3	Male	23andMe
+3335	37	OmniExpress plus	v3	Male	23andMe
+287	37	OmniExpress plus	v3	Male	23andMe
+3267	37	OmniExpress			FTDNA
+2760	37	OmniExpress plus	v3	Female	23andMe
+3341	37	OmniExpress plus	v3	Female	23andMe
+2849	37	OmniExpress plus	v3	Male	23andMe
+323	37	OmniExpress plus	v3	Male	23andMe
+276	37	OmniExpress plus	v3	Male	23andMe
+3257	37	HTS iSelect HD	v4	Male	23andMe
+33	37	OmniExpress plus	v3	Male	23andMe
+3227	37	OmniExpress plus	v3	Male	23andMe
+3326	37	HTS iSelect HD	v4	Female	23andMe
+2920	37	OmniExpress plus	v3	Male	23andMe
+2890	37	OmniExpress plus	v3	Male	23andMe
+295	37	OmniExpress plus	v3	Male	23andMe
+2705	37	OmniExpress			FTDNA
+3078	37	HTS iSelect HD	v4	Male	23andMe
+2755	37	HTS iSelect HD	v4	Female	23andMe
+322	37	OmniExpress plus	v3	Male	23andMe
+3304	37	HTS iSelect HD	v4	Male	23andMe
+3303	37	OmniExpress			FTDNA
+3176	37	HTS iSelect HD	v4	Female	23andMe
+2748	37	OmniExpress	v1	Female	AncestryDNA
+2971	37	OmniExpress plus	v3	Female	23andMe
+3097	37	OmniExpress			FTDNA
+3048	37	OmniExpress	v1	Male	AncestryDNA, 23andMe
+2891	37	HTS iSelect HD	v4	Male	23andMe
+2960	37	HTS iSelect HD	v4	Female	23andMe
+2887	37	HTS iSelect HD	v4	Male	23andMe
+325	37	OmniExpress plus	v3	Male	23andMe
+2794	37	HTS iSelect HD	v4	Male	23andMe
+2881	37	OmniExpress plus	v3	Male	23andMe
+3069	37	HTS iSelect HD	v4	Male	23andMe
+330	37	OmniExpress plus	v3	Male	23andMe
+2860	37	HTS iSelect HD	v4	Male	23andMe
+3113	37	HTS iSelect HD	v4	Female	23andMe
+3170	37	OmniExpress plus	v3	Male	23andMe, 23andMe
+3080	37	HTS iSelect HD	v4	Female	23andMe
+3068	37	OmniExpress			FTDNA
+2746	37			Male	FTDNA
+3344	37	OmniExpress plus	v3	Male	23andMe
+3340	37	HTS iSelect HD	v4	Male	23andMe
+3192	37				23andMe
+319	37	OmniExpress plus	v3	Female	23andMe
+2759	37	HTS iSelect HD	v4	Male	23andMe
+2739	37	OmniExpress plus	v3	Female	23andMe
+2797	37	HTS iSelect HD	v4	Male	23andMe
+2732	37	OmniExpress			FTDNA
+3090	37	HTS iSelect HD	v4	Female	23andMe
+3122	37	HTS iSelect HD	v4	Male	23andMe
+3216	37	HTS iSelect HD	v4	Female	23andMe
+3104	37	OmniExpress plus	v3	Female	23andMe
+2983	37	OmniExpress plus	v3	Female	23andMe
+3004	37	OmniExpress plus	v3	Male	23andMe
+296	37	OmniExpress plus	v3	Male	23andMe
+3124	37	OmniExpress	v1	Male	AncestryDNA
+279	37	OmniExpress plus	v3	Female	23andMe
+2898	37	HTS iSelect HD	v4	Female	23andMe
+3185	37	OmniExpress	v1	Female	AncestryDNA
+3321	37	HTS iSelect HD	v4	Female	23andMe, 23andMe
+3193	37	HTS iSelect HD	v4	Female	23andMe
+3108	37	HTS iSelect HD	v4	Male	23andMe
+3196	37	HTS iSelect HD	v4	Female	23andMe
+3186	37	OmniExpress plus	v3	Male	23andMe
+2964	37	HTS iSelect HD	v4	Female	23andMe
+2969	37	OmniExpress plus	v3	Female	23andMe
+3320	37	OmniExpress plus	v3	Female	23andMe, 23andMe
+3158	37	OmniExpress plus	v3	Female	23andMe
+2953	37	OmniExpress			FTDNA
+3087	37	OmniExpress		Male	FTDNA, 23andMe
+2751	37	OmniExpress plus	v3	Male	23andMe
+2707	37	OmniExpress plus	v3	Male	23andMe, 23andMe
+3046	37	HTS iSelect HD	v4	Female	23andMe
+3140	37	HTS iSelect HD	v4	Female	23andMe
+2708	37	OmniExpress	v1	Male	AncestryDNA
+3357	37	OmniExpress			FTDNA
+3015	37	OmniExpress	v1	Male	AncestryDNA, AncestryDNA
+2858	37	HTS iSelect HD	v4	Female	23andMe
+305	37	OmniExpress plus	v3	Male	23andMe, FTDNA, FTDNA
+3082	37	OmniExpress		Male	FTDNA, FTDNA, 23andMe
+2740	37	HTS iSelect HD	v4	Male	23andMe
+3244	37	HTS iSelect HD	v4	Female	23andMe
+3211	37	OmniExpress plus	v3	Male	23andMe
+2839	37	OmniExpress			FTDNA
+3206	37	OmniExpress plus	v3	Male	23andMe
+2901	37	HTS iSelect HD	v4	Male	23andMe
+3289	37	HTS iSelect HD	v4	Female	23andMe
+3248	37	HTS iSelect HD	v4	Female	23andMe
+3025	37	OmniExpress	v1	Female	AncestryDNA
+2718	37	OmniExpress plus	v3	Male	23andMe, FTDNA
+3137	37	HTS iSelect HD	v4	Female	23andMe
+285	37	OmniExpress plus	v3	Male	23andMe
+2894	37	OmniExpress	v1	Male	AncestryDNA
+3064	37	HTS iSelect HD	v4	Male	23andMe
+298	37	OmniExpress plus	v3	Male	23andMe
+2702	37	HTS iSelect HD	v4	Male	23andMe
+288	37	OmniExpress plus	v3	Female	23andMe, FTDNA, FTDNA
+2949	37	HTS iSelect HD	v4	Male	23andMe
+3280	37	OmniExpress plus	v3	Female	23andMe
+3275	37	HTS iSelect HD	v4	Male	23andMe
+2729	37	OmniExpress	v1	Female	AncestryDNA
+3050	37	OmniExpress	v1	Male	AncestryDNA
+3324	37	HTS iSelect HD	v4	Female	23andMe
+2958	37	HTS iSelect HD	v4	Female	23andMe
+2715	37	OmniExpress	v1	Female	AncestryDNA
+2725	37	HTS iSelect HD	v4	Male	23andMe
+3111	37	HTS iSelect HD	v4	Female	23andMe
+3364	37	HTS iSelect HD	v4	Female	23andMe
+3343	37	OmniExpress plus	v3	Female	23andMe
+3018	37	HTS iSelect HD	v4	Male	23andMe
+2764	37	HTS iSelect HD	v4	Male	23andMe
+3277	37	OmniExpress	v1	Female	AncestryDNA, AncestryDNA
+3265	37	HTS iSelect HD	v4	Male	23andMe
+3199	37	OmniExpress			FTDNA
+2720	37	HTS iSelect HD	v4	Female	23andMe
+2907	37	HTS iSelect HD	v4	Male	23andMe
+3234	37				23andMe
+2841	37	HTS iSelect HD	v4	Female	23andMe
+2856	37			Female	vcf
+2758	37	HTS iSelect HD	v4	Male	23andMe
+2928	37	OmniExpress			FTDNA
+3145	37	HTS iSelect HD	v4	Female	23andMe
+3167	37	HTS iSelect HD	v4	Male	23andMe
+2912	37	HTS iSelect HD	v4	Male	23andMe
+294	37	OmniExpress plus	v3	Male	23andMe
+2850	37	HTS iSelect HD	v4	Female	23andMe
+3130	37			Male	23andMe
+3306	37	HTS iSelect HD	v4	Male	23andMe
+3301	37	OmniExpress	v1	Female	AncestryDNA
+2998	37	HTS iSelect HD	v4	Male	23andMe
+2874	37	HTS iSelect HD	v4	Male	23andMe
+3034	37	HTS iSelect HD	v4	Female	23andMe
+3085	37	OmniExpress plus	v3	Female	23andMe
+3129	37			Female	23andMe
+2980	37	HTS iSelect HD	v4	Male	23andMe
+3043	37	HTS iSelect HD	v4	Male	23andMe
+311	37	OmniExpress plus	v3	Female	23andMe
+3317	37	HTS iSelect HD	v4	Male	23andMe
+2966	37	HTS iSelect HD	v4	Female	23andMe
+3197	37	HTS iSelect HD	v4	Male	23andMe
+3224	37	OmniExpress			FTDNA
+2886	37	HTS iSelect HD	v4	Female	23andMe
+2990	37	OmniExpress plus	v3	Male	23andMe
+2826	37	HTS iSelect HD	v4	Male	23andMe
+3179	37	OmniExpress plus	v3	Female	23andMe
+2903	37	HTS iSelect HD	v4	Female	23andMe, 23andMe
+user	build	chip	chip_version	inferred_sex	source
+3881	37	HTS iSelect HD	v4	Female	23andMe
+3569	37	OmniExpress plus	v3	Male	23andMe
+3733	37	OmniExpress	v1	Male	AncestryDNA
+3667	37	HTS iSelect HD	v4	Male	23andMe
+3865	37	HTS iSelect HD	v4	Female	23andMe
+3788	37	HTS iSelect HD	v4	Female	23andMe
+3883	37	HTS iSelect HD	v4	Female	23andMe
+3395	37	OmniExpress plus	v3	Male	23andMe, AncestryDNA, FTDNA
+3478	37	HTS iSelect HD	v4	Female	23andMe
+337	37	OmniExpress plus	v3	Male	23andMe
+3957	37	OmniExpress	v1	Male	AncestryDNA
+3422	37	HTS iSelect HD	v4	Female	23andMe
+3459	37	OmniExpress	v1	Female	AncestryDNA
+3777	37	HTS iSelect HD	v4	Male	23andMe
+3853	37	HTS iSelect HD	v4	Male	23andMe
+3655	37	HTS iSelect HD	v4	Male	23andMe
+3532	37	HTS iSelect HD	v4	Female	23andMe
+3747	37	HTS iSelect HD	v4	Female	23andMe
+3954	37	HTS iSelect HD	v4	Female	23andMe
+3581	37	HTS iSelect HD	v4	Female	23andMe
+3912	37	HTS iSelect HD	v4	Female	23andMe
+3847	37	HTS iSelect HD	v4	Female	23andMe
+3449	37	HTS iSelect HD	v4	Female	23andMe
+3598	37	OmniExpress plus	v3	Male	23andMe
+3680	37	HTS iSelect HD	v4	Male	23andMe
+3730	37	HTS iSelect HD	v4	Male	23andMe
+3605	37	OmniExpress plus	v3	Male	23andMe
+3905	37	HTS iSelect HD	v4	Female	23andMe
+366	37	OmniExpress plus	v3	Male	23andMe
+3858	37	OmniExpress	v1	Female	AncestryDNA, AncestryDNA
+3643	37	HTS iSelect HD	v4	Female	23andMe
+3834	37	HTS iSelect HD	v4	Male	23andMe
+3974	37	HTS iSelect HD	v4	Female	23andMe
+3394	37	OmniExpress plus	v3	Male	23andMe
+3985	37			Male	FTDNA
+3494	37	HTS iSelect HD		Male	generic, 23andMe
+3923	37	OmniExpress plus	v3	Female	23andMe
+3622	37	HTS iSelect HD	v4	Female	23andMe
+3381	37	HTS iSelect HD	v4	Male	23andMe, FTDNA
+3806	37	HTS iSelect HD	v4	Male	23andMe
+3964	37	HTS iSelect HD	v4	Male	23andMe
+3375	37	HTS iSelect HD	v4	Female	23andMe
+3833	37	OmniExpress	v1	Female	AncestryDNA
+3682	37	HTS iSelect HD	v4	Male	23andMe
+3882	37	HTS iSelect HD	v4	Male	23andMe
+3624	37	OmniExpress	v1	Male	AncestryDNA
+3547	37	HTS iSelect HD		Female	generic
+339	37	OmniExpress		Male	FTDNA, FTDNA
+3799	37	OmniExpress plus	v3	Male	23andMe, 23andMe
+3993	37				FTDNA
+4012	37				23andMe
+3582	37	HTS iSelect HD	v4	Female	23andMe
+3486	37	HTS iSelect HD	v4	Female	23andMe
+38	37	OmniExpress plus	v3	Male	23andMe
+397	37	OmniExpress plus	v3	Male	23andMe
+3672	37	OmniExpress	v1	Female	AncestryDNA
+3625	37	HTS iSelect HD	v4	Female	23andMe
+3952	37	OmniExpress			FTDNA
+3971	37	OmniExpress	v1	Female	AncestryDNA
+3402	37	HTS iSelect HD	v4	Male	23andMe
+368	37	OmniExpress plus	v3	Female	23andMe
+3904	37	HTS iSelect HD	v4	Female	23andMe
+3644	37	HTS iSelect HD	v4	Female	23andMe
+3908	37	HTS iSelect HD	v4	Male	23andMe
+3671	37	OmniExpress	v1	Female	AncestryDNA
+3934	37	HTS iSelect HD	v4	Male	23andMe
+3370	37				23andMe
+3543	37	HTS iSelect HD	v4	Male	23andMe
+3571	37	OmniExpress	v1	Female	AncestryDNA, FTDNA
+347	37	OmniExpress plus	v3	Female	23andMe
+345	37	OmniExpress plus	v3	Female	23andMe
+36	37			Male	vcf, vcf, 23andMe
+3615	37	HTS iSelect HD	v4	Female	23andMe
+3766	37	HTS iSelect HD	v4	Male	23andMe
+3495	37	HTS iSelect HD	v4	Female	23andMe
+3559	37	HTS iSelect HD	v4	Female	23andMe
+3987	37	HTS iSelect HD	v4	Male	23andMe
+3531	37	OmniExpress plus	v3	Female	23andMe
+3786	37	HTS iSelect HD	v4	Male	23andMe
+3706	37	OmniExpress plus	v3	Male	23andMe
+3626	37	OmniExpress	v1	Female	AncestryDNA
+3866	37	HTS iSelect HD	v4	Male	23andMe
+3639	37	HTS iSelect HD	v4	Female	23andMe
+3689	37	HTS iSelect HD	v4	Female	23andMe
+3417	37	OmniExpress plus	v3	Male	23andMe
+3468	37	HTS iSelect HD	v4	Male	23andMe
+3423	37				23andMe
+3802	37	HTS iSelect HD	v4	Male	23andMe
+3749	37	HTS iSelect HD	v4	Male	23andMe
+3948	37	HTS iSelect HD	v4	Male	23andMe
+3540	37	Illumina GSAs	v5	Male	23andMe, 23andMe
+3921	37	HTS iSelect HD	v4	Female	23andMe
+3404	37	HTS iSelect HD	v4	Male	23andMe
+357	37	OmniExpress plus	v3	Male	23andMe
+3399	37	HTS iSelect HD	v4	Male	23andMe
+3931	37	HTS iSelect HD	v4	Male	23andMe
+3393	37	OmniExpress	v1	Female	AncestryDNA
+3990	37	HTS iSelect HD	v4	Female	23andMe
+3967	37	HTS iSelect HD	v4	Male	23andMe
+3988	37	HTS iSelect HD	v4	Female	23andMe
+4009	37	HTS iSelect HD	v4	Male	23andMe
+3822	37	OmniExpress		Female	MyHeritage, FTDNA
+3499	37	HTS iSelect HD	v4	Male	23andMe
+349	37	OmniExpress plus	v3	Male	23andMe
+3415	37	OmniExpress plus	v3	Male	23andMe
+3862	37	HTS iSelect HD	v4	Male	23andMe
+3454	37	HTS iSelect HD	v4	Male	23andMe
+363	37	OmniExpress plus	v3	Male	23andMe
+3782	37	OmniExpress		Female	FTDNA, FTDNA
+3595	37	OmniExpress			FTDNA
+3660	37	OmniExpress	v1	Female	AncestryDNA
+3688	37	OmniExpress	v1	Female	AncestryDNA
+3992	37	HTS iSelect HD	v4	Male	23andMe
+3998	37				FTDNA
+3695	37	HTS iSelect HD	v4	Female	23andMe
+3767	37	OmniExpress	v1	Female	AncestryDNA
+3642	37	HTS iSelect HD	v4	Male	23andMe
+3973	37	HTS iSelect HD	v4	Male	23andMe
+4006	37	HTS iSelect HD	v4	Female	23andMe
+3448	37	Illumina GSAs	v5	Female	23andMe, FTDNA
+3913	37	HTS iSelect HD	v4	Female	23andMe
+3397	37	OmniExpress		Male	FTDNA, FTDNA, 23andMe, FTDNA
+4010	37				23andMe
+3835	37	HTS iSelect HD	v4	Female	23andMe
+3751	37	OmniExpress		Male	FTDNA
+3935	37	HTS iSelect HD	v4	Male	23andMe
+40	37	OmniExpress plus	v3	Male	23andMe
+3611	37	HTS iSelect HD	v4	Male	23andMe
+380	37	OmniExpress plus	v3	Male	23andMe
+3886	37	OmniExpress	v1	Female	AncestryDNA
+394	37	OmniExpress plus	v3	Male	23andMe
+3922	37	HTS iSelect HD	v4	Female	23andMe
+3821	37	HTS iSelect HD	v4	Male	23andMe
+341	37	OmniExpress plus	v3	Female	23andMe
+3489	37	OmniExpress plus	v3	Female	23andMe
+3942	37			Male	23andMe
+35	37			Male	vcf, 23andMe
+3783	37	HTS iSelect HD	v4	Male	23andMe
+3885	37	OmniExpress	v1	Female	AncestryDNA
+3724	37	OmniExpress plus	v3	Female	23andMe
+3780	37	OmniExpress plus	v3	Female	23andMe
+3867	37	HTS iSelect HD	v4	Female	23andMe, 23andMe
+3728	37	OmniExpress plus	v3	Male	23andMe
+3979	37	HTS iSelect HD	v4	Female	23andMe
+user	build	chip	chip_version	inferred_sex	source
+4212	37	HTS iSelect HD	v4	Male	23andMe
+4614	37	OmniExpress	v1	Male	AncestryDNA
+4460	37	OmniExpress	v1	Female	AncestryDNA
+4652	37	OmniExpress			FTDNA
+466	37	OmniExpress plus	v3	Male	23andMe
+4304	37	OmniExpress	v1	Male	AncestryDNA
+4130	37	HTS iSelect HD	v4	Female	23andMe
+4372	37	HTS iSelect HD	v4	Male	23andMe
+4605	37	HTS iSelect HD	v4	Male	23andMe
+4018	37	HTS iSelect HD	v4	Female	23andMe
+4021	37	OmniExpress	v1	Male	AncestryDNA
+4585	37	OmniExpress			FTDNA
+440	37	OmniExpress plus	v3	Male	23andMe
+4030	37	HTS iSelect HD	v4	Male	23andMe, 23andMe
+4604	37	OmniExpress	v1	Male	AncestryDNA
+4258	37	HTS iSelect HD	v4	Male	23andMe
+4056	37	HTS iSelect HD	v4	Male	23andMe
+4207	37	OmniExpress	v1	Male	AncestryDNA
+4547	37	HTS iSelect HD	v4	Female	23andMe
+4251	37	HTS iSelect HD	v4	Female	23andMe
+4267	37	HTS iSelect HD	v4	Male	23andMe
+4351	37	HTS iSelect HD	v4	Female	23andMe
+4159	37	HTS iSelect HD	v4	Female	23andMe
+4468	37	OmniExpress	v1	Female	AncestryDNA
+4490	37	HTS iSelect HD	v4	Male	23andMe, 23andMe
+4346	37	HTS iSelect HD	v4	Male	23andMe
+4546	37				FTDNA
+4438	37	OmniExpress plus	v3	Female	23andMe
+4179	37				23andMe
+4241	37	HTS iSelect HD	v4	Female	23andMe
+4569	37	OmniExpress plus	v3	Male	23andMe
+4483	37	HTS iSelect HD	v4	Female	23andMe
+4036	37	HTS iSelect HD	v4	Male	23andMe
+4552	37	OmniExpress	v1	Male	AncestryDNA
+4580	37	HTS iSelect HD	v4	Female	23andMe
+441	37	OmniExpress plus	v3	Male	23andMe
+4297	37	OmniExpress	v1	Male	AncestryDNA
+4067	37	HTS iSelect HD	v4	Female	23andMe
+4430	37	OmniExpress	v1	Male	AncestryDNA
+4643	37	HTS iSelect HD	v4	Female	23andMe
+4646	37	OmniExpress plus	v3	Female	23andMe
+4171	37	OmniExpress plus	v3	Male	23andMe, 23andMe
+4638	37	OmniExpress	v1	Female	AncestryDNA
+4359	37	HTS iSelect HD	v4	Female	23andMe
+4032	37	HTS iSelect HD	v4	Male	23andMe
+4428	37	HTS iSelect HD	v4	Female	23andMe
+4029	37	HTS iSelect HD	v4	Male	23andMe
+4532	37	HTS iSelect HD	v4	Female	23andMe, FTDNA, FTDNA
+4498	37	OmniExpress plus	v3	Male	23andMe
+4509	37	HTS iSelect HD	v4	Male	23andMe
+4290	37	HTS iSelect HD	v4	Male	23andMe
+4343	37				23andMe
+4425	37	OmniExpress	v1	Male	AncestryDNA
+4502	37	OmniExpress	v1	Male	AncestryDNA
+4342	37	OmniExpress plus	v3	Male	23andMe
+4507	37	HTS iSelect HD	v4	Male	23andMe
+4170	37				23andMe
+437	37	OmniExpress plus	v3	Male	23andMe
+4482	37	HTS iSelect HD	v4	Male	23andMe
+4191	37	HTS iSelect HD	v4	Male	23andMe
+4095	37	HTS iSelect HD	v4	Female	23andMe
+4587	37	OmniExpress plus	v3	Female	23andMe
+4613	37				FTDNA
+4584	37	OmniExpress		Male	FTDNA
+4042	37	OmniExpress	v1	Male	AncestryDNA
+4356	37	HTS iSelect HD	v4	Female	23andMe
+42	37			Male	vcf, 23andMe, vcf, AncestryDNA, FTDNA
+4641	37	OmniExpress	v1	Female	AncestryDNA
+4648	37	HTS iSelect HD	v4	Female	23andMe
+4173	37	HTS iSelect HD	v4	Male	23andMe
+429	37	OmniExpress	v1	Male	AncestryDNA, 23andMe
+4568	37	OmniExpress	v1	Female	AncestryDNA
+4084	37			Male	23andMe
+4632	37	HTS iSelect HD	v4	Female	23andMe
+4111	37	OmniExpress	v1	Female	AncestryDNA
+4066	37	HTS iSelect HD	v4	Male	23andMe
+4248	37	OmniExpress plus	v3	Male	23andMe
+4320	37	HTS iSelect HD	v4	Male	23andMe
+4230	37	OmniExpress plus	v3	Male	23andMe
+4213	37	OmniExpress			FTDNA
+4180	37	HTS iSelect HD	v4	Female	23andMe
+4041	37	OmniExpress	v1	Female	AncestryDNA
+439	37	OmniExpress plus	v3	Male	23andMe
+4215	37	HTS iSelect HD	v4	Male	23andMe
+4133	37	OmniExpress	v1	Female	AncestryDNA
+4381	37	OmniExpress plus	v3	Male	23andMe
+4176	37	OmniExpress	v1	Female	AncestryDNA
+4667	37	OmniExpress		Male	FTDNA, FTDNA
+4441	37	HTS iSelect HD	v4	Female	23andMe
+4583	37	OmniExpress		Male	FTDNA
+4178	37	HTS iSelect HD	v4	Male	23andMe, 23andMe
+4195	37	OmniExpress plus	v3	Male	23andMe
+4057	37	HTS iSelect HD	v4	Male	23andMe
+463	37	OmniExpress plus	v3	Male	23andMe
+4295	37	HTS iSelect HD	v4	Male	23andMe
+4360	37	OmniExpress			FTDNA
+4538	37	OmniExpress	v1	Male	AncestryDNA
+4065	37	HTS iSelect HD	v4	Male	23andMe
+4369	37	OmniExpress			FTDNA
+4064	37	OmniExpress	v1	Female	AncestryDNA
+4539	37	HTS iSelect HD	v4	Male	23andMe
+420	37	OmniExpress plus	v3	Male	23andMe
+4621	37	HTS iSelect HD	v4	Male	23andMe
+4549	37	HTS iSelect HD	v4	Male	23andMe
+4252	37	OmniExpress	v1	Male	AncestryDNA
+4235	37	OmniExpress	v1	Female	AncestryDNA
+4602	37	OmniExpress	v1	Male	AncestryDNA
+4106	37	HTS iSelect HD	v4	Female	23andMe
+4143	37	HTS iSelect HD	v4	Male	23andMe
+4034	37	HTS iSelect HD	v4	Male	23andMe
+4181	37	HTS iSelect HD	v4	Male	23andMe
+4245	37	HTS iSelect HD	v4	Female	23andMe
+4440	37	OmniExpress	v1	Male	AncestryDNA
+4224	37	OmniExpress	v1	Female	AncestryDNA
+4644	37	OmniExpress			FTDNA
+4026	37				FTDNA
+44	37	OmniExpress plus	v3	Male	23andMe
+4412	37	OmniExpress	v1	Female	AncestryDNA
+4292	37				23andMe
+4411	37	OmniExpress plus	v3	Female	23andMe
+4597	37	OmniExpress	v1	Male	AncestryDNA
+4135	37	OmniExpress		Male	FTDNA, FTDNA
+411	37	OmniExpress plus	v3	Male	23andMe
+4594	37	OmniExpress plus	v3	Male	23andMe
+4463	37	HTS iSelect HD	v4	Female	23andMe
+4194	37	OmniExpress plus	v3	Female	23andMe
+4598	37	OmniExpress	v1	Male	AncestryDNA
+4055	37	HTS iSelect HD	v4	Female	23andMe
+4499	37	HTS iSelect HD	v4	Female	23andMe
+4185	37	HTS iSelect HD	v4	Female	23andMe
+4200	37	OmniExpress plus	v3	Male	23andMe
+4204	37	OmniExpress	v1	Female	AncestryDNA
+4127	37	HTS iSelect HD	v4	Female	23andMe
+4147	37	HTS iSelect HD	v4	Female	23andMe
+4048	37	OmniExpress plus	v3	Female	23andMe
+4080	37	HTS iSelect HD	v4	Male	23andMe
+4522	37	OmniExpress	v1	Female	AncestryDNA
+4577	37			Male	23andMe, 23andMe
+4558	37	OmniExpress plus	v3	Male	23andMe, 23andMe
+4654	37	OmniExpress	v1	Female	AncestryDNA
+4500	37	OmniExpress plus	v3	Male	23andMe
+4555	37	OmniExpress	v1	Female	AncestryDNA
+4198	37	OmniExpress			FTDNA
+4240	37	OmniExpress plus	v3	Female	23andMe
+4399	37	HTS iSelect HD	v4	Female	23andMe
+4301	37	OmniExpress plus	v3	Male	23andMe
+user	build	chip	chip_version	inferred_sex	source
+483	37	OmniExpress plus	v3	Female	23andMe
+5213	37			Female	GenesForGood, vcf
+5233	37	HTS iSelect HD	v4	Female	23andMe
+4738	37	OmniExpress			FTDNA
+4990	37	HTS iSelect HD	v4	Female	23andMe
+5301	37	OmniExpress		Male	FTDNA, FTDNA, FTDNA, FTDNA
+5098	37	OmniExpress plus	v3	Female	23andMe
+4851	37	HTS iSelect HD	v4	Male	23andMe
+5185	37	HTS iSelect HD	v4	Male	23andMe
+5027	37			Male	AncestryDNA
+500	37	OmniExpress plus	v3	Male	23andMe
+488	37	OmniExpress plus	v3	Male	23andMe, vcf
+4796	37	OmniExpress	v1	Female	AncestryDNA
+5326	37	HTS iSelect HD	v4	Male	23andMe
+5236	37	HTS iSelect HD	v4	Female	23andMe
+528	37	OmniExpress plus	v3	Male	23andMe
+468	37	OmniExpress plus	v3	Female	23andMe
+5172	37	HTS iSelect HD	v4	Male	23andMe, 23andMe
+5284	37	HTS iSelect HD	v4	Female	23andMe
+5164	37			Male	AncestryDNA, 23andMe
+5180	37	HTS iSelect HD	v4	Male	23andMe
+5130	37	HTS iSelect HD	v4	Female	23andMe
+5218	37	HTS iSelect HD	v4	Female	23andMe
+4954	37	OmniExpress	v1	Male	AncestryDNA
+5226	37	HTS iSelect HD	v4	Female	23andMe, 23andMe, 23andMe
+5323	37	HTS iSelect HD	v4	Female	23andMe
+5066	37			Male	AncestryDNA
+4801	37	HTS iSelect HD	v4	Male	23andMe
+5170	37	OmniExpress	v1	Male	AncestryDNA
+5154	37			Male	AncestryDNA
+4895	37	HTS iSelect HD	v4	Female	23andMe
+5283	37	OmniExpress			FTDNA
+4941	37			Male	23andMe
+4735	37	OmniExpress plus	v3	Female	23andMe
+4889	37	HTS iSelect HD	v4	Male	23andMe
+5145	37	HTS iSelect HD	v4	Female	23andMe
+4712	37	HTS iSelect HD	v4	Male	23andMe
+5049	37	HTS iSelect HD	v4	Male	23andMe
+5169	37			Female	AncestryDNA
+4671	37	HTS iSelect HD	v4	Male	23andMe
+4797	37	HTS iSelect HD	v4	Male	23andMe
+4814	37	OmniExpress plus	v3	Female	23andMe
+5190	37	HTS iSelect HD	v4	Female	23andMe
+4679	37	HTS iSelect HD	v4	Male	23andMe
+4928	37	OmniExpress	v1	Male	AncestryDNA
+4859	37	HTS iSelect HD	v4	Male	23andMe
+5034	37	OmniExpress	v1	Female	AncestryDNA
+5107	37			Female	AncestryDNA, 23andMe
+4897	37	HTS iSelect HD	v4	Male	23andMe
+4947	37	OmniExpress			FTDNA
+497	37	OmniExpress plus	v3	Male	23andMe
+4983	37	OmniExpress plus	v3	Male	23andMe
+5310	37	HTS iSelect HD	v4	Female	23andMe
+4939	37	OmniExpress	v1	Female	AncestryDNA
+4832	37	OmniExpress			FTDNA
+5192	37			Female	vcf
+5241	37	OmniExpress	v1	Female	AncestryDNA
+4672	37	HTS iSelect HD	v4	Male	23andMe
+5221	37			Male	AncestryDNA
+4962	37	HTS iSelect HD	v4	Female	23andMe
+481	37	OmniExpress plus	v3	Male	23andMe
+5099	37	OmniExpress	v1	Female	AncestryDNA
+4758	37	HTS iSelect HD	v4	Male	23andMe
+4831	37	HTS iSelect HD	v4	Female	23andMe
+4693	37	HTS iSelect HD	v4	Female	23andMe
+5342	37	HTS iSelect HD	v4	Female	23andMe
+5235	37	OmniExpress plus	v3	Male	23andMe, AncestryDNA
+5237	37	OmniExpress		Male	FTDNA, FTDNA
+5073	37	HTS iSelect HD	v4	Female	23andMe
+5144	37	HTS iSelect HD	v4	Female	23andMe
+502	37	OmniExpress plus	v3	Female	23andMe
+5195	37	OmniExpress plus	v3	Female	23andMe
+5278	37	OmniExpress	v1	Female	AncestryDNA
+4985	37	HTS iSelect HD	v4	Female	23andMe
+495	37	OmniExpress plus	v3	Female	23andMe
+5044	37	OmniExpress plus	v3	Female	23andMe
+503	37	OmniExpress plus	v3	Female	23andMe
+5168	37	HTS iSelect HD	v4	Female	23andMe
+4999	37	HTS iSelect HD	v4	Female	23andMe
+4864	37	OmniExpress	v1	Female	AncestryDNA, FTDNA
+5302	37	OmniExpress plus	v3	Female	23andMe
+5207	37	HTS iSelect HD	v4	Male	23andMe
+4694	37	HTS iSelect HD	v4	Female	23andMe
+5246	37	HTS iSelect HD	v4	Male	23andMe
+4813	37	HTS iSelect HD	v4	Female	23andMe
+4927	37	HTS iSelect HD	v4	Male	23andMe
+5103	37	OmniExpress	v1	Female	AncestryDNA
+5332	37	HTS iSelect HD	v4	Male	23andMe
+4754	37	OmniExpress			FTDNA
+473	37	OmniExpress plus	v3	Male	23andMe
+4834	37	OmniExpress	v1	Female	AncestryDNA
+5206	37	HTS iSelect HD	v4	Male	23andMe
+4697	37	HTS iSelect HD	v4	Female	23andMe
+5167	37	HTS iSelect HD	v4	Female	23andMe
+5276	37	HTS iSelect HD	v4	Female	23andMe
+5182	37	HTS iSelect HD	v4	Female	23andMe
+4880	37	OmniExpress			FTDNA
+5257	37	HTS iSelect HD	v4	Female	23andMe
+4879	37	HTS iSelect HD	v4	Female	23andMe
+4696	37	OmniExpress		Female	FTDNA
+4825	37	HTS iSelect HD	v4	Male	23andMe
+5146	37	HTS iSelect HD	v4	Male	23andMe
+5155	37	HTS iSelect HD	v4	Male	23andMe
+512	37			Female	23andMe
+5249	37			Female	AncestryDNA, 23andMe
+4784	37	OmniExpress plus	v3	Female	23andMe
+5275	37	OmniExpress			FTDNA
+4703	37	HTS iSelect HD	v4	Female	23andMe
+5263	37	HTS iSelect HD	v4	Male	23andMe
+4715	37	HTS iSelect HD	v4	Male	23andMe
+5199	37	OmniExpress	v1	Male	AncestryDNA
+4952	37				23andMe
+533	37	OmniExpress plus	v3	Male	23andMe
+4943	37	HTS iSelect HD	v4	Female	23andMe
+5048	37	HTS iSelect HD	v4	Female	23andMe
+4756	37	HTS iSelect HD	v4	Male	23andMe
+4833	37	HTS iSelect HD	v4	Male	23andMe
+4935	37	HTS iSelect HD	v4	Male	23andMe
+5024	37	OmniExpress		Female	FTDNA
+5041	37			Male	AncestryDNA
+5267	37	OmniExpress	v1	Female	AncestryDNA, AncestryDNA, AncestryDNA
+4732	37	OmniExpress	v1	Female	AncestryDNA, AncestryDNA
+5105	37	HTS iSelect HD	v4	Female	23andMe
+4705	37			Female	FTDNA
+4917	37	OmniExpress			FTDNA
+5274	37	HTS iSelect HD	v4	Male	23andMe
+5330	37			Female	AncestryDNA, 23andMe
+4718	37	HTS iSelect HD	v4	Female	23andMe
+4996	37			Female	AncestryDNA
+4695	37	OmniExpress plus	v3	Male	23andMe
+5273	37	HTS iSelect HD	v4	Male	23andMe
+53	37	OmniExpress plus	v3	Male	23andMe
+5176	37			Male	generic
+4998	37	OmniExpress plus	v3	Female	23andMe
+4888	37	HTS iSelect HD	v4	Male	23andMe
+4910	37	OmniExpress	v1	Male	AncestryDNA
+4925	37	OmniExpress	v1	Female	AncestryDNA
+5293	37	HTS iSelect HD	v4	Male	23andMe
+5288	37	HTS iSelect HD	v4	Female	23andMe
+4932	37	HTS iSelect HD	v4	Female	23andMe
+5093	37	HTS iSelect HD	v4	Female	23andMe
+5258	37	OmniExpress		Male	FTDNA
+4837	37	OmniExpress plus	v3	Male	23andMe
+5223	37	HTS iSelect HD	v4	Male	23andMe
+4680	37	HTS iSelect HD	v4	Female	23andMe
+user	build	chip	chip_version	inferred_sex	source
+5872	37	HTS iSelect HD	v4	Female	23andMe
+5943	37			Female	AncestryDNA
+5352	37	HTS iSelect HD	v4	Female	23andMe
+556	37	OmniExpress plus	v3	Male	23andMe
+5888	37	OmniExpress		Female	FTDNA, FTDNA
+5892	37	HTS iSelect HD	v4	Female	23andMe
+5902	37	HTS iSelect HD	v4	Female	23andMe, 23andMe
+5552	37	HTS iSelect HD	v4	Female	23andMe
+5998	37			Male	AncestryDNA
+5820	37	HTS iSelect HD	v4	Female	23andMe
+5830	37	HTS iSelect HD	v4	Female	23andMe
+5460	37			Female	23andMe
+5844	37	OmniExpress		Female	FTDNA
+5918	37	HTS iSelect HD	v4	Female	23andMe
+5515	37	HTS iSelect HD	v4	Male	23andMe
+5999	37	HTS iSelect HD	v4	Male	23andMe
+6025	37	HTS iSelect HD	v4	Male	23andMe
+5745	37	HTS iSelect HD	v4	Female	23andMe
+5867	37	OmniExpress	v1	Female	AncestryDNA
+5487	37	HTS iSelect HD	v4	Female	23andMe
+5628	37			Male	AncestryDNA
+5490	37	HTS iSelect HD	v4	Male	23andMe
+572	37	OmniExpress plus	v3	Male	23andMe
+6020	37			Male	AncestryDNA, AncestryDNA, AncestryDNA, AncestryDNA, AncestryDNA, AncestryDNA, AncestryDNA, AncestryDNA, 23andMe
+5672	37			Male	vcf
+5709	37			Male	AncestryDNA
+5362	37	OmniExpress			FTDNA
+6	37				generic
+5443	37	HTS iSelect HD	v4	Male	23andMe
+5475	37	HTS iSelect HD	v4	Male	23andMe
+5815	37			Male	DNA.Land
+5359	37			Female	AncestryDNA
+5557	37	HTS iSelect HD	v4	Female	23andMe
+5442	37	HTS iSelect HD	v4	Male	23andMe
+5675	37	HTS iSelect HD	v4	Male	23andMe
+5602	37	HTS iSelect HD	v4	Male	23andMe
+5853	37			Male	AncestryDNA, GenesForGood
+5859	37	OmniExpress		Male	FTDNA
+5778	37	HTS iSelect HD	v4	Male	23andMe
+5701	37	HTS iSelect HD	v4	Female	23andMe
+580	37			Male	23andMe
+5996	37	HTS iSelect HD	v4	Female	23andMe
+5494	37			Female	AncestryDNA
+5559	37			Male	AncestryDNA
+5633	37	OmniExpress		Female	FTDNA, AncestryDNA
+6045	37			Male	23andMe
+5795	37			Male	AncestryDNA
+5480	37			Female	GenesForGood
+5568	37	HTS iSelect HD	v4	Female	23andMe
+5613	37	HTS iSelect HD	v4	Female	23andMe
+58	37	OmniExpress plus	v3	Male	23andMe
+5768	37	OmniExpress	v1	Female	AncestryDNA
+5516	37	HTS iSelect HD	v4	Female	23andMe
+554	37	OmniExpress plus	v3	Male	23andMe
+5629	37	HTS iSelect HD	v4	Female	23andMe
+5573	37	OmniExpress		Female	FTDNA, AncestryDNA
+5924	37	HTS iSelect HD	v4	Male	23andMe
+5540	37	HTS iSelect HD	v4	Female	23andMe
+5728	37			Male	AncestryDNA
+5850	37	HTS iSelect HD	v4	Male	23andMe
+594	37	OmniExpress plus	v3	Male	23andMe
+5425	37	HTS iSelect HD	v4	Female	23andMe
+5351	37			Male	AncestryDNA
+5502	37	OmniExpress		Female	FTDNA
+5596	37	OmniExpress		Female	FTDNA
+6042	37	HTS iSelect HD	v4	Female	23andMe, 23andMe
+5485	37	OmniExpress	v1	Female	AncestryDNA
+589	37	OmniExpress plus	v3	Male	23andMe
+5570	37	HTS iSelect HD	v4	Male	23andMe
+5659	37			Female	AncestryDNA
+5612	37			Male	AncestryDNA, 23andMe
+581	37	OmniExpress plus	v3	Male	23andMe
+5536	37			Female	AncestryDNA
+5545	37	HTS iSelect HD	v4	Male	23andMe
+5895	37	OmniExpress	v1	Female	AncestryDNA
+5800	37	HTS iSelect HD	v4	Male	23andMe
+5583	37	OmniExpress		Male	FTDNA
+6035	37	OmniExpress plus	v3	Female	23andMe, 23andMe
+5611	37	OmniExpress	v1	Male	AncestryDNA
+542	37	OmniExpress			FTDNA
+602	37	OmniExpress plus	v3	Male	23andMe
+567	37	OmniExpress plus	v3	Female	23andMe
+5790	37			Female	AncestryDNA
+5884	37	HTS iSelect HD	v4	Male	23andMe
+5965	37	OmniExpress plus	v3	Female	23andMe
+5408	37	HTS iSelect HD	v4	Female	23andMe
+5917	37	HTS iSelect HD	v4	Female	23andMe
+5544	37	OmniExpress			FTDNA, FTDNA
+6005	37	HTS iSelect HD	v4	Male	23andMe
+5821	37	HTS iSelect HD	v4	Female	23andMe
+549	37	OmniExpress plus	v3	Male	23andMe
+5900	37	HTS iSelect HD	v4	Male	23andMe
+5521	37	HTS iSelect HD	v4	Female	23andMe
+5397	37	HTS iSelect HD	v4	Female	23andMe
+5810	37	OmniExpress		Male	FTDNA
+5727	37			Female	AncestryDNA
+6013	37	HTS iSelect HD	v4	Male	23andMe
+583	37	OmniExpress plus	v3	Male	23andMe
+595	37	OmniExpress plus	v3	Female	23andMe
+5857	37			Female	AncestryDNA, FTDNA
+5501	37			Male	AncestryDNA
+574	37	OmniExpress plus	v3	Male	23andMe
+5620	37	OmniExpress plus	v3	Male	23andMe
+5495	37	HTS iSelect HD	v4	Male	23andMe
+5881	37	HTS iSelect HD	v4	Female	23andMe
+5775	37	OmniExpress	v1	Female	AncestryDNA
+5456	37	HTS iSelect HD	v4	Male	23andMe
+5741	37	HTS iSelect HD	v4	Female	23andMe
+5743	37	HTS iSelect HD	v4	Male	23andMe
+5432	37	HTS iSelect HD	v4	Male	23andMe
+5826	37	OmniExpress	v1	Male	AncestryDNA
+5866	37	HTS iSelect HD	v4	Female	23andMe
+5527	37	HTS iSelect HD	v4	Male	23andMe
+5414	37	HTS iSelect HD	v4	Female	23andMe
+5621	37	HTS iSelect HD	v4	Male	23andMe
+5531	37			Male	AncestryDNA
+5961	37			Male	AncestryDNA, AncestryDNA
+563	37	OmniExpress plus	v3	Male	23andMe
+5803	37	HTS iSelect HD	v4	Female	23andMe
+5792	37	OmniExpress		Female	FTDNA
+5773	37	HTS iSelect HD	v4	Female	23andMe
+5666	37	OmniExpress			FTDNA
+5478	37	HTS iSelect HD	v4	Female	23andMe
+5989	37	HTS iSelect HD	v4	Male	23andMe
+561	37	OmniExpress plus	v3	Female	23andMe
+5641	37			Male	FTDNA
+5935	37			Male	AncestryDNA
+5514	37	OmniExpress			FTDNA
+5913	37	OmniExpress		Female	MyHeritage
+5447	37	OmniExpress plus	v3	Male	23andMe
+5973	37	HTS iSelect HD	v4	Female	23andMe
+5582	37	OmniExpress plus	v3	Male	23andMe
+5868	37			Female	GenesForGood
+5581	37			Female	AncestryDNA, 23andMe, 23andMe, 23andMe, 23andMe, AncestryDNA, 23andMe, 23andMe
+5723	37	HTS iSelect HD	v4	Female	23andMe
+5833	37	HTS iSelect HD	v4	Female	23andMe
+5683	37	HTS iSelect HD	v4	Male	23andMe
+579	37	OmniExpress			FTDNA
+5637	37	HTS iSelect HD	v4	Male	23andMe
+539	37	OmniExpress plus	v3	Female	23andMe
+60	37			Male	vcf, 23andMe
+5912	37	OmniExpress		Male	FTDNA
+569	37	OmniExpress plus	v3	Female	23andMe
+55	37	OmniExpress plus	v3	Male	23andMe
+6056	37	OmniExpress		Male	FTDNA, FTDNA
+5529	37	HTS iSelect HD	v4	Male	23andMe
+5435	37	HTS iSelect HD	v4	Female	23andMe
+5719	37	HTS iSelect HD	v4	Female	23andMe
+5506	37			Female	AncestryDNA
+user	build	chip	chip_version	inferred_sex	source
+6510	37	HTS iSelect HD	v4	Male	23andMe
+6099	37	OmniExpress plus	v3	Male	23andMe
+650	37	OmniExpress plus	v3	Male	23andMe
+682	37			Male	23andMe
+6725	37				FTDNA
+6351	37	HTS iSelect HD	v4	Female	23andMe
+6617	37	Illumina GSAs	v5	Female	23andMe
+667	37	OmniExpress plus	v3	Male	23andMe
+6634	37			Female	AncestryDNA
+646	37	OmniExpress plus	v3	Male	23andMe
+651	37	OmniExpress plus	v3	Male	23andMe
+6131	37			Male	AncestryDNA
+6484	37	HTS iSelect HD	v4	Male	23andMe
+607	37	OmniExpress plus	v3	Male	23andMe, 23andMe
+6335	37	HTS iSelect HD	v4	Female	23andMe
+6108	37	OmniExpress	v1	Male	AncestryDNA
+6235	37	OmniExpress	v1	Male	AncestryDNA
+609	37	OmniExpress plus	v3	Male	23andMe
+6187	37	OmniExpress		Male	MyHeritage, 23andMe, AncestryDNA
+62	37	OmniExpress plus	v3	Male	23andMe
+6182	37			Female	AncestryDNA
+6738	37			Male	AncestryDNA
+6156	37	HTS iSelect HD	v4	Male	23andMe
+6750	37			Female	23andMe
+6860	37	OmniExpress plus	v3	Female	23andMe
+6866	37	Illumina GSAs	v5	Female	23andMe
+688	37	OmniExpress plus	v3	Female	23andMe
+610	37	OmniExpress plus	v3	Male	23andMe
+6814	37	HTS iSelect HD	v4	Female	23andMe
+669	37	OmniExpress plus	v3	Male	23andMe
+6491	37	HTS iSelect HD	v4	Male	23andMe
+6858	37	HTS iSelect HD	v4	Male	23andMe
+6192	37	OmniExpress plus	v3	Female	23andMe
+684	37	OmniExpress plus	v3	Female	23andMe
+6869	37			Female	GenesForGood
+6184	37	OmniExpress			FTDNA
+6599	37			Female	AncestryDNA
+6314	37			Female	FTDNA
+6639	37	Illumina GSAs	v5	Female	23andMe
+64	37			Male	23andMe
+6885	37	OmniExpress		Female	FTDNA
+6214	37	HTS iSelect HD	v4	Female	23andMe
+6228	37	OmniExpress		Male	FTDNA
+644	37			Male	23andMe
+6221	37			Female	AncestryDNA
+613	37	OmniExpress plus	v3	Male	23andMe
+656	37	Illumina GSAs	v5	Male	23andMe
+6805	37	Illumina GSAs	v5	Female	23andMe
+6356	37	HTS iSelect HD	v4	Female	23andMe
+6115	37	HTS iSelect HD	v4	Male	23andMe
+6387	37	OmniExpress		Female	FTDNA
+6545	37	Illumina GSAs	v5	Male	23andMe, 23andMe
+6120	37	OmniExpress plus	v3	Female	23andMe
+6117	37			Male	AncestryDNA
+6103	37	HTS iSelect HD	v4	Male	23andMe
+6366	37	OmniExpress		Male	MyHeritage
+6284	37	HTS iSelect HD	v4	Female	23andMe
+675	37	OmniExpress plus		Female	generic
+6483	37	Illumina GSAs	v5	Female	23andMe
+6829	37	Illumina GSAs	v5	Male	23andMe
+6341	37			Female	AncestryDNA
+6780	37			Female	AncestryDNA
+6731	37	Illumina GSAs	v5	Male	23andMe, 23andMe
+6169	37	HTS iSelect HD	v4	Female	23andMe
+6321	37			Female	vcf
+6689	37	OmniExpress			FTDNA
+6704	37	OmniExpress		Male	FTDNA, FTDNA
+6722	37	OmniExpress		Female	FTDNA, FTDNA
+6216	37	HTS iSelect HD	v4	Female	23andMe
+6189	37			Female	AncestryDNA
+6250	37			Female	AncestryDNA
+6690	37	HTS iSelect HD	v4	Male	23andMe
+6269	37	HTS iSelect HD	v4	Female	23andMe
+6544	37	OmniExpress plus	v3	Male	23andMe
+6873	37	Illumina GSAs	v5	Male	23andMe
+6257	37	HTS iSelect HD	v4	Female	23andMe
+6064	37	HTS iSelect HD	v4	Female	23andMe
+6296	37			Male	AncestryDNA
+6861	37	OmniExpress plus	v3	Female	23andMe
+6879	37			Female	FTDNA
+6248	37	HTS iSelect HD	v4	Female	23andMe
+6875	37	HTS iSelect HD	v4	Female	23andMe
+6244	37	HTS iSelect HD	v4	Female	23andMe
+6493	37			Male	AncestryDNA
+6706	37	OmniExpress plus	v3	Male	23andMe, AncestryDNA, FTDNA, 23andMe
+6721	37	HTS iSelect HD	v4	Female	23andMe
+6127	37			Male	AncestryDNA
+6191	37	OmniExpress		Female	FTDNA, FTDNA, DNA.Land, FTDNA
+6695	37	OmniExpress			FTDNA
+6348	37	OmniExpress		Female	FTDNA
+6832	37	HTS iSelect HD	v4	Female	23andMe
+6077	37			Female	AncestryDNA
+6124	37			Female	23andMe
+6851	37	Illumina GSAs	v5	Female	23andMe
+6882	37			Female	23andMe
+6734	37	Illumina GSAs	v5	Female	23andMe
+6733	37	HTS iSelect HD	v4	Female	23andMe
+645	37	OmniExpress plus	v3	Male	23andMe
+6239	37	HTS iSelect HD	v4	Female	23andMe
+63	37	OmniExpress plus	v3	Male	23andMe
+6085	37	OmniExpress	v1	Male	AncestryDNA
+6363	37	Illumina GSAs	v5	Male	23andMe
+6074	37	HTS iSelect HD	v4	Male	23andMe
+6206	37	HTS iSelect HD	v4	Female	23andMe, 23andMe
+6238	37	HTS iSelect HD	v4	Female	23andMe
+6065	37	HTS iSelect HD	v4	Female	23andMe
+6889	37	Illumina GSAs	v5	Female	23andMe
+6633	37			Female	AncestryDNA
+6758	37	HTS iSelect HD	v4	Male	23andMe
+6252	37			Female	AncestryDNA
+6897	37			Male	AncestryDNA
+6810	37	Illumina GSAs	v5	Male	23andMe
+6316	37	OmniExpress		Male	FTDNA, FTDNA
+6815	37			Female	GenesForGood
+6857	37	OmniExpress	v1	Female	AncestryDNA
+6573	37	HTS iSelect HD	v4	Female	23andMe
+6589	37	OmniExpress plus	v3	Male	23andMe
+6793	37				23andMe
+6613	37	Illumina GSAs	v5	Male	23andMe
+6263	37			Male	AncestryDNA, 23andMe
+6285	37	HTS iSelect HD	v4	Female	23andMe
+685	37	OmniExpress plus	v3	Female	23andMe
+6367	37	HTS iSelect HD	v4	Female	23andMe
+6874	37	OmniExpress		Male	FTDNA
+6677	37	Illumina GSAs	v5	Female	23andMe
+6179	37	OmniExpress plus	v3	Female	23andMe
+6204	37	HTS iSelect HD	v4	Female	23andMe
+6699	37	Illumina GSAs	v5	Female	23andMe
+6547	37	HTS iSelect HD	v4	Male	23andMe
+6828	37			Female	AncestryDNA
+6560	37	Illumina GSAs	v5	Female	23andMe
+6450	37	HTS iSelect HD	v4	Female	23andMe
+6247	37	OmniExpress		Male	FTDNA
+6745	37	Illumina GSAs	v5	Male	23andMe
+6105	37			Female	AncestryDNA
+678	37	OmniExpress plus	v3	Male	23andMe
+6812	37	Illumina GSAs	v5	Female	23andMe
+6665	37			Male	AncestryDNA
+6859	37	OmniExpress plus	v3	Male	23andMe, GenesForGood
+6791	37	Illumina GSAs	v5	Female	23andMe
+6093	37			Male	AncestryDNA
+6249	37	HTS iSelect HD	v4	Male	23andMe
+637	37	OmniExpress plus	v3	Male	23andMe
+6583	37			Female	AncestryDNA, 23andMe
+6274	37			Male	AncestryDNA
+6381	37	HTS iSelect HD	v4	Male	23andMe
+user	build	chip	chip_version	inferred_sex	source
+7103	37			Female	AncestryDNA
+7307	37	OmniExpress	v1	Male	AncestryDNA
+704	37			Male	23andMe
+7500	37			Male	AncestryDNA
+6943	37	Illumina GSAs	v5	Male	23andMe
+754	37	OmniExpress plus	v3	Male	23andMe
+7358	37	Illumina GSAs	v5	Male	23andMe
+6985	37	Illumina GSAs	v5	Female	23andMe
+7585	37	HTS iSelect HD	v4	Female	23andMe
+7098	37	Illumina GSAs	v5	Female	23andMe
+7199	37	Illumina GSAs	v5	Female	23andMe
+7527	37	OmniExpress		Female	FTDNA
+7567	37			Male	AncestryDNA
+762	37	OmniExpress plus	v3	Female	23andMe
+7320	37	Illumina GSAs	v5	Male	23andMe
+7013	37	OmniExpress			FTDNA
+7189	37	OmniExpress	v1	Male	AncestryDNA
+7224	37			Male	AncestryDNA
+7228	37			Female	AncestryDNA
+7544	37			Male	AncestryDNA, 23andMe
+7611	37			Female	FTDNA, 23andMe
+72	37	OmniExpress			FTDNA
+6949	37			Male	AncestryDNA
+7470	37			Female	AncestryDNA
+7610	37	Illumina GSAs	v5	Male	23andMe
+7082	37	Illumina GSAs	v5	Male	23andMe
+6989	37	OmniExpress plus	v3	Male	23andMe
+7565	37	HTS iSelect HD	v4	Female	23andMe
+7384	37	OmniExpress		Female	MyHeritage
+748	37			Female	23andMe
+745	37	OmniExpress plus	v3	Male	23andMe
+7020	37	HTS iSelect HD	v4	Male	23andMe
+7080	37	Illumina GSAs	v5	Male	23andMe
+7261	37	OmniExpress		Female	FTDNA
+7413	37	HTS iSelect HD	v4	Female	23andMe
+7245	37	OmniExpress			FTDNA
+7266	37	Illumina GSAs	v5	Female	23andMe
+6916	37			Female	AncestryDNA
+726	37	OmniExpress plus	v3	Male	23andMe
+7510	37	HTS iSelect HD	v4	Male	23andMe
+7284	37			Male	vcf
+7568	37	HTS iSelect HD	v4	Female	23andMe
+7572	37			Male	AncestryDNA
+7405	37			Female	AncestryDNA, 23andMe
+7198	37	Illumina GSAs	v5	Female	23andMe
+7520	37	HTS iSelect HD	v4	Male	23andMe
+6959	37	OmniExpress		Male	MyHeritage
+7014	37	HTS iSelect HD	v4	Male	23andMe
+7359	37	Illumina GSAs	v5	Female	23andMe
+717	37			Male	23andMe
+7092	37	Illumina GSAs	v5	Female	23andMe
+7141	37			Female	AncestryDNA
+7403	37	HTS iSelect HD	v4	Female	23andMe
+6928	37	HTS iSelect HD	v4	Female	23andMe
+7070	37	HTS iSelect HD	v4	Female	23andMe
+721	37	OmniExpress plus	v3	Female	23andMe
+7498	37			Female	AncestryDNA, AncestryDNA
+6910	37	Illumina GSAs	v5	Male	23andMe
+7047	37	Illumina GSAs	v5	Male	23andMe
+7281	37			Male	AncestryDNA
+7184	37			Female	AncestryDNA, AncestryDNA, FTDNA, vcf
+6908	37	OmniExpress		Male	MyHeritage
+7561	37			Female	AncestryDNA
+7019	37	OmniExpress		Female	FTDNA
+7028	37			Male	AncestryDNA
+7454	37			Male	AncestryDNA
+7053	37			Female	vcf, 23andMe, FTDNA, vcf
+7372	37	OmniExpress		Male	FTDNA
+7312	37	Illumina GSAs	v5	Female	23andMe
+7547	37	OmniExpress plus	v3	Female	23andMe
+7119	37	Illumina GSAs	v5	Male	23andMe
+7218	37	Illumina GSAs	v5	Male	23andMe
+71	37	OmniExpress		Female	FTDNA
+6993	37	HTS iSelect HD	v4	Female	23andMe
+7114	37	Illumina GSAs	v5	Female	23andMe
+7155	37	HTS iSelect HD	v4	Female	23andMe
+7360	37	HTS iSelect HD	v4	Male	23andMe
+7597	37	OmniExpress		Female	FTDNA, FTDNA
+7257	37			Female	AncestryDNA
+6971	37	HTS iSelect HD	v4	Female	23andMe
+6900	37			Female	FTDNA
+7156	37	HTS iSelect HD	v4	Male	23andMe
+7127	37	OmniExpress plus	v3	Male	23andMe
+7195	37	OmniExpress		Male	FTDNA, 23andMe
+7569	37			Female	AncestryDNA
+6936	37	Illumina GSAs	v5	Male	23andMe
+7379	37	Illumina GSAs	v5	Female	23andMe
+693	37			Male	23andMe
+7099	37			Female	AncestryDNA
+734	37			Female	FTDNA
+7538	37	OmniExpress		Male	FTDNA
+7322	37	HTS iSelect HD	v4	Female	23andMe
+74	37	OmniExpress plus	v3	Male	23andMe
+7450	37	Illumina GSAs	v5	Female	23andMe
+758	37	OmniExpress plus	v3	Male	23andMe
+7134	37			Male	AncestryDNA
+7613	37	OmniExpress		Female	FTDNA, AncestryDNA
+75	37	OmniExpress plus	v3	Male	23andMe
+722	37	OmniExpress plus	v3	Male	23andMe
+761	37	OmniExpress plus	v3	Female	23andMe
+735	37	OmniExpress plus	v3	Male	23andMe
+7382	37	Illumina GSAs	v5	Male	23andMe
+7280	37	Illumina GSAs	v5	Female	23andMe
+7485	37	Illumina GSAs	v5	Female	23andMe
+7297	37			Female	AncestryDNA
+6952	37	Illumina GSAs	v5	Female	23andMe
+7214	37	HTS iSelect HD	v4	Male	23andMe
+7493	37			Female	vcf
+7504	37	Illumina GSAs	v5	Male	23andMe
+7339	37			Female	AncestryDNA
+7011	37			Male	AncestryDNA
+7292	37	Illumina GSAs	v5	Male	23andMe
+7190	37			Female	AncestryDNA
+7244	37			Male	AncestryDNA
+7252	37	Illumina GSAs	v5	Male	23andMe
+7471	37	OmniExpress plus	v3	Male	23andMe
+7072	37	Illumina GSAs	v5	Female	23andMe
+7311	37			Male	AncestryDNA
+7163	37	OmniExpress		Male	FTDNA, 23andMe
+6934	37			Male	AncestryDNA
+6981	37	HTS iSelect HD	v4	Male	23andMe
+7153	37	Illumina GSAs	v5	Male	23andMe
+7376	37	OmniExpress	v1	Male	AncestryDNA
+7232	37	Illumina GSAs	v5	Female	23andMe
+7144	37	Illumina GSAs	v5	Male	23andMe
+7475	37	HTS iSelect HD	v4	Female	23andMe
+7336	37	Illumina GSAs	v5	Female	23andMe
+7466	37	Illumina GSAs	v5	Male	23andMe
+703	37	OmniExpress			FTDNA, FTDNA
+7055	37	OmniExpress plus	v3	Male	23andMe
+7089	37	HTS iSelect HD	v4	Female	23andMe
+7231	37	Illumina GSAs	v5	Female	23andMe
+7285	37	HTS iSelect HD	v4	Female	23andMe
+7362	37			Female	vcf
+7222	37	OmniExpress		Female	MyHeritage
+749	37	OmniExpress plus	v3	Male	23andMe
+7393	37	Illumina GSAs	v5	Male	23andMe
+7267	37	OmniExpress			FTDNA
+7345	37			Male	AncestryDNA
+7229	37	HTS iSelect HD	v4	Male	23andMe
+7258	37	Illumina GSAs	v5	Female	23andMe
+7465	37	OmniExpress			FTDNA
+7377	37	OmniExpress			FTDNA
+6923	37	OmniExpress		Male	FTDNA
+6927	37			Male	AncestryDNA
+7446	37	Illumina GSAs	v5	Female	23andMe
+7616	37	OmniExpress		Male	FTDNA
+6935	37	OmniExpress	v1	Female	AncestryDNA
+user	build	chip	chip_version	inferred_sex	source
+8	37	OmniExpress plus	v3	Female	23andMe
+7783	37	Illumina GSAs	v5	Female	23andMe
+7763	37			Male	AncestryDNA
+7989	37	OmniExpress plus	v3	Female	23andMe
+7761	37	HTS iSelect HD	v4	Female	23andMe
+8393	37	Illumina GSAs	v5	Female	23andMe
+8180	37			Female	AncestryDNA
+8046	37	Illumina GSAs	v5	Female	23andMe
+8304	37			Female	AncestryDNA
+8041	37	Illumina GSAs	v5	Female	23andMe
+8202	37	HTS iSelect HD	v4	Female	23andMe
+8134	37	Illumina GSAs	v5	Male	23andMe
+7688	37	OmniExpress		Female	MyHeritage
+803	37	OmniExpress plus	v3	Female	23andMe
+8184	37	Illumina GSAs	v5	Male	23andMe
+7847	37	OmniExpress		Male	MyHeritage
+8319	37			Male	AncestryDNA
+7735	37	OmniExpress	v1	Female	AncestryDNA
+7708	37	OmniExpress		Male	FTDNA
+7888	37			Female	AncestryDNA
+8301	37	HTS iSelect HD	v4	Female	23andMe
+7948	37	Illumina GSAs	v5	Male	23andMe
+798	37	OmniExpress plus	v3	Female	23andMe
+8060	37	Illumina GSAs	v5	Female	23andMe
+777	37	OmniExpress plus	v3	Male	23andMe
+8383	37	Illumina GSAs	v5	Female	23andMe
+813	37			Male	23andMe
+781	37	OmniExpress plus	v3	Female	23andMe
+7707	37			Female	AncestryDNA
+8129	37	OmniExpress plus	v3	Female	23andMe
+7931	37			Male	AncestryDNA
+7945	37	Illumina GSAs	v5	Female	23andMe
+8139	37			Female	AncestryDNA, 23andMe
+8379	37			Male	AncestryDNA
+8217	37	Illumina GSAs	v5	Male	23andMe
+8336	37	Illumina GSAs	v5	Female	23andMe
+7722	37	OmniExpress plus	v3	Male	23andMe, AncestryDNA
+807	37	OmniExpress plus	v3	Male	23andMe
+7968	37	Illumina GSAs	v5	Male	23andMe
+7954	37	HTS iSelect HD	v4	Female	23andMe
+839	37	OmniExpress plus	v3	Male	23andMe
+7787	37	Illumina GSAs	v5	Male	23andMe
+820	37	OmniExpress plus	v3	Male	23andMe
+7670	37			Male	AncestryDNA
+782	37	OmniExpress plus	v3	Female	23andMe
+836	37	OmniExpress plus	v3	Male	23andMe
+8384	37	OmniExpress	v1	Male	AncestryDNA, 23andMe
+7905	37	Illumina GSAs	v5	Female	23andMe
+8212	37	OmniExpress	v1	Female	AncestryDNA
+8360	37			Female	AncestryDNA
+811	37	OmniExpress plus	v3	Female	23andMe
+8237	37	Illumina GSAs	v5	Female	23andMe
+8327	37	OmniExpress	v1	Male	AncestryDNA
+7636	37	HTS iSelect HD	v4	Male	23andMe
+7700	37	Illumina GSAs	v5	Female	23andMe
+8090	37	HTS iSelect HD	v4	Male	23andMe
+8274	37	OmniExpress	v1	Female	AncestryDNA
+7856	37			Female	AncestryDNA
+7685	37	Illumina GSAs	v5	Female	23andMe
+775	37	OmniExpress plus	v3	Male	23andMe
+810	37			Male	23andMe, FTDNA
+7898	37	Illumina GSAs	v5	Male	23andMe
+8049	37			Male	AncestryDNA
+776	37	OmniExpress plus	v3	Female	23andMe
+8363	37	HTS iSelect HD	v4	Female	23andMe
+8203	37			Male	23andMe
+7953	37			Male	AncestryDNA
+8387	37	HTS iSelect HD	v4	Female	23andMe
+8403	37	HTS iSelect HD	v4	Male	23andMe
+7659	37	OmniExpress			FTDNA
+7929	37	Illumina GSAs	v5	Male	23andMe
+7711	37	Illumina GSAs	v5	Male	23andMe
+832	37	OmniExpress plus	v3	Male	23andMe
+792	37	OmniExpress plus	v3	Male	23andMe
+8266	37	Illumina GSAs	v5	Female	23andMe
+7842	37			Male	AncestryDNA, AncestryDNA
+799	37	OmniExpress plus	v3	Female	23andMe
+8138	37	Illumina GSAs	v5	Female	23andMe
+7841	37	Illumina GSAs	v5	Female	23andMe
+8132	37	OmniExpress		Female	FTDNA
+80	37	OmniExpress plus	v3	Male	23andMe
+8056	37			Female	AncestryDNA
+7800	37			Female	AncestryDNA
+7757	37			Female	AncestryDNA
+7753	37			Male	AncestryDNA
+81	37	OmniExpress plus	v3	Male	23andMe
+7882	37	OmniExpress		Female	FTDNA
+8206	37	Illumina GSAs	v5	Male	23andMe
+842	37	OmniExpress plus	v3	Female	23andMe
+8015	37	OmniExpress			FTDNA
+8135	37	Illumina GSAs	v5	Male	23andMe
+8417	37	Illumina GSAs	v5	Female	23andMe
+7854	37			Female	AncestryDNA
+7639	37	Illumina GSAs	v5	Female	23andMe
+814	37	HTS iSelect HD	v4	Male	23andMe
+8089	37	Illumina GSAs	v5	Female	23andMe
+7959	37			Female	AncestryDNA
+8120	37	Illumina GSAs	v5	Male	23andMe
+8318	37	OmniExpress plus	v3	Female	23andMe
+7759	37			Male	AncestryDNA, 23andMe
+7732	37	OmniExpress		Male	MyHeritage
+8415	37	OmniExpress plus	v3	Male	23andMe
+806	37	OmniExpress plus	v3	Male	23andMe
+7955	37	HTS iSelect HD	v4	Female	23andMe
+7981	37	OmniExpress plus	v3	Female	23andMe
+7622	37			Female	AncestryDNA
+7923	37	Illumina GSAs	v5	Female	23andMe
+7657	37	Illumina GSAs	v5	Female	23andMe
+7824	37	Illumina GSAs	v5	Female	23andMe
+8158	37			Male	AncestryDNA
+8352	37			Male	23andMe
+7828	37	OmniExpress		Female	MyHeritage
+8052	37	OmniExpress		Male	MyHeritage
+7733	37			Male	AncestryDNA
+8100	37	Illumina GSAs	v5	Male	23andMe
+763	37	OmniExpress plus	v3	Male	23andMe
+8058	37	Illumina GSAs	v5	Female	23andMe
+808	37	OmniExpress plus	v3	Male	23andMe
+7701	37			Female	GenesForGood
+7967	37	Illumina GSAs	v5	Female	23andMe
+7781	37			Male	AncestryDNA
+8178	37	Illumina GSAs	v5	Female	23andMe
+8076	37	Illumina GSAs	v5	Female	23andMe, FTDNA
+7992	37	Illumina GSAs	v5	Male	23andMe
+7785	37	HTS iSelect HD	v4	Female	23andMe
+8314	37	Illumina GSAs	v5	Female	23andMe
+77	37			Male	generic
+8291	37	Illumina GSAs	v5	Male	23andMe
+8155	37	Illumina GSAs	v5	Female	23andMe
+8238	37	Illumina GSAs	v5	Male	23andMe
+7646	37	OmniExpress		Male	MyHeritage
+7857	37			Female	AncestryDNA
+8416	37	HTS iSelect HD	v4	Female	23andMe
+7876	37	HTS iSelect HD	v4	Female	23andMe
+8246	37	Illumina GSAs	v5	Male	23andMe
+7798	37			Female	GenesForGood
+7912	37				FTDNA
+8204	37			Female	AncestryDNA
+7907	37			Male	AncestryDNA
+7915	37	Illumina GSAs	v5	Male	23andMe
+7693	37			Female	AncestryDNA
+779	37	OmniExpress plus	v3	Male	23andMe
+8073	37	Illumina GSAs	v5	Female	23andMe
+8085	37	OmniExpress			FTDNA
+816	37	OmniExpress plus	v3	Male	23andMe
+user	build	chip	chip_version	inferred_sex	source
+8766	37			Female	AncestryDNA
+9223	37	OmniExpress	v1	Male	AncestryDNA
+8554	37	Illumina GSAs	v5	Male	23andMe
+9218	37			Female	AncestryDNA
+912	37	OmniExpress plus	v3	Female	23andMe
+8841	37	OmniExpress plus	v3	Male	23andMe
+9172	37	HTS iSelect HD	v4	Female	23andMe
+8930	37			Female	MyHeritage
+8432	37	OmniExpress		Female	FTDNA, FTDNA
+8991	37	OmniExpress			FTDNA
+898	37	OmniExpress plus	v3	Male	23andMe
+8469	37	OmniExpress		Male	FTDNA
+8588	37			Male	AncestryDNA
+862	37	OmniExpress plus	v3	Male	23andMe
+9046	37			Female	AncestryDNA
+9243	37			Female	AncestryDNA
+8783	37	Illumina GSAs	v5	Male	23andMe
+9143	37			Male	23andMe
+8578	37			Female	AncestryDNA
+8594	37	Illumina GSAs	v5	Female	23andMe
+850	37	OmniExpress plus	v3	Male	23andMe
+8675	37	Illumina GSAs	v5	Female	23andMe
+9248	37	Illumina GSAs	v5	Female	23andMe
+924	37	OmniExpress plus	v3	Male	23andMe
+9135	37	Illumina GSAs	v5	Female	23andMe
+8734	37	Illumina GSAs	v5	Female	23andMe
+885	37	OmniExpress plus	v3	Male	23andMe
+918	37	OmniExpress plus	v3	Female	23andMe
+8598	37	Illumina GSAs	v5	Male	23andMe
+925	37	OmniExpress plus	v3	Male	23andMe
+9195	37	OmniExpress plus	v3	Male	23andMe, 23andMe
+845	37			Female	23andMe
+8864	37	Illumina GSAs	v5	Female	23andMe
+9187	37	Illumina GSAs	v5	Male	23andMe
+922	37	OmniExpress plus	v3	Male	23andMe, 23andMe
+9076	37	Illumina GSAs	v5	Male	23andMe
+9211	37	Illumina GSAs	v5	Male	23andMe
+8463	37	Illumina GSAs	v5	Male	23andMe
+8834	37	HTS iSelect HD	v4	Male	23andMe
+8883	37	HTS iSelect HD	v4	Male	23andMe
+9126	37			Female	AncestryDNA, 23andMe
+865	37	OmniExpress plus	v3	Male	23andMe
+9146	37			Male	MyHeritage
+9232	37	OmniExpress plus	v3	Female	23andMe
+8563	37			Female	AncestryDNA, 23andMe
+8874	37	OmniExpress plus	v3	Male	23andMe
+8729	37	Illumina GSAs	v5	Female	23andMe
+9215	37	Illumina GSAs	v5	Male	23andMe
+8476	37	HTS iSelect HD	v4	Female	23andMe
+8634	37	HTS iSelect HD	v4	Male	23andMe
+90	37			Female	23andMe
+9050	37	OmniExpress		Male	MyHeritage
+891	37	OmniExpress plus	v3	Male	23andMe, 23andMe
+8985	37	Illumina GSAs	v5	Male	23andMe
+8936	37	Illumina GSAs	v5	Female	23andMe
+899	37	OmniExpress plus	v3	Female	23andMe
+86	37			Male	vcf, 23andMe
+8803	37	Illumina GSAs	v5	Female	23andMe
+9246	37	Illumina GSAs	v5	Male	23andMe
+8990	37			Female	AncestryDNA
+8656	37			Female	AncestryDNA
+9217	37			Male	AncestryDNA
+9024	37	Illumina GSAs	v5	Female	23andMe
+8534	37			Male	AncestryDNA
+9259	37	OmniExpress		Male	MyHeritage
+9023	37			Female	AncestryDNA
+9133	37	Illumina GSAs	v5	Male	23andMe
+8466	37			Female	AncestryDNA
+8947	37			Male	AncestryDNA
+8844	37			Male	AncestryDNA
+8840	37	Illumina GSAs	v5	Female	23andMe
+9107	37	OmniExpress			FTDNA
+9158	37	Illumina GSAs	v5	Male	23andMe
+8449	37	Illumina GSAs	v5	Male	23andMe
+8787	37	Illumina GSAs	v5	Female	23andMe
+9079	37			Male	FTDNA
+9129	37			Female	AncestryDNA
+909	37	OmniExpress plus	v3	Male	23andMe, 23andMe
+8565	37			Male	AncestryDNA
+916	37	OmniExpress plus	v3	Male	23andMe
+8988	37	Illumina GSAs	v5	Female	23andMe
+8933	37			Male	FTDNA
+8522	37			Male	DNA.Land
+9185	37	HTS iSelect HD	v4	Female	23andMe
+8723	37			Female	AncestryDNA
+8747	37	HTS iSelect HD	v4	Male	23andMe
+9111	37			Male	AncestryDNA
+9174	37	Illumina GSAs	v5	Female	23andMe
+8808	37	Illumina GSAs	v5	Female	23andMe
+8632	37	Illumina GSAs	v5	Male	23andMe
+8739	37			Male	AncestryDNA
+8737	37	OmniExpress plus	v3	Male	23andMe
+8641	37	OmniExpress		Male	FTDNA
+8483	37	Illumina GSAs	v5	Male	23andMe
+8423	37	Illumina GSAs	v5	Male	23andMe
+8911	37	Illumina GSAs	v5	Female	23andMe
+8934	37	Illumina GSAs	v5	Male	23andMe
+8635	37	Illumina GSAs	v5	Male	23andMe
+9166	37			Female	23andMe
+8707	37	OmniExpress		Female	MyHeritage
+9039	37			Female	AncestryDNA
+9101	37	Illumina GSAs	v5	Female	23andMe
+854	37	OmniExpress plus	v3	Male	23andMe
+8538	37			Female	AncestryDNA
+8915	37			Male	23andMe
+9036	37			Female	AncestryDNA
+9081	37			Male	AncestryDNA
+915	37	OmniExpress plus	v3	Male	23andMe
+8427	37	OmniExpress		Female	FTDNA
+8547	37	OmniExpress		Male	MyHeritage
+8685	37	OmniExpress		Male	MyHeritage
+9119	37	Illumina GSAs	v5	Female	23andMe, 23andMe
+8796	37			Male	23andMe
+8978	37			Male	FTDNA
+8499	37	OmniExpress		Female	MyHeritage
+8939	37			Female	AncestryDNA
+8851	37	Illumina GSAs	v5	Female	23andMe
+8619	37			Male	AncestryDNA
+8852	37	Illumina GSAs	v5	Male	23andMe
+9078	37	HTS iSelect HD	v4	Female	23andMe
+8701	37	HTS iSelect HD	v4	Male	23andMe
+8951	37			Female	LivingDNA
+9220	37	Illumina GSAs	v5	Male	23andMe
+8818	37	Illumina GSAs	v5	Male	23andMe
+9164	37			Female	AncestryDNA
+8731	37	Illumina GSAs	v5	Male	23andMe
+9072	37	Illumina GSAs	v5	Female	23andMe
+8885	37	OmniExpress	v1	Female	AncestryDNA
+8905	37	Illumina GSAs	v5	Female	23andMe
+8977	37	HTS iSelect HD	v4	Female	23andMe
+903	37	OmniExpress plus	v3	Male	23andMe
+8788	37	Illumina GSAs	v5	Male	23andMe
+887	37	OmniExpress plus	v3	Male	23andMe
+8715	37			Female	AncestryDNA
+8948	37			Male	23andMe
+920	37	OmniExpress plus	v3	Male	23andMe
+9112	37	Illumina GSAs	v5	Male	23andMe
+8529	37			Female	AncestryDNA
+9247	37			Male	AncestryDNA
+8599	37	Illumina GSAs	v5	Female	23andMe
+9188	37	Illumina GSAs	v5	Female	23andMe
+8780	37			Male	MyHeritage
+8592	37	OmniExpress		Male	MyHeritage
+8546	37			Male	AncestryDNA, vcf
+8666	37			Male	AncestryDNA
+user	build	chip	chip_version	inferred_sex	source
+952	37	OmniExpress plus	v3	Male	23andMe
+9720	37	Illumina GSAs	v5	Male	23andMe
+9862	37			Male	AncestryDNA
+9530	37				23andMe
+9489	37			Female	AncestryDNA, 23andMe
+9327	37			Female	AncestryDNA
+9413	37			Male	AncestryDNA
+9635	37	Illumina GSAs	v5	Male	23andMe
+968	37	OmniExpress plus	v3	Male	23andMe
+9796	37	Illumina GSAs	v5	Male	23andMe
+9672	37			Female	AncestryDNA, 23andMe
+9568	37	Illumina GSAs	v5	Male	23andMe
+9539	37	OmniExpress	v1	Male	AncestryDNA, AncestryDNA
+9450	37	Illumina GSAs	v5	Female	23andMe
+9762	37	HTS iSelect HD	v4	Male	23andMe
+9765	37	OmniExpress plus	v3	Female	23andMe
+9784	37			Female	AncestryDNA
+990	37	OmniExpress plus	v3	Male	23andMe
+9724	37			Female	FTDNA, FTDNA, FTDNA
+9906	37			Female	AncestryDNA
+999	37	OmniExpress plus	v3	Male	23andMe
+9835	37			Female	AncestryDNA
+9480	37			Female	AncestryDNA
+9518	37	Illumina GSAs	v5	Male	23andMe
+9589	37	Illumina GSAs	v5	Female	23andMe
+9702	37	Illumina GSAs	v5	Female	23andMe, 23andMe
+9974	37			Female	AncestryDNA
+951	37	OmniExpress plus	v3	Male	23andMe
+966	37	OmniExpress plus	v3	Female	23andMe
+9832	37			Male	AncestryDNA
+994	37	OmniExpress	v1	Female	AncestryDNA
+9372	37	Illumina GSAs	v5	Male	23andMe
+9281	37			Female	AncestryDNA
+9541	37			Male	23andMe
+9360	37	Illumina GSAs	v5	Male	23andMe
+9283	37			Male	AncestryDNA
+9565	37	Illumina GSAs	v5	Male	23andMe
+9276	37	Illumina GSAs	v5	Female	23andMe
+9707	37			Female	AncestryDNA
+9849	37			Male	AncestryDNA
+9749	37	HTS iSelect HD	v4	Male	23andMe
+9869	37	Illumina GSAs	v5	Male	23andMe
+9928	37	OmniExpress plus	v3	Female	23andMe
+9507	37			Male	AncestryDNA
+9336	37			Male	AncestryDNA
+9752	37			Female	AncestryDNA
+9486	37			Male	23andMe
+9527	37	Illumina GSAs	v5	Female	23andMe
+9726	37	Illumina GSAs	v5	Male	23andMe
+9876	37	HTS iSelect HD	v4	Female	23andMe
+9575	37			Male	vcf
+9656	37			Male	AncestryDNA
+9375	37	Illumina GSAs	v5	Male	23andMe
+9453	37	Illumina GSAs	v5	Male	23andMe
+9561	37			Male	generic
+9274	37	Illumina GSAs	v5	Male	23andMe
+937	37			Male	23andMe
+9905	37			Female	AncestryDNA
+9781	37	OmniExpress plus	v3	Female	23andMe
+9485	37	HTS iSelect HD	v4	Male	23andMe
+9871	37	Illumina GSAs	v5	Female	23andMe
+9307	37	Illumina GSAs	v5	Female	23andMe
+9468	37			Female	MyHeritage
+99	37	OmniExpress plus	v3	Male	23andMe
+9516	37	Illumina GSAs	v5	Male	23andMe
+9399	37	Illumina GSAs	v5	Male	23andMe
+9429	37			Male	FTDNA
+9430	37			Female	AncestryDNA, 23andMe
+9735	37	Illumina GSAs	v5	Female	23andMe
+9719	37	Illumina GSAs	v5	Female	23andMe, vcf
+9812	37	OmniExpress plus	v3	Male	23andMe
+9969	37	Illumina GSAs	v5	Male	23andMe
+9421	37	Illumina GSAs	v5	Male	23andMe
+9519	37	OmniExpress plus	v3	Male	23andMe
+9369	37	Illumina GSAs	v5	Female	23andMe
+972	37			Male	23andMe, 23andMe
+991	37	OmniExpress	v1	Female	AncestryDNA, AncestryDNA
+9920	37	Illumina GSAs	v5	Female	23andMe
+9471	37			Male	AncestryDNA
+9457	37	Illumina GSAs	v5	Female	23andMe
+9314	37			Female	AncestryDNA
+9839	37	HTS iSelect HD	v4	Female	23andMe
+954	37	OmniExpress plus	v3	Male	23andMe
+9817	37			Male	23andMe
+9367	37	Illumina GSAs	v5	Female	23andMe
+943	37	OmniExpress plus	v3	Male	23andMe
+9497	37			Female	AncestryDNA
+926	37	OmniExpress plus	v3	Male	23andMe
+9262	37	Illumina GSAs	v5	Female	23andMe
+9277	37			Male	AncestryDNA
+945	37	OmniExpress			FTDNA
+9616	37	Illumina GSAs	v5	Female	23andMe
+9743	37	Illumina GSAs	v5	Female	23andMe
+9803	37	OmniExpress		Male	MyHeritage, 23andMe, AncestryDNA
+9380	37	Illumina GSAs	v5	Female	23andMe
+9822	37	OmniExpress		Male	FTDNA, 23andMe
+9799	37	Illumina GSAs	v5	Female	23andMe
+9323	37	HTS iSelect HD	v4	Female	23andMe
+9324	37	Illumina GSAs	v5	Male	23andMe
+9528	37	HTS iSelect HD	v4	Female	23andMe
+9886	37			Female	GenesForGood
+9366	37			Male	AncestryDNA
+9979	37			Female	FTDNA
+9278	37	OmniExpress	v1	Female	AncestryDNA
+949	37	OmniExpress plus	v3	Male	23andMe
+9804	37	OmniExpress		Female	MyHeritage, AncestryDNA, FTDNA
+9351	37	Illumina GSAs	v5	Male	23andMe
+9427	37	HTS iSelect HD	v4	Female	23andMe
+9388	37	OmniExpress			FTDNA
+9747	37	Illumina GSAs	v5	Female	23andMe
+9941	37	OmniExpress		Male	FTDNA
