@@ -3,9 +3,36 @@
 ## Steps Overview
 | Step         | Command                              | Description                  |
 |--------------|--------------------------------------|------------------------------|
-| Impute sex   | xx                     | Remove individuals with >10% missing data |
-| MAF Filter   | plink --maf 0.01                     | Remove rare variants         |
+| Split IID by chip   | splitbychip.ipynb (Python)    | extract IIDs specific to one chip |
+|    |                      |          |
 
+# 1. Initial per-chip QC (split) [x]
+- why: different chips = different SNPs, genotyping errors etc.
+
+Python script to:
+1. Read the metadata and split IIDs by chip.
+2. Create `.keep` files for each chip group.
+
+## 1.1 Sample-level QC
+
+### 1.1.1 Missingness
+
+### 1.1.2 Sex checks
+
+### 1.1.3 Heterozygosity outliers
+
+### 1.1.4 Relatedness / Duplicates
+
+## 1.2 SNP-level QC
+
+### 1.2.1 Call rate/Missingness
+
+### 1.2.2 MAF
+
+### 1.2.3 HWE
+
+
+---
 ## 1. Impute Sex
 ```bash
 plink --bfile gwas_data_indiv_filtered
