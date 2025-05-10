@@ -13,23 +13,23 @@ Python script to:
 1. Read the metadata and split IIDs by chip.
 2. Create `.keep` files for each chip group.
 
-## 1.1 Sample-level QC
+## 1.1 Sample-level QC []
 
-### 1.1.1 Missingness
+### 1.1.1 Missingness []
 
-### 1.1.2 Sex checks
+### 1.1.2 Sex checks []
 
-### 1.1.3 Heterozygosity outliers
+### 1.1.3 Heterozygosity outliers []
 
-### 1.1.4 Relatedness / Duplicates
+### 1.1.4 Relatedness / Duplicates []
 
-## 1.2 SNP-level QC
+## 1.2 SNP-level QC []
 
-### 1.2.1 Call rate/Missingness
+### 1.2.1 Call rate/Missingness []
 
-### 1.2.2 MAF
+### 1.2.2 MAF []
 
-### 1.2.3 HWE
+### 1.2.3 HWE []
 
 
 ---
