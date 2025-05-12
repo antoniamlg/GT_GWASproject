@@ -6,6 +6,8 @@
 | Split IID by chip   | splitbychip.ipynb (Python)    | extract IIDs specific to one chip |
 |    |                      |          |
 
+Also check out this link [QC README](https://github.com/kaspermunch/PopulationGenomicsCourse/blob/master/Exercises/GWAS_QC/step_by_step_tutorial.md). 
+
 # 1. Initial per-chip QC (split) [x]
 - why: different chips = different SNPs, genotyping errors etc.
 
@@ -19,24 +21,74 @@ plink --bfile gwas_data --keep /faststorage/project/populationgenomics/students/
 ```
 
 ## 1.1 Sample-level QC []
+I just checked, that's also what we did in the exercise. There, missingness and sex check was switched (but it should't matter too much right?).
 
 ### 1.1.1 Missingness []
 
+```bash
+plink --bfile GWA-QC --missing --out GWA-QC
+```
+
 ### 1.1.2 Sex checks []
+
+```bash
+plink --bfile GWA-data --check-sex --out GWA-QC
+```
+Then, remove proplematic sex with
+```bash
+plink --bfile GWA-data --remove wrong_sex.txt --make-bed --out GWA-QC
+```
 
 ### 1.1.3 Heterozygosity outliers []
 
+```bash
+plink --bfile GWA-QC --het --out GWA-QC 
+```
+calculate the observed heterozygosity rate per individual using the formula:
+
+Het = (N(NM) − O(Hom))/N(NM) -> look at the exercises!
+
+* then, do a plot and find outliers
+
+Make a file with the FID and IID of all individuals that have a genotype missing rate >=0.03 or a heterozygosity rate that is more than 3 s.d. from the mean. Then use plink to remove these individuals from the data set.
+```bash
+plink --bfile GWA-QC --remove wrong_het_missing_values.txt --make-bed --out GWA-QC
+```
+
 ### 1.1.4 Relatedness / Duplicates []
+
+1. prune the data
+```bash
+plink --bfile GWA-QC --indep-pairwise 500kb 5 0.2 --out GWA-QC
+```
+2. Calculate IBD between each pair of individuals
+```bash
+plink --bfile GWA-QC --extract GWA-QC.prune.in --genome --min 0.185 --out GWA-QC
+```
+3. Remove a member from each of the pairs that are too closely related from the data set. To keep it simple you can just always remove the individual mentioned first. *
+
+4. Remove individuals with wrong IBD.
+```bash
+plink --bfile  GWA-QC --remove wrong_ibd.txt --make-bed --out GWA-QC
+```
 
 ## 1.2 SNP-level QC []
 
 ### 1.2.1 Call rate/Missingness []
+Run the --missing command again to generate the GWA-data.lmiss with the missing data rate for each SNP. <br>
+Use R to make a histogram of the missing data rates (F_MISS).
+Run the test-missing command and make a list of all the names of all SNPs where the differential missingness p-value is less than 1e-5. Save the list as fail-diffmiss-qc.txt.
 
 ### 1.2.2 MAF []
 
 ### 1.2.3 HWE []
 
+after doing all this, remove all low-quality SNPs
+```bash
+plink --bfile GWA-QC --exclude fail-diffmiss-qc.txt --geno 0.05 --hwe 0.00001 --maf 0.01 --make-bed --out GWA-QC
+```
 
+In addition to removing SNPs identified with differential call rates between cases and controls, this command removes SNPs with call rate less than 95% with --geno option and deviation from HWE (p<1e-5) with the --hwe option. It also removes all SNPs with minor allele frequency less than a specified threshold using the --maf option.
 ---
 ## 1. Impute Sex
 ```bash
