@@ -30,7 +30,24 @@ Run the test-missing command and make a list of all the names of all SNPs where 
 plink --bfile splitbychip/unknown_chip_data --missing --out ../SNPmiss/unknown_chip_SNPmiss
 ls -lht
 ```
-[ ] Before continuing to the next step, do a plot to see where to set the threshold. Apparently, 0.05 removes almost everything which is annoying.
+
+See visualization script at ../Scripts/SNPmiss_QC.ipynb.
+
+A lot of care must be taken when filtering variants, since we can lose potential variants associaated with the phenotypic trait. Therefore, we only filter these variants in which the missigness is associated with the phenotype, i.e case or control, so they could be a source of bias in our study. I compute the Fisher exact test between these two variables by running:
+
+```bash
+plink --bfile infile --test-missing --out outfile
+```
+<font color="pink">=> did not work because we don't have case/control data</font>
+
+[X] Before continuing to the next step, do a plot to see where to set the threshold. Apparently, 0.05 removes almost everything which is annoying.
+
+#### Results
+
+* use `0.9` as a filtering threshold to first get rid of SNPs which are missing in all individuals (data cleaning)
+* use `0.05` -> If a SNP has a high F_MISS (e.g., > 0.05), it means that a large proportion of individuals have missing data for that SNP.
+* the `unknown_chip` does not have any data below 0.2% missing data rate. So the idea is, to just exclude the whole chip. <font color="pink">=> Does that make any sense though?</font>
+=> sooo next step: [ ] do the actual filtering
 
 ### 1.1.2 MAF & HWE [ ]
 
