@@ -1,0 +1,27 @@
+PLINK v1.90b6.21 64-bit (19 Oct 2020)
+Options in effect:
+  --bfile OmniExpress_plus_data
+  --missing
+  --out ../SNPmiss/OmniExpress_plus_SNPmiss
+
+Hostname: cn-1045
+Working directory: /faststorage/project/populationgenomics/students/amlg/project/data/splitbychip
+Start time: Wed May 14 12:19:55 2025
+
+Random number seed: 1747217995
+1547882 MB RAM detected; reserving 773941 MB for main workspace.
+1376653 variants loaded from .bim file.
+484 people (304 males, 180 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 484 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: 52068 het. haploid genotypes present (see
+../SNPmiss/OmniExpress_plus_SNPmiss.hh ); many commands treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.679783.
+--missing: Sample missing data report written to
+../SNPmiss/OmniExpress_plus_SNPmiss.imiss, and variant-based missing data
+report written to ../SNPmiss/OmniExpress_plus_SNPmiss.lmiss.
+
+End time: Wed May 14 12:20:11 2025

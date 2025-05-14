@@ -27,7 +27,8 @@ Use R to make a histogram of the missing data rates (F_MISS).
 Run the test-missing command and make a list of all the names of all SNPs where the differential missingness p-value is less than 1e-5. Save the list as fail-diffmiss-qc.txt.
 
 ```bash
-plink --bfile chipX --missing --out chipX_snp_missing
+plink --bfile splitbychip/unknown_chip_data --missing --out ../SNPmiss/unknown_chip_SNPmiss
+ls -lht
 ```
 [ ] Before continuing to the next step, do a plot to see where to set the threshold. Apparently, 0.05 removes almost everything which is annoying.
 
