@@ -49,7 +49,21 @@ plink --bfile infile --test-missing --out outfile
 * the `unknown_chip` does not have any data below 0.2% missing data rate. So the idea is, to just exclude the whole chip. <font color="pink">=> Does that make any sense though?</font>
 => sooo next step: [ ] do the actual filtering
 
-### 1.1.2 MAF & HWE [ ]
+### 1.1.2 Filter SNPs that are missing in 100% of individuals
+
+```bash
+plink --bfile chipX --geno 1 --make-bed --out chipX...
+```
+First, I will only filter SNPs that are missing in 100% of individuals in a  chip. Later (add section) I will also filter for higher missingness - but first, do sex imputation.
+
+### 1.1.3 Merge chips
+We need to run the sex-imputation on all the datasets, so we at least have a chance to impute sex for the `omics` chip which does not have any information about the sex. 
+
+### 1.1.4 Sex-imputation (TRY)
+If it works - amazing.
+If it doesn't - just continue with QC and don't care too much (-*Bjarke*).
+
+### 1.1.5 MAF & HWE [ ]
 
 after doing all this, remove all low-quality SNPs
 ```bash
