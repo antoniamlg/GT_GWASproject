@@ -1,5 +1,33 @@
 # GWAS Pipeline Documentation
 
+- [GWAS Pipeline Documentation](#gwas-pipeline-documentation)
+  - [Steps Overview](#steps-overview)
+- [1. Initial per-chip QC (split) \[x\]](#1-initial-per-chip-qc-split-x)
+  - [1.1 SNP-level QC \[ \]](#11-snp-level-qc--)
+    - [1.1.1 Call rate/Missingness \[ \]](#111-call-ratemissingness--)
+      - [Results](#results)
+    - [1.1.2 Filter SNPs that are missing in 100% of individuals](#112-filter-snps-that-are-missing-in-100-of-individuals)
+    - [1.1.3 Merge chips](#113-merge-chips)
+    - [1.1.4 Sex-imputation (TRY)](#114-sex-imputation-try)
+    - [1.1.5 MAF \& HWE \[ \]](#115-maf--hwe--)
+  - [1.2 Sample-level QC \[ \]](#12-sample-level-qc--)
+    - [1.2.1 Sex checks \[ \]](#121-sex-checks--)
+    - [1.2.2 Missingness \[ \]](#122-missingness--)
+    - [1.2.3 Heterozygosity outliers \[ \]](#123-heterozygosity-outliers--)
+    - [1.2.4 Relatedness / Duplicates \[ \]](#124-relatedness--duplicates--)
+  - [1.3 Population Structure/ Stratification/ Batch Effects](#13-population-structure-stratification-batch-effects)
+    - [1.3.1 PCA](#131-pca)
+          - [After QC, merge chips again](#after-qc-merge-chips-again)
+  - [1. Impute Sex](#1-impute-sex)
+  - [2. Check Sex](#2-check-sex)
+  - [How do do .md files](#how-do-do-md-files)
+    - [code blocks](#code-blocks)
+    - [bullet lists](#bullet-lists)
+    - [tables](#tables)
+    - [links](#links)
+    - [images](#images)
+    - [text formatting](#text-formatting)
+
 ## Steps Overview
 | Step         | Command                              | Description                  |
 |--------------|--------------------------------------|------------------------------|
