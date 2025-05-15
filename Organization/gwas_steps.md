@@ -4,10 +4,11 @@
   - [Steps Overview](#steps-overview)
 - [1. Initial per-chip QC (split) \[x\]](#1-initial-per-chip-qc-split-x)
   - [1.1 SNP-level QC \[ \]](#11-snp-level-qc--)
-    - [1.1.1 Call rate/Missingness \[ \]](#111-call-ratemissingness--)
+    - [1.1.1 Call rate/Missingness \[X\]](#111-call-ratemissingness-x)
       - [Results](#results)
-    - [1.1.2 Filter SNPs that are missing in 100% of individuals](#112-filter-snps-that-are-missing-in-100-of-individuals)
+    - [1.1.2 Filter SNPs that are missing in 100% of individuals \[X\]](#112-filter-snps-that-are-missing-in-100-of-individuals-x)
     - [1.1.3 Merge chips](#113-merge-chips)
+    - [1.1.X Replot missingness to see if i actually did something.](#11x-replot-missingness-to-see-if-i-actually-did-something)
     - [1.1.4 Sex-imputation (TRY)](#114-sex-imputation-try)
     - [1.1.5 MAF \& HWE \[ \]](#115-maf--hwe--)
   - [1.2 Sample-level QC \[ \]](#12-sample-level-qc--)
@@ -49,7 +50,7 @@ plink --bfile gwas_data --keep /faststorage/project/populationgenomics/students/
 ```
 ## 1.1 SNP-level QC [ ]
 
-### 1.1.1 Call rate/Missingness [ ]
+### 1.1.1 Call rate/Missingness [X]
 Run the --missing command again to generate the GWA-data.lmiss with the missing data rate for each SNP. <br>
 Use R to make a histogram of the missing data rates (F_MISS).
 Run the test-missing command and make a list of all the names of all SNPs where the differential missingness p-value is less than 1e-5. Save the list as fail-diffmiss-qc.txt.
@@ -77,7 +78,7 @@ plink --bfile infile --test-missing --out outfile
 * the `unknown_chip` does not have any data below 0.2% missing data rate. So the idea is, to just exclude the whole chip. <font color="pink">=> Does that make any sense though?</font>
 => sooo next step: [ ] do the actual filtering
 
-### 1.1.2 Filter SNPs that are missing in 100% of individuals
+### 1.1.2 Filter SNPs that are missing in 100% of individuals [X]
 
 ```bash
 plink --bfile chipX --geno 1 --make-bed --out chipX...
@@ -85,7 +86,10 @@ plink --bfile chipX --geno 1 --make-bed --out chipX...
 First, I will only filter SNPs that are missing in 100% of individuals in a  chip. Later (add section) I will also filter for higher missingness - but first, do sex imputation.
 
 ### 1.1.3 Merge chips
-We need to run the sex-imputation on all the datasets, so we at least have a chance to impute sex for the `omics` chip which does not have any information about the sex. 
+We need to run the sex-imputation on all the datasets, so we at least have a chance to impute sex for the `omics` chip which does not have any information about the sex. <br>
+Sooooooooo, apparently you cannot really merge bfiles back together, if they don't have exactly the same SNPs
+
+### 1.1.X Replot missingness to see if i actually did something.
 
 ### 1.1.4 Sex-imputation (TRY)
 If it works - amazing.
