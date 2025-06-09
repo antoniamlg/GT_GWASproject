@@ -5,7 +5,7 @@
   - [Datanumbers](#datanumbers)
 - [0. Filter by phenotype \[X\]](#0-filter-by-phenotype-x)
 - [1. Initial per-chip QC (split) \[X\]](#1-initial-per-chip-qc-split-x)
-      - [As we do not have that many individuals (now \`\`)](#as-we-do-not-have-that-many-individuals-now-)
+      - [As we do not have that many individuals (now ~`1071`), I will start with the SNP-level QC first, to preserve as many individuals as I can.](#as-we-do-not-have-that-many-individuals-now-1071-i-will-start-with-the-snp-level-qc-first-to-preserve-as-many-individuals-as-i-can)
   - [1.1 SNP-level QC \[ \]](#11-snp-level-qc--)
     - [1.1.1 Call rate/Missingness \[ \]](#111-call-ratemissingness--)
       - [Results](#results)
@@ -59,7 +59,7 @@ Our height.txt file only contains the phenotype of `1106` individuals. We cannot
 awk '{print $1, $1}' height.txt > /faststorage/project/populationgenomics/students/amlg/project/data/shit_phenotypes_kickedout/phenokeep.txt
 
 # then use plink to filter the b-files
-plink --bfile /faststorage/project/populationgenomics/project_data/GWAS/gwas_data --keep phenokeep.txt --make-bed --out pheno_filtered
+plink --bfile shit_phenotypes_kickedout/pheno_filtered --keep splitbychip/chipX.keep --make-bed --out splitbychip/chipX
 ```
 
 * --keep: 1071 people remaining
@@ -69,7 +69,7 @@ plink --bfile /faststorage/project/populationgenomics/project_data/GWAS/gwas_dat
 # 1. Initial per-chip QC (split) [X]
 - why: different chips = different SNPs, genotyping errors etc.
 
-Python script ((find script)[https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/splitbychip.ipynb]) to:
+Python script (find script)[https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/splitbychip.ipynb] to:
 1. Read the metadata and split IIDs by chip.
 2. Create `.keep` files for each chip group.
 
@@ -80,11 +80,12 @@ plink --bfile gwas_data --keep /faststorage/project/populationgenomics/students/
 
 This results in 6 different b-file sets. Each of them only containing data specific to the chip. I decided, to not use the all the datapoints with the "chip" label as they do not contain any useful data.
 
-#### As we do not have that many individuals (now ``)
+#### As we do not have that many individuals (now ~`1071`), I will start with the SNP-level QC first, to preserve as many individuals as I can. ####
+
 ## 1.1 SNP-level QC [ ]
 
 ### 1.1.1 Call rate/Missingness [ ]
-Run the --missing command again to generate the GWA-data.lmiss with the missing data rate for each SNP. <br>
+Run the --missing command to generate the GWA-data.lmiss with the missing data rate for each SNP. <br>
 Use R to make a histogram of the missing data rates (F_MISS).
 Run the test-missing command and make a list of all the names of all SNPs where the differential missingness p-value is less than 1e-5. Save the list as fail-diffmiss-qc.txt.
 
@@ -93,16 +94,11 @@ plink --bfile splitbychip/unknown_chip_data --missing --out ../SNPmiss/unknown_c
 ls -lht
 ```
 
-See visualization script at ../Scripts/SNPmiss_QC.ipynb.
+See visualization script at [here](https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/SNPmiss_QC.ipynb).
 
-A lot of care must be taken when filtering variants, since we can lose potential variants associaated with the phenotypic trait. Therefore, we only filter these variants in which the missigness is associated with the phenotype, i.e case or control, so they could be a source of bias in our study. I compute the Fisher exact test between these two variables by running:
+A lot of care must be taken when filtering variants, since we can lose potential variants associated with the phenotypic trait.
 
-```bash
-plink --bfile infile --test-missing --out outfile
-```
-<font color="pink">=> did not work because we don't have case/control data</font>
-
-[X] Before continuing to the next step, do a plot to see where to set the threshold. Apparently, 0.05 removes almost everything which is annoying.
+[ ] Before continuing to the next step, do a plot to see where to set the threshold. Apparently, 0.05 removes almost everything which is annoying.
 
 #### Results
 
