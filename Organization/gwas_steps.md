@@ -2,11 +2,12 @@
 
 - [GWAS Pipeline Documentation](#gwas-pipeline-documentation)
   - [Steps Overview](#steps-overview)
-- [1. Initial per-chip QC (split) \[x\]](#1-initial-per-chip-qc-split-x)
+- [0. Filter by phenotype](#0-filter-by-phenotype)
+- [1. Initial per-chip QC (split) \[ \]](#1-initial-per-chip-qc-split--)
   - [1.1 SNP-level QC \[ \]](#11-snp-level-qc--)
-    - [1.1.1 Call rate/Missingness \[X\]](#111-call-ratemissingness-x)
+    - [1.1.1 Call rate/Missingness \[ \]](#111-call-ratemissingness--)
       - [Results](#results)
-    - [1.1.2 Filter SNPs that are missing in 100% of individuals \[X\]](#112-filter-snps-that-are-missing-in-100-of-individuals-x)
+    - [1.1.2 Filter SNPs that are missing in 100% of individuals \[ \]](#112-filter-snps-that-are-missing-in-100-of-individuals--)
     - [1.1.3 Merge chips](#113-merge-chips)
     - [1.1.X Replot missingness to see if i actually did something.](#11x-replot-missingness-to-see-if-i-actually-did-something)
     - [1.1.4 Sex-imputation (TRY)](#114-sex-imputation-try)
@@ -37,7 +38,23 @@
 
 Also check out this link [QC README](https://github.com/kaspermunch/PopulationGenomicsCourse/blob/master/Exercises/GWAS_QC/step_by_step_tutorial.md). 
 
-# 1. Initial per-chip QC (split) [x]
+# 0. Filter by phenotype
+Our height.txt file only contains the phenotype of `1106` individuals. We cannot use the remaining ones without a phenotype for anything so before doing any QC, splitting etc. filter them out.
+
+```bash
+# create keep file from individuals
+# duplicate column one to get the following format: IID FID HEIGHT
+awk '{print $1, $1}' height.txt > /faststorage/project/populationgenomics/students/amlg/project/data/shit_phenotypes_kickedout/phenokeep.txt
+
+# then use plink to filter the b-files
+plink --bfile /faststorage/project/populationgenomics/project_data/GWAS/gwas_data --keep phenokeep.txt --make-bed --out pheno_filtered
+```
+
+* --keep: 1071 people remaining
+*  At least 2 duplicate IDs in --keep file
+*  1376653 variants and 1071 people pass filters and QC
+
+# 1. Initial per-chip QC (split) [ ]
 - why: different chips = different SNPs, genotyping errors etc.
 
 Python script to:
@@ -50,7 +67,7 @@ plink --bfile gwas_data --keep /faststorage/project/populationgenomics/students/
 ```
 ## 1.1 SNP-level QC [ ]
 
-### 1.1.1 Call rate/Missingness [X]
+### 1.1.1 Call rate/Missingness [ ]
 Run the --missing command again to generate the GWA-data.lmiss with the missing data rate for each SNP. <br>
 Use R to make a histogram of the missing data rates (F_MISS).
 Run the test-missing command and make a list of all the names of all SNPs where the differential missingness p-value is less than 1e-5. Save the list as fail-diffmiss-qc.txt.
@@ -78,7 +95,7 @@ plink --bfile infile --test-missing --out outfile
 * the `unknown_chip` does not have any data below 0.2% missing data rate. So the idea is, to just exclude the whole chip. <font color="pink">=> Does that make any sense though?</font>
 => sooo next step: [ ] do the actual filtering
 
-### 1.1.2 Filter SNPs that are missing in 100% of individuals [X]
+### 1.1.2 Filter SNPs that are missing in 100% of individuals [ ]
 
 ```bash
 plink --bfile chipX --geno 1 --make-bed --out chipX...
