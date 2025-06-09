@@ -69,7 +69,7 @@ plink --bfile shit_phenotypes_kickedout/pheno_filtered --keep splitbychip/chipX.
 # 1. Initial per-chip QC (split) [X]
 - why: different chips = different SNPs, genotyping errors etc.
 
-Python script (find script)[https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/splitbychip.ipynb] to:
+Python script [find script](https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/splitbychip.ipynb) to:
 1. Read the metadata and split IIDs by chip.
 2. Create `.keep` files for each chip group.
 
