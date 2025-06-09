@@ -2,8 +2,10 @@
 
 - [GWAS Pipeline Documentation](#gwas-pipeline-documentation)
   - [Steps Overview](#steps-overview)
-- [0. Filter by phenotype](#0-filter-by-phenotype)
-- [1. Initial per-chip QC (split) \[ \]](#1-initial-per-chip-qc-split--)
+  - [Datanumbers](#datanumbers)
+- [0. Filter by phenotype \[X\]](#0-filter-by-phenotype-x)
+- [1. Initial per-chip QC (split) \[X\]](#1-initial-per-chip-qc-split-x)
+      - [As we do not have that many individuals (now \`\`)](#as-we-do-not-have-that-many-individuals-now-)
   - [1.1 SNP-level QC \[ \]](#11-snp-level-qc--)
     - [1.1.1 Call rate/Missingness \[ \]](#111-call-ratemissingness--)
       - [Results](#results)
@@ -36,9 +38,19 @@
 | Split IID by chip   | splitbychip.ipynb (Python)    | extract IIDs specific to one chip |
 |    |                      |          |
 
-Also check out this link [QC README](https://github.com/kaspermunch/PopulationGenomicsCourse/blob/master/Exercises/GWAS_QC/step_by_step_tutorial.md). 
+Also check out this link [QC README](https://github.com/kaspermunch/PopulationGenomicsCourse/blob/master/Exercises/GWAS_QC/step_by_step_tutorial.md).
 
-# 0. Filter by phenotype
+## Datanumbers
+| Chip Name             | # Individuals | # Variants          | #Ind. after phenotype filtering  |
+|-----------------------|---------------|---------------------|----------------------------------|
+| whole dataset         | 2009          | 1376653             | 1071                             |
+| HTS_iSelect_HD        | 587           |                     | 275                              |
+| Illumina_GSAs         | 248           |                     | 128                              |
+| OmniExpress           | 291           |                     | 170                              |
+| OmniExpress_plus      | 484           |                     | 266                              |
+| unknown_chip          | 399           |                     | 232                              |
+
+# 0. Filter by phenotype [X]
 Our height.txt file only contains the phenotype of `1106` individuals. We cannot use the remaining ones without a phenotype for anything so before doing any QC, splitting etc. filter them out.
 
 ```bash
@@ -54,17 +66,21 @@ plink --bfile /faststorage/project/populationgenomics/project_data/GWAS/gwas_dat
 *  At least 2 duplicate IDs in --keep file
 *  1376653 variants and 1071 people pass filters and QC
 
-# 1. Initial per-chip QC (split) [ ]
+# 1. Initial per-chip QC (split) [X]
 - why: different chips = different SNPs, genotyping errors etc.
 
-Python script to:
+Python script ((find script)[https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/splitbychip.ipynb]) to:
 1. Read the metadata and split IIDs by chip.
 2. Create `.keep` files for each chip group.
 
-Use `.keep` to filter bed file into chip specific files:
+Use `.keep` files to filter bed file into chip specific files:
 ```bash
 plink --bfile gwas_data --keep /faststorage/project/populationgenomics/students/amlg/project/data/splitbychip/chipX.keep --make-bed --out /faststorage/project/populationgenomics/students/amlg/project/data/splitbychip/chipX_data
 ```
+
+This results in 6 different b-file sets. Each of them only containing data specific to the chip. I decided, to not use the all the datapoints with the "chip" label as they do not contain any useful data.
+
+#### As we do not have that many individuals (now ``)
 ## 1.1 SNP-level QC [ ]
 
 ### 1.1.1 Call rate/Missingness [ ]
