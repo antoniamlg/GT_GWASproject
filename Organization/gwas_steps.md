@@ -164,6 +164,7 @@ Check for errors in the Omni_Express dataset:
    awk '$1 == 23' OmniExpress_geno005.bim | wc -l
 ```
    <br> returns 0, so the dataset does not contain any X-chromosome SNPs - which means **sex imputation is not possible from this dataset**
+   
 2. Keep sex as-is and exclude ambigous:
    Dataset has 
 * 62 males
