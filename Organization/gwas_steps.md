@@ -94,17 +94,16 @@ plink --bfile splitbychip/unknown_chip_data --missing --out ../SNPmiss/unknown_c
 ls -lht
 ```
 
-See visualization script at [here](https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/SNPmiss_QC.ipynb).
+See visualization script [here](https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/SNPmiss_QC.ipynb).
+[X] Before continuing to the next step, do a plot to see where to set the threshold. Apparently, 0.05 removes almost everything which is annoying.
 
 A lot of care must be taken when filtering variants, since we can lose potential variants associated with the phenotypic trait.
-
-[ ] Before continuing to the next step, do a plot to see where to set the threshold. Apparently, 0.05 removes almost everything which is annoying.
 
 #### Results
 
 * use `0.9` as a filtering threshold to first get rid of SNPs which are missing in all individuals (data cleaning)
 * use `0.05` -> If a SNP has a high F_MISS (e.g., > 0.05), it means that a large proportion of individuals have missing data for that SNP.
-* the `unknown_chip` does not have any data below 0.2% missing data rate. So the idea is, to just exclude the whole chip. <font color="pink">=> Does that make any sense though?</font>
+* the `unknown_chip` does not have any data below 0.2% missing data rate. So the idea is, to just exclude the whole chip.  \textcolor{pink}{Does that make any sense though?}
 => sooo next step: [ ] do the actual filtering
 
 ### 1.1.2 Filter SNPs that are missing in 100% of individuals [ ]
