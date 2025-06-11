@@ -2,19 +2,19 @@
 
 # Define input and output directories
 INPUT_DIR="../data/splitbychip"
-OUTPUT_DIR="../data/SNPmiss1"
+OUTPUT_DIR="../data/SNPmiss005"
 
 # List of chip names (match your filenames, without extensions)
-chips=("unknown_chip_data" "HTS_iSelect_HD_data" "Illumina_GSAs_data" "OmniExpress_data" "OmniExpress_plus_data")
+chips=("unknown_chip" "HTS_iSelect_HD" "Illumina_GSAs" "OmniExpress" "OmniExpress_plus")
 
 # Loop through each chip and run the PLINK command
 for chip in "${chips[@]}"
 do
     echo "Running PLINK on $chip..."
     plink --bfile "${INPUT_DIR}/${chip}" \
-          --geno 1 \
+          --geno 0.05 \
           --make-bed \
-          --out "${OUTPUT_DIR}/${chip}_geno1_filtered"
+          --out "${OUTPUT_DIR}/${chip}_geno005"
 done
 
 echo "All done!"
