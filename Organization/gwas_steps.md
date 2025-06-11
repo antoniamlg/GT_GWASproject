@@ -103,7 +103,7 @@ A lot of care must be taken when filtering variants, since we can lose potential
 
 * use `0.9` as a filtering threshold to first get rid of SNPs which are missing in all individuals (data cleaning)
 * use `0.05` -> If a SNP has a high F_MISS (e.g., > 0.05), it means that a large proportion of individuals have missing data for that SNP.
-* the `unknown_chip` does not have any data below 0.2% missing data rate. So the idea is, to just exclude the whole chip.  \textcolor{pink}{Does that make any sense though?}
+* the `unknown_chip` does not have any data below 0.2% missing data rate. So the idea is, to just exclude the whole chip.  <span style="color:red;">Does that make any sense though?</span> <br>
 => sooo next step: [ ] do the actual filtering
 
 ### 1.1.2 Filter SNPs that are missing in 100% of individuals [ ]
