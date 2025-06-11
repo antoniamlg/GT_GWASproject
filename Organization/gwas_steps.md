@@ -6,14 +6,14 @@
 - [0. Filter by phenotype \[X\]](#0-filter-by-phenotype-x)
 - [1. Initial per-chip QC (split) \[X\]](#1-initial-per-chip-qc-split-x)
       - [As we do not have that many individuals (now ~`1071`), I will start with the SNP-level QC first, to preserve as many individuals as I can.](#as-we-do-not-have-that-many-individuals-now-1071-i-will-start-with-the-snp-level-qc-first-to-preserve-as-many-individuals-as-i-can)
-  - [1.1 SNP-level QC \[ \]](#11-snp-level-qc--)
+  - [1.1 SNP-level QC \[X\]](#11-snp-level-qc-x)
     - [1.1.1 Call rate/Missingness \[ \]](#111-call-ratemissingness--)
       - [Results](#results)
-    - [1.1.2 Filter SNPs that are missing in 100% of individuals \[ \]](#112-filter-snps-that-are-missing-in-100-of-individuals--)
-    - [1.1.3 Replot missingness to see if i actually did something.](#113-replot-missingness-to-see-if-i-actually-did-something)
-    - [1.1.4 Merge chips](#114-merge-chips)
-    - [1.1.5 Sex-imputation (TRY)](#115-sex-imputation-try)
-    - [1.1.5 MAF \& HWE \[ \]](#115-maf--hwe--)
+    - [1.1.2 Filter SNPs that are missing in 100% of individuals + with 0.05 threshold \[X\]](#112-filter-snps-that-are-missing-in-100-of-individuals--with-005-threshold-x)
+    - [1.1.3 Replot missingness to see if i actually did something. \[X\]](#113-replot-missingness-to-see-if-i-actually-did-something-x)
+    - [1.1.4 Merge chips \[X\]](#114-merge-chips-x)
+    - [1.1.5 Sex-imputation (TRY) \[X\]](#115-sex-imputation-try-x)
+    - [1.1.5 MAF \& HWE \[X\]](#115-maf--hwe-x)
   - [1.2 Sample-level QC \[ \]](#12-sample-level-qc--)
     - [1.2.1 Sex checks \[ \]](#121-sex-checks--)
     - [1.2.2 Missingness \[ \]](#122-missingness--)
@@ -41,14 +41,14 @@
 Also check out this link [QC README](https://github.com/kaspermunch/PopulationGenomicsCourse/blob/master/Exercises/GWAS_QC/step_by_step_tutorial.md).
 
 ## Datanumbers
-| Chip Name             | # Individuals | # Variants          | #Ind. after phenotype filtering  |
-|-----------------------|---------------|---------------------|----------------------------------|
-| whole dataset         | 2009          | 1376653             | 1071                             |
-| HTS_iSelect_HD        | 587           |                     | 275                              |
-| Illumina_GSAs         | 248           |                     | 128                              |
-| OmniExpress           | 291           |                     | 170 -> 133 after sex-check       |
-| OmniExpress_plus      | 484           |                     | 266                              |
-| unknown_chip          | 399           |                     | 232                              |
+| Chip Name             | # Individuals | # Variants          | #Ind. after phenotype filtering  | #Var. after SNP QC (hwe + maf) |
+|-----------------------|---------------|---------------------|----------------------------------|------|
+| whole dataset         | 2009          | 1376653             | 1071                             | 
+| HTS_iSelect_HD        | 587           |                     | 275                              | 513670
+| Illumina_GSAs         | 248           |                     | 128                              | 410086
+| OmniExpress           | 291           |                     | 170 -> 133 after sex-check       | 569238
+| OmniExpress_plus      | 484           |                     | 266                              | 84250
+| unknown_chip          | 399           |                     | 232                              | 17
 
 # 0. Filter by phenotype [X]
 Our height.txt file only contains the phenotype of `1106` individuals. We cannot use the remaining ones without a phenotype for anything so before doing any QC, splitting etc. filter them out.
@@ -82,7 +82,7 @@ This results in 6 different b-file sets. Each of them only containing data speci
 
 #### As we do not have that many individuals (now ~`1071`), I will start with the SNP-level QC first, to preserve as many individuals as I can. ####
 
-## 1.1 SNP-level QC [ ]
+## 1.1 SNP-level QC [X]
 
 ### 1.1.1 Call rate/Missingness [ ]
 Run the --missing command to generate the GWA-data.lmiss with the missing data rate for each SNP. <br>
@@ -106,22 +106,22 @@ A lot of care must be taken when filtering variants, since we can lose potential
 * the `unknown_chip` does not have any data below 0.2% missing data rate. So the idea is, to just exclude the whole chip. Does that make any sense though? <br>
 => sooo next step: [X] do the actual filtering
 
-### 1.1.2 Filter SNPs that are missing in 100% of individuals [ ]
+### 1.1.2 Filter SNPs that are missing in 100% of individuals + with 0.05 threshold [X]
 
 ```bash
-plink --bfile chipX --geno 1 --make-bed --out chipX...
+plink --bfile chipX --geno 0.05 --make-bed --out chipX...
 ```
 
 => to not do it on every single dataset [find script here](https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/QC_geno_filter.sh)
 
-### 1.1.3 Replot missingness to see if i actually did something.
+### 1.1.3 Replot missingness to see if i actually did something. [X]
 I plotted the datasets after the filtering to check if everything worked (it worked)
 
-### 1.1.4 Merge chips
+### 1.1.4 Merge chips [X]
 We need to run the sex-imputation on all the datasets, so we at least have a chance to impute sex for the `omics` chip which does not have any information about the sex. <br>
 Sooooooooo, apparently you cannot really merge bfiles back together, if they don't have exactly the same SNPs
 
-### 1.1.5 Sex-imputation (TRY)
+### 1.1.5 Sex-imputation (TRY) [X]
 If it works - amazing.
 If it doesn't - just continue with QC and don't care too much (-*Bjarke*).
 
@@ -164,7 +164,7 @@ Check for errors in the Omni_Express dataset:
    awk '$1 == 23' OmniExpress_geno005.bim | wc -l
 ```
    <br> returns 0, so the dataset does not contain any X-chromosome SNPs - which means **sex imputation is not possible from this dataset**
-   
+
 2. Keep sex as-is and exclude ambigous:
    Dataset has 
 * 62 males
@@ -177,34 +177,41 @@ Check for errors in the Omni_Express dataset:
 ```
 
 
-### 1.1.5 MAF & HWE [ ]
+### 1.1.5 MAF & HWE [X]
 
-after doing all this, remove all low-quality SNPs
+After doing all this, remove all low-quality SNPs
 ```bash
-plink --bfile GWA-QC --exclude fail-diffmiss-qc.txt --geno 0.05 --hwe 0.00001 --maf 0.01 --make-bed --out GWA-QC
+plink --bfile OmniExpress_clean \
+      --maf 0.01 \
+      --hwe 1e-6 \
+      --make-bed \
+      --out OmniExpress_qc
 ```
 
-In addition to removing SNPs identified with differential call rates between cases and controls, this command removes SNPs with call rate less than 95% with --geno option and deviation from HWE (p<1e-5) with the --hwe option. It also removes all SNPs with minor allele frequency less than a specified threshold using the --maf option.
+In addition to removing SNPs identified with differential call rates between cases and controls, this command removes SNPs with call rate less than 95% with --geno option and deviation from HWE (p<1e-6) with the --hwe option. It also removes all SNPs with minor allele frequency less than a specified threshold using the --maf option.
 
 ## 1.2 Sample-level QC [ ]
-At this point still confused what I am doing and how the order matters.
 
 ### 1.2.1 Sex checks [ ]
 
 Don't use for *Omics*-chip - it does not have any info on sex
 
-[ ] Is the number of individuals on the Omics chip == ambiguous individuals? Or do we have more individuals somewhere without any sex?
+[?] Is the number of individuals on the Omics chip == ambiguous individuals? Or do we have more individuals somewhere without any sex? -> also some on the other chips
 
 ```bash
-plink --bfile GWA-data --check-sex --out GWA-QC
+plink --bfile unknown_chip_snpqc --check-sex --out ../SampleQC_sexcheck/unknown_chip_samplesex
 ```
-Then, remove proplematic sex with
+Only the unknown-chip data produced a nosex-output file. So we will filter these one out but then we are also done with the sex-check :)
+
+Remove proplematic sex with
 ```bash
-plink --bfile GWA-data --remove wrong_sex.txt --make-bed --out GWA-QC
+plink --bfile unknown_chip_snpqc --remove ../SampleQC_sexcheck/unknown_chip_samplesex.nosex --make-bed --out unknown_chip_snpqc_cleanedsex
 ```
 
 ### 1.2.2 Missingness [ ]
 
+Look at section 1.1.1, we already did that there.
+Calculated it again anyways to be sure.
 ```bash
 plink --bfile GWA-QC --missing --out GWA-QC
 ```
@@ -214,6 +221,8 @@ plink --bfile GWA-QC --missing --out GWA-QC
 ```bash
 plink --bfile GWA-QC --het --out GWA-QC 
 ```
+-> failed for the unknown-chip data: Error: --het requires at least one polymorphic autosomal marker
+
 calculate the observed heterozygosity rate per individual using the formula:
 
 Het = (N(NM) − O(Hom))/N(NM) -> look at the exercises!
