@@ -10,9 +10,9 @@
     - [1.1.1 Call rate/Missingness \[ \]](#111-call-ratemissingness--)
       - [Results](#results)
     - [1.1.2 Filter SNPs that are missing in 100% of individuals \[ \]](#112-filter-snps-that-are-missing-in-100-of-individuals--)
-    - [1.1.3 Merge chips](#113-merge-chips)
-    - [1.1.X Replot missingness to see if i actually did something.](#11x-replot-missingness-to-see-if-i-actually-did-something)
-    - [1.1.4 Sex-imputation (TRY)](#114-sex-imputation-try)
+    - [1.1.3 Replot missingness to see if i actually did something.](#113-replot-missingness-to-see-if-i-actually-did-something)
+    - [1.1.4 Merge chips](#114-merge-chips)
+    - [1.1.5 Sex-imputation (TRY)](#115-sex-imputation-try)
     - [1.1.5 MAF \& HWE \[ \]](#115-maf--hwe--)
   - [1.2 Sample-level QC \[ \]](#12-sample-level-qc--)
     - [1.2.1 Sex checks \[ \]](#121-sex-checks--)
@@ -46,7 +46,7 @@ Also check out this link [QC README](https://github.com/kaspermunch/PopulationGe
 | whole dataset         | 2009          | 1376653             | 1071                             |
 | HTS_iSelect_HD        | 587           |                     | 275                              |
 | Illumina_GSAs         | 248           |                     | 128                              |
-| OmniExpress           | 291           |                     | 170                              |
+| OmniExpress           | 291           |                     | 170 -> 133 after sex-check       |
 | OmniExpress_plus      | 484           |                     | 266                              |
 | unknown_chip          | 399           |                     | 232                              |
 
@@ -103,25 +103,78 @@ A lot of care must be taken when filtering variants, since we can lose potential
 
 * use `0.9` as a filtering threshold to first get rid of SNPs which are missing in all individuals (data cleaning)
 * use `0.05` -> If a SNP has a high F_MISS (e.g., > 0.05), it means that a large proportion of individuals have missing data for that SNP.
-* the `unknown_chip` does not have any data below 0.2% missing data rate. So the idea is, to just exclude the whole chip.  <span style="color:red;">Does that make any sense though?</span> <br>
-=> sooo next step: [ ] do the actual filtering
+* the `unknown_chip` does not have any data below 0.2% missing data rate. So the idea is, to just exclude the whole chip. Does that make any sense though? <br>
+=> sooo next step: [X] do the actual filtering
 
 ### 1.1.2 Filter SNPs that are missing in 100% of individuals [ ]
 
 ```bash
 plink --bfile chipX --geno 1 --make-bed --out chipX...
 ```
-First, I will only filter SNPs that are missing in 100% of individuals in a  chip. Later (add section) I will also filter for higher missingness - but first, do sex imputation.
 
-### 1.1.3 Merge chips
+=> to not do it on every single dataset [find script here](https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/QC_geno_filter.sh)
+
+### 1.1.3 Replot missingness to see if i actually did something.
+I plotted the datasets after the filtering to check if everything worked (it worked)
+
+### 1.1.4 Merge chips
 We need to run the sex-imputation on all the datasets, so we at least have a chance to impute sex for the `omics` chip which does not have any information about the sex. <br>
 Sooooooooo, apparently you cannot really merge bfiles back together, if they don't have exactly the same SNPs
 
-### 1.1.X Replot missingness to see if i actually did something.
-
-### 1.1.4 Sex-imputation (TRY)
+### 1.1.5 Sex-imputation (TRY)
 If it works - amazing.
 If it doesn't - just continue with QC and don't care too much (-*Bjarke*).
+
+I tried the 
+```bash
+plink --bfile OmniExpress_geno005 --check-sex --out OmniExpress_sexcheck
+```
+and it outputs
+```bash
+(popgen) [amlg@s21n34 SNPmiss005]$ plink --bfile OmniExpress_geno005 --check-sex --out OmniExpress_sexcheck
+PLINK v1.90b6.21 64-bit (19 Oct 2020)          www.cog-genomics.org/plink/1.9/
+(C) 2005-2020 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to OmniExpress_sexcheck.log.
+Options in effect:
+  --bfile OmniExpress_geno005
+  --check-sex
+  --out OmniExpress_sexcheck
+
+515438 MB RAM detected; reserving 257719 MB for main workspace.
+625388 variants loaded from .bim file.
+170 people (62 males, 71 females, 37 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to OmniExpress_sexcheck.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 170 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.971161.
+625388 variants and 170 people pass filters and QC.
+Note: No phenotypes present.
+Error: --check-sex/--impute-sex requires at least one polymorphic X chromosome
+locus.
+```
+
+This means
+* none of the SNPs on the X chromosome are present in your dataset and variable (polymorphic)
+* you cannot perform the `plink sex-check`
+  
+Check for errors in the Omni_Express dataset:
+1. Check if you have X chromosome SNPs: 
+```bash
+   awk '$1 == 23' OmniExpress_geno005.bim | wc -l
+```
+   <br> returns 0, so the dataset does not contain any X-chromosome SNPs - which means **sex imputation is not possible from this dataset**
+2. Keep sex as-is and exclude ambigous:
+   Dataset has 
+* 62 males
+* 71 females
+* 37 ambiguous -> fam file has sex info for most of individuals
+   So we just remove them.
+
+```bash
+   plink --bfile OmniExpress_geno005 --remove OmniExpress_sexcheck.nosex --make-bed --out OmniExpress_clean
+```
+
 
 ### 1.1.5 MAF & HWE [ ]
 
