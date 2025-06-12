@@ -341,13 +341,13 @@ Chat CPT also wants to mention:
 * Consider threshold tuning: Threshold 0.185 is common but can be adjusted depending on study design.
 * Document all removals: Keep track of removed individuals for transparency.
 
-<div style="border:1px solid black; padding:10px; background-color:#f0f0f0;">
+```
 **Task 1: Do a QC. Are there any closely related individuals?**
 After running step 3 above ("Claculating IBD") we get a .genome file as an output. It contains 7149 pairs of related individuals with relatedness >= 0.125.
 `awk 'NR>1' ibdcalc_merged.genome | sort -k10,10nr | head`
 Since we only have ~700 individuals, we assume, that many are related in multiple pairings. This could be the case if they are siblings or cousins, which would create many pairwise combinations.
 With running `awk 'NR>1 && $10 >= 0.125 {print $1; print $2}' ibdcalc_merged.genome | sort | uniq | wc -l` we get the result, that our dataset has 123 closely related individuals. We will remove them in step 4 (above).
-</div>
+```
 
 ## 1.3 Population Structure/ Stratification/ Batch Effects
 
