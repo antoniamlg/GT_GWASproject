@@ -18,6 +18,7 @@
     - [1.2.1 Sex checks \[ \]](#121-sex-checks--)
     - [1.2.2 Missingness \[ \]](#122-missingness--)
     - [1.2.3 Heterozygosity outliers \[ \]](#123-heterozygosity-outliers--)
+      - [Decide on thresholds](#decide-on-thresholds)
     - [1.2.4 Relatedness / Duplicates \[ \]](#124-relatedness--duplicates--)
   - [1.3 Population Structure/ Stratification/ Batch Effects](#13-population-structure-stratification-batch-effects)
     - [1.3.1 PCA](#131-pca)
@@ -41,14 +42,14 @@
 Also check out this link [QC README](https://github.com/kaspermunch/PopulationGenomicsCourse/blob/master/Exercises/GWAS_QC/step_by_step_tutorial.md).
 
 ## Datanumbers
-| Chip Name             | # Individuals | # Variants          | #Ind. after phenotype filtering  | #Var. after SNP QC (hwe + maf) |
-|-----------------------|---------------|---------------------|----------------------------------|------|
+| Chip Name             | # Individuals | # Variants          | #Ind. after phenotype filtering  | #Var. after SNP QC (hwe + maf) | # Ind. after Sample QC
+|-----------------------|---------------|---------------------|----------------------------------|------|-----|
 | whole dataset         | 2009          | 1376653             | 1071                             | 
-| HTS_iSelect_HD        | 587           |                     | 275                              | 513670
-| Illumina_GSAs         | 248           |                     | 128                              | 410086
-| OmniExpress           | 291           |                     | 170 -> 133 after sex-check       | 569238
-| OmniExpress_plus      | 484           |                     | 266                              | 84250
-| unknown_chip          | 399           |                     | 232                              | 17
+| HTS_iSelect_HD        | 587           |                     | 275                              | 513670 | 264 |
+| Illumina_GSAs         | 248           |                     | 128                              | 410086 | 121 |
+| OmniExpress           | 291           |                     | 170 -> 133 after sex-check       | 569238 | 125 |
+| OmniExpress_plus      | 484           |                     | 266                              | 84250 | 258 |
+| unknown_chip          | 399           |                     | 232                              | 17 | - (no heterozygosity check) |
 
 # 0. Filter by phenotype [X]
 Our height.txt file only contains the phenotype of `1106` individuals. We cannot use the remaining ones without a phenotype for anything so before doing any QC, splitting etc. filter them out.
@@ -218,18 +219,54 @@ plink --bfile GWA-QC --missing --out GWA-QC
 
 ### 1.2.3 Heterozygosity outliers [ ]
 
+Heterozygosity helps you:
+* Detect individuals with unusual genotypes (e.g. contamination, sample swaps, inbreeding)
+* Combine with missingness for sample QC
+* Identify outliers that could skew your results
+
 ```bash
 plink --bfile GWA-QC --het --out GWA-QC 
 ```
 -> failed for the unknown-chip data: Error: --het requires at least one polymorphic autosomal marker
+` awk '{print $1}' unknown_chip_snpqc_cleanedsex.bim | sort | uniq -
+```bash
+# check if we even have autosomes
+ awk '{print $1}' unknown_chip_snpqc_cleanedsex.bim | sort | uniq -c
+# ~out: 17 24
+```
+This means, the unknown chip data contains 17x a SNP mapping to chromosome 24. Chromosome 24 corresponds to the Y chromosome. So we have no polymorphic autosomal SNPs in this dataset.
 
 calculate the observed heterozygosity rate per individual using the formula:
 
 Het = (N(NM) − O(Hom))/N(NM) -> look at the exercises!
 
 * then, do a plot of *F-values* and find outliers manually in Python/R
+* find plot [here](https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/heterozygosityVSmissingness.ipynb) 
+
+Each point is one sample. We have 802 samples left.
+* X-axis: heterozygosity rate
+* Y-axis: missing genotype rate
+* colors: different genotyping chips
+
+Normal samples should cluster together with **low missing rate** aka y~0. Reasonable heterozygosity lies around ~0.30 ± 0.05. <br>
+Outlier samples to check:
+* High missingness: points with high y-value
+* High heterozygosity: may indicate sample contamination or mix-ups (x > 0.35-0.4) 
+* low heterozygosity: could suggest inbreeding or poor genotyping (x < 0.25) -> shit, that's the whole Illumina chip :(
+* far from cluster: anything not clustering with the rest of the group
+
+So the points above 0.2 missingness rate are problematic and also the one green point at (1,1), which has 100% missingness and very high heterozygosity.
+
+#### Decide on thresholds ####
+* missingness > 0.05 (already did that but anyways)
+* remove samples more than 3 standard deviations from the mean
 
 Make a file with the FID and IID of all individuals that have a genotype missing rate >=0.03 or a heterozygosity rate that is more than 3 s.d. from the mean. Then use plink to remove these individuals from the data set.
+(Exercise suggestion) <br>
+
+The code for how these .remove files were created lies [here](https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/heterozygosityVSmissingness.ipynb).
+I will now remove these outliers from the files.
+
 ```bash
 plink --bfile GWA-QC --remove wrong_het_missing_values.txt --make-bed --out GWA-QC
 ```
