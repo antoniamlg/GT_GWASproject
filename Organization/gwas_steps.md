@@ -7,7 +7,7 @@
 - [1. Initial per-chip QC (split) \[X\]](#1-initial-per-chip-qc-split-x)
       - [As we do not have that many individuals (now ~`1071`), I will start with the SNP-level QC first, to preserve as many individuals as I can.](#as-we-do-not-have-that-many-individuals-now-1071-i-will-start-with-the-snp-level-qc-first-to-preserve-as-many-individuals-as-i-can)
   - [1.1 SNP-level QC \[X\]](#11-snp-level-qc-x)
-    - [1.1.1 Call rate/Missingness \[ \]](#111-call-ratemissingness--)
+    - [1.1.1 Call rate/Missingness \[X\]](#111-call-ratemissingness-x)
       - [Results](#results)
     - [1.1.2 Filter SNPs that are missing in 100% of individuals + with 0.05 threshold \[X\]](#112-filter-snps-that-are-missing-in-100-of-individuals--with-005-threshold-x)
     - [1.1.3 Replot missingness to see if i actually did something. \[X\]](#113-replot-missingness-to-see-if-i-actually-did-something-x)
@@ -21,6 +21,7 @@
       - [Decide on thresholds](#decide-on-thresholds)
     - [1.2.4 Relatedness / Duplicates \[ \]](#124-relatedness--duplicates--)
       - [Why check relatedness](#why-check-relatedness)
+      - [Merging the datasets](#merging-the-datasets)
   - [1.3 Population Structure/ Stratification/ Batch Effects](#13-population-structure-stratification-batch-effects)
     - [1.3.1 PCA](#131-pca)
           - [After QC, merge chips again](#after-qc-merge-chips-again)
@@ -86,7 +87,7 @@ This results in 6 different b-file sets. Each of them only containing data speci
 
 ## 1.1 SNP-level QC [X]
 
-### 1.1.1 Call rate/Missingness [ ]
+### 1.1.1 Call rate/Missingness [X]
 Run the --missing command to generate the GWA-data.lmiss with the missing data rate for each SNP. <br>
 Use R to make a histogram of the missing data rates (F_MISS).
 Run the test-missing command and make a list of all the names of all SNPs where the differential missingness p-value is less than 1e-5. Save the list as fail-diffmiss-qc.txt.
@@ -278,9 +279,16 @@ Yay, after a loooooong way through the QC we finally reached the first question 
 Related individuals share segments of genome - identical by descent (IBD). If there are too many related individuals present, it can bias your association results. So you want to detect pairs with high relatedness and remove one from each pair. <br>
 In the [exercises](https://github.com/kaspermunch/PopulationGenomicsCourse/tree/master/Exercises/GWAS_QC) we got the following pipeline.
 
+#### Merging the datasets ####
+1. Choose base dataset
+2. Create merge list (txt)
+3. Merge: `plink --bfile OmniExpress_plus_snpqc --merge-list merge_list.txt --make-bed --out merged_chips` <br>
+  => 1117723 variants and 768 people pass filters and QC.
+
+
 1. Flagging pairs with $\hat{\pi}$ > 0.185
 ```bash
-plink --bfile chipX_qc4 --genome --min 0.185 --out chipX_related
+plink --bfile merged_afterqc --genome --min 0.185 --out related/merged_afterqc
 ```
 * `--genome` : calculate pairwise genome-wide IBD estimates for all pairs of individuals
 * `--min 0.185` : only output pairs with PI_HAT > 0.185 (a measure of relatedness)
@@ -292,7 +300,7 @@ plink --bfile chipX_qc4 --genome --min 0.185 --out chipX_related
 
 2. Pruning SNPs to get independent markers
 ```bash
-plink --bfile GWA-QC --indep-pairwise 500kb 5 0.2 --out GWA-QC
+plink --bfile merged_afterqc --indep-pairwise 500kb 5 0.2 --out related/merged_afterqc
 ```
 * `--indep-pairwise 500kb 5 0.2` : perform linkage disequilibrium (LD) pruning by scanning SNPs in 500 kb windows, shifting 5 SNPs at a time, removing one SNP from pairs with r² > 0.2
 * This removes correlated SNPs so relatedness estimation isn’t biased by SNPs in strong LD.
@@ -302,11 +310,14 @@ plink --bfile GWA-QC --indep-pairwise 500kb 5 0.2 --out GWA-QC
 
 3. Calculate IBD (pairwise relatedness) between each pair of individuals using pruned SNPs
 ```bash
-plink --bfile GWA-QC --extract GWA-QC.prune.in --genome --min 0.185 --out GWA-QC
+plink --bfile merged_afterqc --extract related/merged_afterqc.prune.in --genome --min 0.185 --out merged_afterqc
 ```
 * `--extract GWA-QC.prune.in : use only the pruned set of SNPs for relatedness.`
 * `--genome & --min 0.185 as above.`
 * This reduces bias and improves accuracy of relatedness estimates.
+* This command generated a .genome file that only includes pairs of individuals with π̂  > 0.185, which is the standard threshold above which individuals are considered closely related.
+
+* I also did a plot to visualize the different types of relatedness we have :) It only shows the related individuals.
 
 4. Remove related individuals
 Remove a member from each of the pairs that are too closely related from the data set. To keep it simple you can just always remove the individual mentioned first.
@@ -329,6 +340,14 @@ Chat CPT also wants to mention:
 * Check for duplicates: Look for pairs with PI_HAT > 0.9 (almost identical) which can be duplicates or sample swaps.
 * Consider threshold tuning: Threshold 0.185 is common but can be adjusted depending on study design.
 * Document all removals: Keep track of removed individuals for transparency.
+
+<div style="border:1px solid black; padding:10px; background-color:#f0f0f0;">
+**Task 1: Do a QC. Are there any closely related individuals?**
+After running step 3 above ("Claculating IBD") we get a .genome file as an output. It contains 7149 pairs of related individuals with relatedness >= 0.125.
+`awk 'NR>1' ibdcalc_merged.genome | sort -k10,10nr | head`
+Since we only have ~700 individuals, we assume, that many are related in multiple pairings. This could be the case if they are siblings or cousins, which would create many pairwise combinations.
+With running `awk 'NR>1 && $10 >= 0.125 {print $1; print $2}' ibdcalc_merged.genome | sort | uniq | wc -l` we get the result, that our dataset has 123 closely related individuals. We will remove them in step 4 (above).
+</div>
 
 ## 1.3 Population Structure/ Stratification/ Batch Effects
 
