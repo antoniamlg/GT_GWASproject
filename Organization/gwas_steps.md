@@ -14,12 +14,13 @@
     - [1.1.4 Merge chips \[X\]](#114-merge-chips-x)
     - [1.1.5 Sex-imputation (TRY) \[X\]](#115-sex-imputation-try-x)
     - [1.1.5 MAF \& HWE \[X\]](#115-maf--hwe-x)
-  - [1.2 Sample-level QC \[ \]](#12-sample-level-qc--)
-    - [1.2.1 Sex checks \[ \]](#121-sex-checks--)
-    - [1.2.2 Missingness \[ \]](#122-missingness--)
-    - [1.2.3 Heterozygosity outliers \[ \]](#123-heterozygosity-outliers--)
+  - [1.2 Sample-level QC \[X\]](#12-sample-level-qc-x)
+    - [1.2.1 Sex checks \[X\]](#121-sex-checks-x)
+    - [1.2.2 Missingness \[X\]](#122-missingness-x)
+    - [1.2.3 Heterozygosity outliers \[X\]](#123-heterozygosity-outliers-x)
       - [Decide on thresholds](#decide-on-thresholds)
     - [1.2.4 Relatedness / Duplicates \[ \]](#124-relatedness--duplicates--)
+      - [Why check relatedness](#why-check-relatedness)
   - [1.3 Population Structure/ Stratification/ Batch Effects](#13-population-structure-stratification-batch-effects)
     - [1.3.1 PCA](#131-pca)
           - [After QC, merge chips again](#after-qc-merge-chips-again)
@@ -44,7 +45,7 @@ Also check out this link [QC README](https://github.com/kaspermunch/PopulationGe
 ## Datanumbers
 | Chip Name             | # Individuals | # Variants          | #Ind. after phenotype filtering  | #Var. after SNP QC (hwe + maf) | # Ind. after Sample QC
 |-----------------------|---------------|---------------------|----------------------------------|------|-----|
-| whole dataset         | 2009          | 1376653             | 1071                             | 
+| whole dataset         | 2009          | 1376653             | 1071                             | 768 |
 | HTS_iSelect_HD        | 587           |                     | 275                              | 513670 | 264 |
 | Illumina_GSAs         | 248           |                     | 128                              | 410086 | 121 |
 | OmniExpress           | 291           |                     | 170 -> 133 after sex-check       | 569238 | 125 |
@@ -191,9 +192,9 @@ plink --bfile OmniExpress_clean \
 
 In addition to removing SNPs identified with differential call rates between cases and controls, this command removes SNPs with call rate less than 95% with --geno option and deviation from HWE (p<1e-6) with the --hwe option. It also removes all SNPs with minor allele frequency less than a specified threshold using the --maf option.
 
-## 1.2 Sample-level QC [ ]
+## 1.2 Sample-level QC [X]
 
-### 1.2.1 Sex checks [ ]
+### 1.2.1 Sex checks [X]
 
 Don't use for *Omics*-chip - it does not have any info on sex
 
@@ -209,7 +210,7 @@ Remove proplematic sex with
 plink --bfile unknown_chip_snpqc --remove ../SampleQC_sexcheck/unknown_chip_samplesex.nosex --make-bed --out unknown_chip_snpqc_cleanedsex
 ```
 
-### 1.2.2 Missingness [ ]
+### 1.2.2 Missingness [X]
 
 Look at section 1.1.1, we already did that there.
 Calculated it again anyways to be sure.
@@ -217,7 +218,7 @@ Calculated it again anyways to be sure.
 plink --bfile GWA-QC --missing --out GWA-QC
 ```
 
-### 1.2.3 Heterozygosity outliers [ ]
+### 1.2.3 Heterozygosity outliers [X]
 
 Heterozygosity helps you:
 * Detect individuals with unusual genotypes (e.g. contamination, sample swaps, inbreeding)
@@ -272,33 +273,70 @@ plink --bfile GWA-QC --remove wrong_het_missing_values.txt --make-bed --out GWA-
 ```
 
 ### 1.2.4 Relatedness / Duplicates [ ]
+Yay, after a loooooong way through the QC we finally reached the first question (*pat on the back) <br>
+#### Why check relatedness ####
+Related individuals share segments of genome - identical by descent (IBD). If there are too many related individuals present, it can bias your association results. So you want to detect pairs with high relatedness and remove one from each pair. <br>
+In the [exercises](https://github.com/kaspermunch/PopulationGenomicsCourse/tree/master/Exercises/GWAS_QC) we got the following pipeline.
 
-* what is this command? flags individuals with pi_hat > 0.185
+1. Flagging pairs with $\hat{\pi}$ > 0.185
 ```bash
 plink --bfile chipX_qc4 --genome --min 0.185 --out chipX_related
-
 ```
+* `--genome` : calculate pairwise genome-wide IBD estimates for all pairs of individuals
+* `--min 0.185` : only output pairs with PI_HAT > 0.185 (a measure of relatedness)
+  * $\hat{\pi}$ ~ 0.5: dupicates or twins
+  * $\hat{\pi}$ ~ 0.25: 1st degree relatives (parent-child, siblings)
+  * $\hat{\pi}$ ~ 0.125: 2nd degree relatives (grandparent, uncle)
+  * `0.185` is a common threshold to flag close relatives
+* Result: a .genome file listing pairs of individuals with estimated relatedness > 0.185.
 
-1. prune the data
+2. Pruning SNPs to get independent markers
 ```bash
 plink --bfile GWA-QC --indep-pairwise 500kb 5 0.2 --out GWA-QC
 ```
-2. Calculate IBD between each pair of individuals
+* `--indep-pairwise 500kb 5 0.2` : perform linkage disequilibrium (LD) pruning by scanning SNPs in 500 kb windows, shifting 5 SNPs at a time, removing one SNP from pairs with r² > 0.2
+* This removes correlated SNPs so relatedness estimation isn’t biased by SNPs in strong LD.
+* Result: 
+  * GWA-QC.prune.in (SNPs kept)
+  * GWA-QC.prune.out (SNPs removed)
+
+3. Calculate IBD (pairwise relatedness) between each pair of individuals using pruned SNPs
 ```bash
 plink --bfile GWA-QC --extract GWA-QC.prune.in --genome --min 0.185 --out GWA-QC
 ```
-3. Remove a member from each of the pairs that are too closely related from the data set. To keep it simple you can just always remove the individual mentioned first. *
+* `--extract GWA-QC.prune.in : use only the pruned set of SNPs for relatedness.`
+* `--genome & --min 0.185 as above.`
+* This reduces bias and improves accuracy of relatedness estimates.
 
-4. Remove individuals with wrong IBD.
+4. Remove related individuals
+Remove a member from each of the pairs that are too closely related from the data set. To keep it simple you can just always remove the individual mentioned first.
+
 ```bash
 plink --bfile  GWA-QC --remove wrong_ibd.txt --make-bed --out GWA-QC
 ```
+* `--remove wrong_ibd.txt : remove individuals listed in this text file (one individual ID per line).`
+* This file is typically created by you after inspecting the .genome file, picking one individual from each related pair to exclude.
+* `--make-bed : create a new binary PLINK file with those individuals removed.`
+* `--out GWA-QC : new cleaned dataset prefix.`
+
+Chat CPT also wants to mention:
+* Choosing which individuals to remove. The .genome file lists pairs, so you need a strategy to pick who to remove:
+  * Remove the individual with lower call rate.
+  * Remove duplicates or related individuals with more missingness.
+  * Alternatively, remove the first individual listed as a simple rule (as your comment suggests).
+* Automating removal file creation: You can write a script to parse .genome and generate wrong_ibd.txt accordingly.
+* Visualize relatedness: Plot histogram of PI_HAT values to see the distribution of relatedness.
+* Check for duplicates: Look for pairs with PI_HAT > 0.9 (almost identical) which can be duplicates or sample swaps.
+* Consider threshold tuning: Threshold 0.185 is common but can be adjusted depending on study design.
+* Document all removals: Keep track of removed individuals for transparency.
+
 ## 1.3 Population Structure/ Stratification/ Batch Effects
 
 ### 1.3.1 PCA
 ```bash
 plink --bfile chipX_qc4 --pca 10 --out chipX_pca
 ```
+###############################################
 
 ###### After QC, merge chips again ######
 ---
