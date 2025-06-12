@@ -19,21 +19,19 @@
     - [1.2.2 Missingness \[X\]](#122-missingness-x)
     - [1.2.3 Heterozygosity outliers \[X\]](#123-heterozygosity-outliers-x)
       - [Decide on thresholds](#decide-on-thresholds)
-    - [1.2.4 Relatedness / Duplicates \[ \]](#124-relatedness--duplicates--)
+    - [1.2.4 Relatedness / Duplicates \[X\]](#124-relatedness--duplicates-x)
       - [Why check relatedness](#why-check-relatedness)
-      - [Merging the datasets](#merging-the-datasets)
-  - [1.3 Population Structure/ Stratification/ Batch Effects](#13-population-structure-stratification-batch-effects)
-    - [1.3.1 PCA](#131-pca)
-          - [After QC, merge chips again](#after-qc-merge-chips-again)
-  - [1. Impute Sex](#1-impute-sex)
-  - [2. Check Sex](#2-check-sex)
-  - [How do do .md files](#how-do-do-md-files)
-    - [code blocks](#code-blocks)
-    - [bullet lists](#bullet-lists)
-    - [tables](#tables)
-    - [links](#links)
-    - [images](#images)
-    - [text formatting](#text-formatting)
+      - [Merging the datasets #### \[X\]](#merging-the-datasets--x)
+- [2. PCA \[X\]](#2-pca-x)
+      - [I also redid the plot with sex-colouring](#i-also-redid-the-plot-with-sex-colouring)
+- [3. GWAS on height](#3-gwas-on-height)
+  - [3.1 Prepare phenotype file \[X\]](#31-prepare-phenotype-file-x)
+  - [3.2 Run the GWAS](#32-run-the-gwas)
+  - [3.3 Count significant SNPs](#33-count-significant-snps)
+  - [3.4 Manhattan/QQ Plots](#34-manhattanqq-plots)
+  - [3.5 QQ-plot](#35-qq-plot)
+  - [3.6 Genomic Inflation Factor](#36-genomic-inflation-factor)
+  - [3.7 Genomic Control \& Most Significant p After GC](#37-genomic-control--most-significant-p-after-gc)
 
 ## Steps Overview
 | Step         | Command                              | Description                  |
@@ -273,13 +271,13 @@ I will now remove these outliers from the files.
 plink --bfile GWA-QC --remove wrong_het_missing_values.txt --make-bed --out GWA-QC
 ```
 
-### 1.2.4 Relatedness / Duplicates [ ]
+### 1.2.4 Relatedness / Duplicates [X]
 Yay, after a loooooong way through the QC we finally reached the first question (*pat on the back) <br>
 #### Why check relatedness ####
 Related individuals share segments of genome - identical by descent (IBD). If there are too many related individuals present, it can bias your association results. So you want to detect pairs with high relatedness and remove one from each pair. <br>
 In the [exercises](https://github.com/kaspermunch/PopulationGenomicsCourse/tree/master/Exercises/GWAS_QC) we got the following pipeline.
 
-#### Merging the datasets ####
+#### Merging the datasets #### [X]
 1. Choose base dataset
 2. Create merge list (txt)
 3. Merge: `plink --bfile OmniExpress_plus_snpqc --merge-list merge_list.txt --make-bed --out merged_chips` <br>
@@ -349,99 +347,150 @@ Since we only have ~700 individuals, we assume, that many are related in multipl
 With running `awk 'NR>1 && $10 >= 0.125 {print $1; print $2}' ibdcalc_merged.genome | sort | uniq | wc -l` we get the result, that our dataset has 123 closely related individuals. We will remove them in step 4 (above).
 ```
 
-## 1.3 Population Structure/ Stratification/ Batch Effects
-
-### 1.3.1 PCA
+# 2. PCA [X]
 ```bash
-plink --bfile chipX_qc4 --pca 10 --out chipX_pca
+plink --bfile afterqc --pca 10 --out afterqc_pca
 ```
-###############################################
+This calculates Eigenvalues and Eigenvectors. I used a [Python script](https://github.com/antoniamlg/GT_GWASproject/blob/main/Scripts/PCAplot.ipynb) to visualize them graphically. <br>
 
-###### After QC, merge chips again ######
----
-## 1. Impute Sex
+**Question 2: Do a PCA plot. What does it tell you about the samples?**
+* PCA plot shows, how samples are distributed and how they relate to each other based on the first two principal components (PC1 and PC2).
+* both components account for 57.3% of the total variance which is a substantial portion
+* samples:
+  * **Clustering**: samples of same chip type cluster together -> chip has a strong influence on data structure (they are all in one place, doesn't seem to be the case here)
+  * **Separation**: the colours are not well separated, so samples from different chips do not seem to have chip-wise distinct profiles in PCA space
+  * **Overlap**: since the colors overlap significally, it suggests that the chip types may not be the primary source of variation.
+* there are no batch effects (nice)
+* the biological variation seems to be stronger than the technical variation
+* the v-shaped pattern in the PCA can be indicative of population structure like different ancestries among the samples (CITE)
+  * it is common that genetic differences between populations dominate in the first few principal components
+  * **Admixture**: the point of the V may represent individuals with mixed ancestry, while the arms of the V represent individuals from more genetically distinct populations
+  * **Gradien of ancestry**: the arms of the V may reflect a cline/gradient of ancestry, such as from Northern to Southern Europe
+* How to confirm this?
+  * Overlay with ancestry labels (which we don't have)
+  * use reference populations (beyond scope of this project)
+
+#### I also redid the plot with sex-colouring
+You cannot see any good clustering between female and male samples (sad).
+
+# 3. GWAS on height
+
+## 3.1 Prepare phenotype file [X]
+So that it corresponds to PLINK standards aka FID IID Phenotype.
 ```bash
-plink --bfile gwas_data_indiv_filtered
-      --impute-sex 0.8 
-      --make-bed --out gwas_data_sex_imputed
-      --allow-no-sex
+# duplicate IID to get FID column
+awk '{print $1, $1, $2}' height.txt > height_plink.txt
 ```
-| command                 | what it does                                                                      |
-|-------------------------|-----------------------------------------------------------------------------------|
-| ```--bfile```           | reads in all .bed, .bam & .fam files                                              |
-| ```--impute-sex 0.8```  | command to impute sex, F>0.8 likely male, F<0.2 likely female, 0.8 standard value |
-| ```--make-bed```        | needed to produce new output files                                                |
-| ```--allow-no-sex```    | allows PLINK to process those individuals at all                                  |
+=> height = quantitative trait
 
-- impute sex = infer sex: change sex assignments to imputed values
-- get sex of individuals based on X chromosome heterozygosity rates
-  - SNPs determine whether an individual is likely male (low heterozygosity on X, since XY) or female (normal heterozygosity on X, since XX)
-- outputs a .sexcheck file
-
+## 3.2 Run the GWAS
 ```bash
-# The terminal output I get
-515439 MB RAM detected; reserving 257719 MB for main workspace.
-1376653 variants loaded from .bim file.
-2009 people (992 males, 916 females, 101 ambiguous) loaded from .fam.
-Ambiguous sex IDs written to
-../../students/amlg/project/data/gwas_data_sex_imputed.nosex .
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 2009 founders and 0 nonfounders present.
-Calculating allele frequencies... done.
-Warning: 106246 het. haploid genotypes present (see
-../../students/amlg/project/data/gwas_data_sex_imputed.hh ); many commands
-treat these as missing.
-Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
-treat these as missing.
-Total genotyping rate is 0.478922.
-1376653 variants and 2009 people pass filters and QC.
-Note: No phenotypes present.
---impute-sex: 29856 Xchr and 0 Ychr variant(s) scanned, 1889/2009 sexes
-imputed. Report written to
-../../students/amlg/project/data/gwas_data_sex_imputed.sexcheck .
---make-bed to ../../students/amlg/project/data/gwas_data_sex_imputed.bed +
-../../students/amlg/project/data/gwas_data_sex_imputed.bim +
-../../students/amlg/project/data/gwas_data_sex_imputed.fam ... done.
+plink --bfile your_prefix \
+      --pheno height_plink.txt \
+      --pheno-name height \
+      --assoc \
+      --out gwas_height
 ```
+* what is `--assoc`:  performs basic association testing, for quantitative traits (like height) it's a linear regression
 
-## 2. Check Sex
----
-
-## How do do .md files
-
-### code blocks
-Use triple backticks (```) for code blocks:
-
+I could also use this:
 ```bash
-plink --bfile data --mind 0.1 --geno 0.05 --maf 0.01 --make-bed --out qc_filtered
+plink --bfile gwa --pheno height.txt --linear --adjust --out gwas_height
 ```
-You can specify language after the triple backticks (e.g., bash, r, python) for syntax highlighting.
-
-Also possible like this
+The `--adjust´ option adds multiple testing correction results (like Bonferroni and FDR) to your output
+  
+## 3.3 Count significant SNPs
+Count SNPs with p < 5e-8 (genome-wide significance)
 ```bash
-plink --bfile data/raw/genotypes \
-  --mind 0.1 \
-  --geno 0.05 \
-  --maf 0.01 \
-  --make-bed \
-  --out data/clean/genotypes_qc
+awk '$9 < 5e-8' gwas_height.assoc | wc -l
 ```
 
-### bullet lists
-with - or 1.
+## 3.4 Manhattan/QQ Plots
+-> the cool stuff
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-### tables
-| Step         | Command                              | Description                  |
-|--------------|--------------------------------------|------------------------------|
-| Initial QC   | plink --mind 0.1                     | Remove individuals with >10% missing data |
-| MAF Filter   | plink --maf 0.01                     | Remove rare variants         |
+# Read PLINK association results
+df = pd.read_csv("gwas_height.assoc.linear", delim_whitespace=True)
 
-### links
-[link name](https://github.com/antoniamlg/GT_GWASproject)
+# Remove rows with NA p-values
+df = df[df['P'].notna()]
 
-### images
-![image name](image.png)
+# Prepare chromosome and base pair position for sorting
+df['CHR'] = df['CHR'].astype(int)
+df = df.sort_values(['CHR', 'BP'])
 
-### text formatting
-- use (*) or (_) for *italic* or _italic_ text
-- use (**) or (__) for __bold__ text
+# Create cumulative base pair positions
+df['ind'] = range(len(df))
+df_grouped = df.groupby('CHR')
+
+# Manhattan plot
+fig, ax = plt.subplots(figsize=(12, 6))
+colors = ['skyblue', 'purple']
+x_labels = []
+x_labels_pos = []
+
+for num, (name, group) in enumerate(df_grouped):
+    group.plot(kind='scatter', x='ind', y='-log10(P)', color=colors[num % len(colors)], ax=ax, s=10)
+    x_labels.append(name)
+    x_labels_pos.append((group['ind'].iloc[-1] + group['ind'].iloc[0]) / 2)
+
+# Format plot
+ax.set_xticks(x_labels_pos)
+ax.set_xticklabels(x_labels)
+ax.set_xlabel('Chromosome')
+ax.set_ylabel('-log10(P)')
+ax.set_title('Manhattan Plot')
+
+# Highlight top SNP
+top_snp = df.loc[df['P'].idxmin()]
+ax.scatter(top_snp['ind'], -np.log10(top_snp['P']), color='red', s=30, zorder=10)
+
+plt.tight_layout()
+plt.show()
+```
+
+**How many significant loci do you find?**
+
+## 3.5 QQ-plot
+```python
+import numpy as np
+import scipy.stats as stats
+
+observed_p = df['P'].sort_values()
+expected = np.arange(1, len(observed_p)+1) / (len(observed_p)+1)
+
+plt.figure(figsize=(6, 6))
+plt.plot(-np.log10(expected), -np.log10(observed_p), '.', label="Observed")
+plt.plot([0, max(-np.log10(expected))], [0, max(-np.log10(expected))], 'r--', label="Expected")
+plt.xlabel('Expected -log10(P)')
+plt.ylabel('Observed -log10(P)')
+plt.title('QQ Plot')
+plt.legend()
+plt.tight_layout()
+plt.show()
+```
+That will help answer:
+* Are other variants also associated? → Look for a cluster or "bump" in Manhattan plot.
+* General inflation? → QQ plot: early departure from expected = inflation.
+
+## 3.6 Genomic Inflation Factor
+Inflation factor helps detect population structure or other confounding effects.
+```python
+chisq = stats.chi2.isf(df['P'], df=1)  # inverse survival function = qchisq
+lambda_gc = np.median(chisq) / stats.chi2.ppf(0.5, df=1)
+print(f"Genomic inflation factor (lambda): {lambda_gc:.3f}")
+```
+That answers:
+* What is λ?
+* What is corrected p-value of top SNP?
+
+## 3.7 Genomic Control & Most Significant p After GC
+```python
+chisq_gc = chisq / lambda_gc
+p_gc = stats.chi2.sf(chisq_gc, df=1)  # survival function = 1 - CDF = pchisq lower.tail=FALSE
+
+print("Most significant GC-adjusted p-value:", p_gc.min())
+```
