@@ -285,7 +285,7 @@ In the [exercises](https://github.com/kaspermunch/PopulationGenomicsCourse/tree/
 3. Merge: `plink --bfile OmniExpress_plus_snpqc --merge-list merge_list.txt --make-bed --out merged_chips` <br>
   => 1117723 variants and 768 people pass filters and QC.
 
-
+---
 1. Flagging pairs with $\hat{\pi}$ > 0.185
 ```bash
 plink --bfile merged_afterqc --genome --min 0.185 --out related/merged_afterqc
