@@ -566,5 +566,9 @@ plink --bfile ../data/final_dataset/afterqc \
 * the plot I get after executing the python script, shows just a flat line, so I am only seeing one genotype group (0,0). So 
   * either rs1000135_C is monomorphic (no variation), only one individual has it
   * SNP wasn't genotyped properly or filtered
+* UPDATE: fixed it but don't really now what went wrong
 
+Tried the most significant SNP (apprently that was not the one from before and now I get this really cool box plot! (yay)).
+* Trend: Carrying 1 copy of the minor allele at this SNP is associated with increased height.* This fits the positive BETA = +4.079 from earlier association output — that means each copy of the minor allele adds ~4 cm to height (statistically significant with p ≈ 0.049).
+* Since no 2-copy individuals are shown, you can’t judge whether the effect is additive, dominant, or recessive.
 **THE END**
