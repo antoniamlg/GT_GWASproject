@@ -1,0 +1,130 @@
+PMID- 21234875
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20110408
+LR  - 20250529
+IS  - 1934-8258 (Electronic)
+IS  - 1934-8266 (Print)
+IS  - 1934-8258 (Linking)
+VI  - Chapter 1
+DP  - 2011 Jan
+TI  - Quality control procedures for genome-wide association studies.
+PG  - Unit1.19
+LID - 10.1002/0471142905.hg0119s68 [doi]
+AB  - Genome-wide association studies (GWAS) are being conducted at an unprecedented 
+      rate in population-based cohorts and have increased our understanding of the 
+      pathophysiology of complex disease. Regardless of context, the practical utility 
+      of this information will ultimately depend upon the quality of the original data. 
+      Quality control (QC) procedures for GWAS are computationally intensive, 
+      operationally challenging, and constantly evolving. Here we enumerate some of the 
+      challenges in QC of GWAS data and describe the approaches that the electronic 
+      MEdical Records and Genomics (eMERGE) network is using for quality assurance in 
+      GWAS data, thereby minimizing potential bias and error in GWAS results. We 
+      discuss common issues associated with QC of GWAS data, including data file 
+      formats, software packages for data manipulation and analysis, sex chromosome 
+      anomalies, sample identity, sample relatedness, population substructure, batch 
+      effects, and marker quality. We propose best practices and discuss areas of 
+      ongoing and future research.
+CI  - © 2011 by John Wiley & Sons, Inc.
+FAU - Turner, Stephen
+AU  - Turner S
+AD  - Center for Human Genetics Research, Department of Molecular Physiology & 
+      Biophysics, Vanderbilt University, Nashville, Tennessee, USA.
+FAU - Armstrong, Loren L
+AU  - Armstrong LL
+FAU - Bradford, Yuki
+AU  - Bradford Y
+FAU - Carlson, Christopher S
+AU  - Carlson CS
+FAU - Crawford, Dana C
+AU  - Crawford DC
+FAU - Crenshaw, Andrew T
+AU  - Crenshaw AT
+FAU - de Andrade, Mariza
+AU  - de Andrade M
+FAU - Doheny, Kimberly F
+AU  - Doheny KF
+FAU - Haines, Jonathan L
+AU  - Haines JL
+FAU - Hayes, Geoffrey
+AU  - Hayes G
+FAU - Jarvik, Gail
+AU  - Jarvik G
+FAU - Jiang, Lan
+AU  - Jiang L
+FAU - Kullo, Iftikhar J
+AU  - Kullo IJ
+FAU - Li, Rongling
+AU  - Li R
+FAU - Ling, Hua
+AU  - Ling H
+FAU - Manolio, Teri A
+AU  - Manolio TA
+FAU - Matsumoto, Martha
+AU  - Matsumoto M
+FAU - McCarty, Catherine A
+AU  - McCarty CA
+FAU - McDavid, Andrew N
+AU  - McDavid AN
+FAU - Mirel, Daniel B
+AU  - Mirel DB
+FAU - Paschall, Justin E
+AU  - Paschall JE
+FAU - Pugh, Elizabeth W
+AU  - Pugh EW
+FAU - Rasmussen, Luke V
+AU  - Rasmussen LV
+FAU - Wilke, Russell A
+AU  - Wilke RA
+FAU - Zuvich, Rebecca L
+AU  - Zuvich RL
+FAU - Ritchie, Marylyn D
+AU  - Ritchie MD
+LA  - eng
+GR  - U01HG004438/HG/NHGRI NIH HHS/United States
+GR  - T32 GM080178/GM/NIGMS NIH HHS/United States
+GR  - U01HG004610/HG/NHGRI NIH HHS/United States
+GR  - U01 HG004603/HG/NHGRI NIH HHS/United States
+GR  - U01HG04603/HG/NHGRI NIH HHS/United States
+GR  - U01HG004609/HG/NHGRI NIH HHS/United States
+GR  - U01 HG004609/HG/NHGRI NIH HHS/United States
+GR  - U01 HG004599/HG/NHGRI NIH HHS/United States
+GR  - U01HG004608/HG/NHGRI NIH HHS/United States
+GR  - U01 HG004608/HG/NHGRI NIH HHS/United States
+GR  - U01 HG006375/HG/NHGRI NIH HHS/United States
+GR  - U01 HG004438/HG/NHGRI NIH HHS/United States
+GR  - U01HG04599/HG/NHGRI NIH HHS/United States
+GR  - ImNIH/Intramural NIH HHS/United States
+GR  - R01 LM010040/LM/NLM NIH HHS/United States
+GR  - U01 HG004610/HG/NHGRI NIH HHS/United States
+GR  - R01LM010040/LM/NLM NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, N.I.H., Intramural
+PL  - United States
+TA  - Curr Protoc Hum Genet
+JT  - Current protocols in human genetics
+JID - 101287858
+SB  - IM
+MH  - Electronic Health Records
+MH  - Genome-Wide Association Study/methods/*standards
+MH  - Genomics
+MH  - Genotype
+MH  - Humans
+MH  - Phenotype
+MH  - Quality Control
+MH  - *Software
+PMC - PMC3066182
+MID - NIHMS262648
+EDAT- 2011/01/15 06:00
+MHDA- 2011/04/09 06:00
+PMCR- 2012/01/01
+CRDT- 2011/01/15 06:00
+PHST- 2011/01/15 06:00 [entrez]
+PHST- 2011/01/15 06:00 [pubmed]
+PHST- 2011/04/09 06:00 [medline]
+PHST- 2012/01/01 00:00 [pmc-release]
+AID - 10.1002/0471142905.hg0119s68 [doi]
+PST - ppublish
+SO  - Curr Protoc Hum Genet. 2011 Jan;Chapter 1:Unit1.19. doi: 
+      10.1002/0471142905.hg0119s68.

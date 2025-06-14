@@ -1,0 +1,21 @@
+TY  - JOUR
+AU  - Anderson, Carl A
+AU  - Pettersson, Fredrik H
+AU  - Clarke, Geraldine M
+AU  - Cardon, Lon R
+AU  - Morris, Andrew P
+AU  - Zondervan, Krina T
+PY  - 2010
+DA  - 2010/09/01
+TI  - Data quality control in genetic case-control association studies
+JO  - Nature Protocols
+SP  - 1564
+EP  - 1573
+VL  - 5
+IS  - 9
+AB  - This protocol details the steps for data quality assessment and control that are typically carried out during case-control association studies. The steps described involve the identification and removal of DNA samples and markers that introduce bias. These critical steps are paramount to the success of a case-control study and are necessary before statistically testing for association. We describe how to use PLINK, a tool for handling SNP data, to perform assessments of failure rate per individual and per SNP and to assess the degree of relatedness between individuals. We also detail other quality-control procedures, including the use of SMARTPCA software for the identification of ancestral outliers. These platforms were selected because they are user-friendly, widely used and computationally efficient. Steps needed to detect and establish a disease association using case-control data are not discussed here. Issues concerning study design and marker selection in case-control studies have been discussed in our earlier protocols. This protocol, which is routinely used in our labs, should take approximately 8 h to complete.
+SN  - 1750-2799
+UR  - https://doi.org/10.1038/nprot.2010.116
+DO  - 10.1038/nprot.2010.116
+ID  - Anderson2010
+ER  - 
