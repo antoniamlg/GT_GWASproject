@@ -32,6 +32,15 @@
   - [3.5 QQ-plot](#35-qq-plot)
   - [3.6 Genomic Inflation Factor](#36-genomic-inflation-factor)
   - [3.7 Genomic Control \& Most Significant p After GC](#37-genomic-control--most-significant-p-after-gc)
+  - [3.8 Replot](#38-replot)
+- [4. PCA II + Adjust for PCs](#4-pca-ii--adjust-for-pcs)
+  - [4.1 Use PCs as covariates in GWAS](#41-use-pcs-as-covariates-in-gwas)
+- [5. Do additional analyses using Plink, GCTA, R or any other tool you might find relevant](#5-do-additional-analyses-using-plink-gcta-r-or-any-other-tool-you-might-find-relevant)
+  - [5.1 Association test conditioning on the most significant SNP (Option 8)](#51-association-test-conditioning-on-the-most-significant-snp-option-8)
+    - [5.1.1 Identify top SNP](#511-identify-top-snp)
+    - [5.1.2 Run conditional analysis](#512-run-conditional-analysis)
+  - [5.2 Distribution of phenotypes by genotype at the most significant SNP (Option 6)](#52-distribution-of-phenotypes-by-genotype-at-the-most-significant-snp-option-6)
+  - [5.2.1 Extract genotype for one SNP with PLINK](#521-extract-genotype-for-one-snp-with-plink)
 
 ## Steps Overview
 | Step         | Command                              | Description                  |
@@ -387,7 +396,6 @@ awk '{print $1, $1, $2}' height.txt > height_plink.txt
 ```bash
 plink --bfile your_prefix \
       --pheno height_plink.txt \
-      --pheno-name height \
       --assoc \
       --out gwas_height
 ```
@@ -404,93 +412,159 @@ Count SNPs with p < 5e-8 (genome-wide significance)
 ```bash
 awk '$9 < 5e-8' gwas_height.assoc | wc -l
 ```
+* **gwas_height**: 7
+  * basic lin. regression without any covariates (like PCs)
+  * assumes that all individuals are from a single homogeneous population
+  * problem: if your dataset has population structure (e.g. people from different ancestries), results are heavily infiltrated because allele frequency differences can correlate with height due to confounding - not true biological effects.
+* **gwas_height_adj**: 0
+  * this runs a linear regression adjusted for covariates (PCs), that controls for population structure
+  * had 20.993 SNPs -> are too much though, something went wrong
+* so I guess I am sticking with the 7 SNPs
 
 ## 3.4 Manhattan/QQ Plots
+Find the script for the Manhattan and QQ plot under [plot script]().
 -> the cool stuff
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-# Read PLINK association results
-df = pd.read_csv("gwas_height.assoc.linear", delim_whitespace=True)
-
-# Remove rows with NA p-values
-df = df[df['P'].notna()]
-
-# Prepare chromosome and base pair position for sorting
-df['CHR'] = df['CHR'].astype(int)
-df = df.sort_values(['CHR', 'BP'])
-
-# Create cumulative base pair positions
-df['ind'] = range(len(df))
-df_grouped = df.groupby('CHR')
-
-# Manhattan plot
-fig, ax = plt.subplots(figsize=(12, 6))
-colors = ['skyblue', 'purple']
-x_labels = []
-x_labels_pos = []
-
-for num, (name, group) in enumerate(df_grouped):
-    group.plot(kind='scatter', x='ind', y='-log10(P)', color=colors[num % len(colors)], ax=ax, s=10)
-    x_labels.append(name)
-    x_labels_pos.append((group['ind'].iloc[-1] + group['ind'].iloc[0]) / 2)
-
-# Format plot
-ax.set_xticks(x_labels_pos)
-ax.set_xticklabels(x_labels)
-ax.set_xlabel('Chromosome')
-ax.set_ylabel('-log10(P)')
-ax.set_title('Manhattan Plot')
-
-# Highlight top SNP
-top_snp = df.loc[df['P'].idxmin()]
-ax.scatter(top_snp['ind'], -np.log10(top_snp['P']), color='red', s=30, zorder=10)
-
-plt.tight_layout()
-plt.show()
-```
+* X-axis: Chromosomes (1–22), showing the genomic position of each SNP.
+* Y-axis: −log10(p-value), so higher points are more statistically significant.
+* Dots: Each represents a SNP. The higher the dot, the stronger the association with the trait being studied.
+* Red dot on chromosome 22: This SNP is highly significant — likely a strong candidate for further investigation.
 
 **How many significant loci do you find?**
+6
+1092480     rs1349787
+1092509     rs6588911
+1092518    rs35178888
+1116614      rs306894
+1116649     rs3093474
+1117147     rs1084422
+
+=> there is no known height-association of these SNPs :(
 
 ## 3.5 QQ-plot
-```python
-import numpy as np
-import scipy.stats as stats
-
-observed_p = df['P'].sort_values()
-expected = np.arange(1, len(observed_p)+1) / (len(observed_p)+1)
-
-plt.figure(figsize=(6, 6))
-plt.plot(-np.log10(expected), -np.log10(observed_p), '.', label="Observed")
-plt.plot([0, max(-np.log10(expected))], [0, max(-np.log10(expected))], 'r--', label="Expected")
-plt.xlabel('Expected -log10(P)')
-plt.ylabel('Observed -log10(P)')
-plt.title('QQ Plot')
-plt.legend()
-plt.tight_layout()
-plt.show()
-```
 That will help answer:
 * Are other variants also associated? → Look for a cluster or "bump" in Manhattan plot.
 * General inflation? → QQ plot: early departure from expected = inflation.
 
+Interpretation:
+- assess, whether the distribution of observed p-values deviates from what would be expected under H_0 (aka no association between genetic variants and traits)
+- red line: line of equality - if all your observed p-values matched the expected ones perfectly (no true associations), all points would lie on this line
+- blue dots: 
+  - each dot = SNP
+  - dots above red line = lower p-values than expected, suggesting potential true associations
+  - strong upward deviation at tail (top right) suggests significant associations (yay)
+- my data:
+  - most points follow red line - data is well-behaved overall
+  - deviation at the end of the line likely represents a genome-wide significant hit
+
 ## 3.6 Genomic Inflation Factor
 Inflation factor helps detect population structure or other confounding effects.
-```python
-chisq = stats.chi2.isf(df['P'], df=1)  # inverse survival function = qchisq
-lambda_gc = np.median(chisq) / stats.chi2.ppf(0.5, df=1)
-print(f"Genomic inflation factor (lambda): {lambda_gc:.3f}")
-```
+It’s a measure of how much your test statistics are inflated compared to what you expect under the null. λ > 1 suggests inflation, possibly from:
+* population stratification (hidden population structure)
+* technical artifacts
+λ ≈ 1 means your p-values look well-calibrated. Calculating λ helps you check if your GWAS test statistics are unbiased or inflated. <br>
+How does it work? <br>
+* It adjusts your test statistics to correct for inflation by dividing by λ.
+* You then recalculate p-values from the adjusted chi-squared values.
+* This controls false positives if λ > 1. <br>
+
 That answers:
 * What is λ?
-* What is corrected p-value of top SNP?
+* What is corrected p-value of top SNP? <br>
+
+My result => Genomic inflation factor (lambda): 0.956. This means, there is no inflation and population stratification or other confounding effects don’t look like a big problem here.
 
 ## 3.7 Genomic Control & Most Significant p After GC
-```python
-chisq_gc = chisq / lambda_gc
-p_gc = stats.chi2.sf(chisq_gc, df=1)  # survival function = 1 - CDF = pchisq lower.tail=FALSE
+My most significant GC-adjusted p-value: 5.1859116007633647e-17.
 
-print("Most significant GC-adjusted p-value:", p_gc.min())
+## 3.8 Replot
+How to interpret differences:
+* If the original and GC-adjusted Manhattan plots look almost the same (which often happens when lambda is near 1 like yours), it means:
+  * Your association results are robust.
+  * No inflation or confounding is affecting your findings.
+* If the GC-adjusted plot had fewer SNPs passing the genome-wide significance threshold, it would mean some original signals might have been false positives due to inflation.
+* Conversely, if your lambda is below 1 (like 0.956), sometimes the GC correction can make p-values a bit more significant, but usually differences are minor. <br>
+
+**Also, on a side note, I did QC separately per chip but the GWAS not. So that could also be something to do in future analyses.**
+
+# 4. PCA II + Adjust for PCs
+There may still be population structure (ancestry differences) in your sample. People from different ancestries have different allele frequencies, and if uncorrected, that can fake associations. That’s where PCA helps:
+* It captures hidden structure (e.g., European vs. African ancestry).
+* You then adjust for top PCs in your GWAS to remove this confounding.
+
+```bash
+plink --bfile gwa --indep-pairwise 500kb 5 0.2 --out gwa
+plink --bfile gwa --extract gwa.prune.in --pca 20 --out gwa
 ```
+
+=> it looks pretty the same, only mirrored and with less variance.
+
+## 4.1 Use PCs as covariates in GWAS
+```bash
+plink --bfile afterqc \
+  --pheno height_adj.txt \
+  --covar pca_ldpruned/pca_ldpruned.eigenvec \
+  --covar-number 1-10 \
+  --linear
+  ```
+
+  => and that did not work at all
+
+# 5. Do additional analyses using Plink, GCTA, R or any other tool you might find relevant
+
+## 5.1 Association test conditioning on the most significant SNP (Option 8)
+
+### 5.1.1 Identify top SNP
+Run `sort -g -k9 plink.assoc | head`, assuming that your association results are in `plink.assoc`.
+
+| CHR | SNP        | BP        | A1 | TEST | NMISS | OR | STAT | P      |
+|-----|------------|-----------|----|------|-------|----|------|--------|
+| 10  | i6006521   | 101595996 | 1  | NA   | NA    | NA | NA   | NA     |
+| 10  | i6009456   | 96521657  | 1  | NA   | NA    | NA | NA   | NA     |
+| 10  | i6058695   | 88717154  | 1  | NA   | NA    | NA | NA   | NA     |
+| 10  | i6059147   | 72195439  | 1  | NA   | NA    | NA | NA   | NA     |
+| 10  | rs1000135  | 10854819  | 1  | NA   | NA    | NA | NA   | NA     |
+| 10  | rs1003441  | 116044364 | 1  | NA   | NA    | NA | NA   | NA     |
+| 10  | rs1004296  | 14815459  | 1  | NA   | NA    | NA | NA   | NA     |
+| 10  | rs1006193  | 81159255  | 1  | NA   | NA    | NA | NA   | NA     |
+| 10  | rs1006218  | 129149586 | 1  | NA   | NA    | NA | NA   | NA     |
+| 10  | rs1006791  | 133839610 | 1  | NA   | NA    | NA | NA   | NA     |
+
+**Why don't we take i SNPs into account?**
+The i SNPs (like i6006521, i6009456, etc.) are typically imputed SNPs or non-reference variants introduced during certain types of preprocessing or genotyping. Why you should exclude them:
+1. Lack of rsID: They usually don't have a known rsID, so it's harder to match them to known variants or published GWAS hits.
+2. Lower confidence: They may come from lower-confidence calls or imputation with low quality.
+3. Not present in external PRS tools or replication studies.
+
+So we will use `rs1000135`.
+
+### 5.1.2 Run conditional analysis
+```bash
+plink \
+  --bfile data \
+  --pheno phenotype.txt \               
+  --covar covariates.txt \              
+  --condition rs1000135 \                 
+  --linear \
+  --out conditioned_assoc
+```
+Use python script - createCovariancestxt - to get a file witht the sex info from the metadata. This will be used to control for covariance in the conditional analysis.
+
+Comment:
+* PLINK is skipping the association test because it thinks you have too many variables (covariates) compared to samples, or the phenotype is missing or invalid.
+* apparently, I have extra samples in phenotype/covariate files: the phenotype and covariate files contain samples not genotyped or not included in your genotype data .fam. Maybe the pheno/covar files were created from a larger cohort or different subset.
+* I am stopping, it's a lot of data wrangling and I feel it is a bit pointless
+
+## 5.2 Distribution of phenotypes by genotype at the most significant SNP (Option 6)
+
+## 5.2.1 Extract genotype for one SNP with PLINK
+```bash
+plink --bfile ../data/final_dataset/afterqc \
+      --snp rs1000135 \
+      --recode A --out ../data/final_dataset/rs1000135_geno
+```
+
+* the plot I get after executing the python script, shows just a flat line, so I am only seeing one genotype group (0,0). So 
+  * either rs1000135_C is monomorphic (no variation), only one individual has it
+  * SNP wasn't genotyped properly or filtered
+
+**THE END**
