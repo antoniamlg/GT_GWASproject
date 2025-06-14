@@ -40,7 +40,7 @@
     - [5.1.1 Identify top SNP](#511-identify-top-snp)
     - [5.1.2 Run conditional analysis](#512-run-conditional-analysis)
   - [5.2 Distribution of phenotypes by genotype at the most significant SNP (Option 6)](#52-distribution-of-phenotypes-by-genotype-at-the-most-significant-snp-option-6)
-  - [5.2.1 Extract genotype for one SNP with PLINK](#521-extract-genotype-for-one-snp-with-plink)
+    - [5.2.1 Extract genotype for one SNP with PLINK](#521-extract-genotype-for-one-snp-with-plink)
 
 ## Steps Overview
 | Step         | Command                              | Description                  |
@@ -556,7 +556,7 @@ Comment:
 
 ## 5.2 Distribution of phenotypes by genotype at the most significant SNP (Option 6)
 
-## 5.2.1 Extract genotype for one SNP with PLINK
+### 5.2.1 Extract genotype for one SNP with PLINK
 ```bash
 plink --bfile ../data/final_dataset/afterqc \
       --snp rs1000135 \
