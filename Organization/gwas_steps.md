@@ -43,12 +43,7 @@
     - [5.2.1 Extract genotype for one SNP with PLINK](#521-extract-genotype-for-one-snp-with-plink)
 
 ## Steps Overview
-| Step         | Command                              | Description                  |
-|--------------|--------------------------------------|------------------------------|
-| Split IID by chip   | splitbychip.ipynb (Python)    | extract IIDs specific to one chip |
-|    |                      |          |
-
-Also check out this link [QC README](https://github.com/kaspermunch/PopulationGenomicsCourse/blob/master/Exercises/GWAS_QC/step_by_step_tutorial.md).
+Check out this link [QC README](https://github.com/kaspermunch/PopulationGenomicsCourse/blob/master/Exercises/GWAS_QC/step_by_step_tutorial.md).
 
 ## Datanumbers
 | Chip Name             | # Individuals | # Variants          | #Ind. after phenotype filtering  | #Var. after SNP QC (hwe + maf) | # Ind. after Sample QC
